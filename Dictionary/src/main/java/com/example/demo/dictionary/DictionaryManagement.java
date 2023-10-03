@@ -36,7 +36,7 @@ public class DictionaryManagement {
     }
 
     public void insertFromFile() {
-        String filePath = "C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionary.txt";
+        String filePath = "C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt";
 
         try {
             FileReader fileReader = new FileReader(filePath);
@@ -72,7 +72,7 @@ public class DictionaryManagement {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
 
-        scanner.close();
+        //scanner.close();
     }
 
     public void dictionaryLookup2() {
@@ -87,7 +87,7 @@ public class DictionaryManagement {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
 
-        scanner.close();
+       // scanner.close();
     }
 
     public void dictionarySearcher() {
@@ -112,7 +112,7 @@ public class DictionaryManagement {
             System.out.println("Không tìm thấy từ nào có chữ cái đầu là '" + searchLetter + "'.");
         }
 
-        scanner.close();
+        //scanner.close();
     }
 
     public void addWordFromCommandLine() {
@@ -124,7 +124,7 @@ public class DictionaryManagement {
         Word word = new Word(wordTarget, wordExplain);
         this.dictionary.addWord(word);
         System.out.println("Từ đã được thêm vào từ điển.");
-        scanner.close();
+        //scanner.close();
     }
 
     public void deleteWordFromCommandLine() {
@@ -139,7 +139,7 @@ public class DictionaryManagement {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
 
-        scanner.close();
+        //scanner.close();
     }
 
     public void editWord() {
@@ -159,12 +159,12 @@ public class DictionaryManagement {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
 
-        scanner.close();
+        //scanner.close();
     }
 
     public void dictionaryExportToFile() {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionary.txt");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt");
             List<Word> words = this.dictionary.getWords();
             Iterator var3 = words.iterator();
 

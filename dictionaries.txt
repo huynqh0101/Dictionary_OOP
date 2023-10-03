@@ -1,0 +1,3 @@
+hello	xin chào
+age	tuổi
+hand	tay
