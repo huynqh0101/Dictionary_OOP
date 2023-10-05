@@ -16,6 +16,9 @@ public class DictionaryManagement {
         dictionary.add(newWord);
     }
 
+
+    //thay doi
+
     public void insertFromCommandline(){
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
