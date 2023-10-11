@@ -1,0 +1,20 @@
+hello	xin chao
+bye	tam biet
+morning	buoi sang
+ugly	xau
+indicate	chi ra
+gorgeous	xinh dep
+merit	loi ich
+factory	nha may
+shoes	doi giay
+raincoat	ao mua
+badminton	cau long
+table tennis	bong ban
+soccer	bong da
+bed	giuong
+computer science	khoa hoc may tinh
+information technology	cong nghe thong tin
+computer	may tinh
+car	o to
+phone	dien thoai
+frigde	tu lanh
