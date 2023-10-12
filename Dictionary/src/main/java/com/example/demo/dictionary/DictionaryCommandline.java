@@ -22,7 +22,6 @@ public class DictionaryCommandline {
             Word word = (Word)words.get(i);
             System.out.printf("%-3d| %-10s | %7s%n", i + 1, word.getWordTarget(), word.getWordExplain());
         }
-
     }
 
     public void dictionaryBasic() {

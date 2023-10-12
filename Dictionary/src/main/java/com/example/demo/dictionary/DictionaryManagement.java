@@ -1,6 +1,7 @@
 package com.example.demo.dictionary;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -35,29 +36,43 @@ public class DictionaryManagement {
 
     }
 
+    // insert file từ bên ngopaif vào
     public void insertFromFile() {
-        String filePath = "C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt";
+        System.out.print("Enter file path (e.g., D:\\Codeeeee\\OOP\\Dictionary_OOP\\CommandLineVersion\\src\\dictionaries.txt): ");
+        String fileName = scanner.nextLine();
 
-        try {
-            FileReader fileReader = new FileReader(filePath);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
-            while((line = bufferedReader.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\t");
-                if (parts.length == 2) {
+                if (parts.length >= 2) {
                     String wordTarget = parts[0].trim();
                     String wordExplain = parts[1].trim();
                     Word word = new Word(wordTarget, wordExplain);
                     this.dictionary.addWord(word);
                 }
             }
-
-            bufferedReader.close();
-        } catch (IOException var9) {
-            var9.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Error while reading the file " + fileName);
         }
+    }
 
+    //tự động lấy dữ liệu khi chạy chương trình
+    public void insertFromFileDictionaries() {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split("\t");
+                if (parts.length >= 2) {
+                    String wordTarget = parts[0].trim();
+                    String wordExplain = parts[1].trim();
+                    Word word = new Word(wordTarget, wordExplain);
+                    this.dictionary.addWord(word);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error while reading the file " + "dictionaries.txt");
+        }
     }
 
     public void dictionaryLookup1() {
@@ -158,8 +173,6 @@ public class DictionaryManagement {
         } else {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
-
-        //scanner.close();
     }
 
     public void dictionaryExportToFile() {
@@ -180,6 +193,5 @@ public class DictionaryManagement {
         } catch (IOException var7) {
             var7.printStackTrace();
         }
-
     }
 }
