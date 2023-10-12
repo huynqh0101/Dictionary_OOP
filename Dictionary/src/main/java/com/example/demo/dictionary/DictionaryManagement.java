@@ -38,7 +38,7 @@ public class DictionaryManagement {
 
     // insert file từ bên ngopaif vào
     public void insertFromFile() {
-        System.out.print("Enter file path (e.g., D:\\Codeeeee\\OOP\\Dictionary_OOP\\CommandLineVersion\\src\\dictionaries.txt): ");
+        System.out.print("Enter file path (e.g., dictionaries.txt): ");
         String fileName = scanner.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
