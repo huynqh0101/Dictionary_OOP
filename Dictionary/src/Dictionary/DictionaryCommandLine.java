@@ -18,14 +18,18 @@ public class DictionaryCommandLine {
         words.sort(Comparator.comparing(Word::getWord_target));
         System.out.println("No | English    | Vietnamese");
 
-        for(int i = 0; i < words.size(); ++i) {
-            Word word = (Word)words.get(i);
+        for (int i = 0; i < words.size(); ++i) {
+            Word word = (Word) words.get(i);
             System.out.printf("%-3d| %-10s | %7s%n", i + 1, word.getWord_target(), word.getWord_explain());
         }
     }
 
-    public void dictionaryBasic(){
+    public void dictionaryBasic() {
         dictionaryManagement.insertFromCommandline();
         showAllWords();
+    }
+
+    public void dictionarySearcher() {
+
     }
 }
