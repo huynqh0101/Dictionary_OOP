@@ -59,7 +59,7 @@ public class DictionaryManagement {
 
     //tự động lấy dữ liệu khi chạy chương trình
     public void insertFromFileDictionaries() {
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("dictionaries.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\t");
@@ -177,7 +177,7 @@ public class DictionaryManagement {
 
     public void dictionaryExportToFile() {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\Huy\\IdeaProjects\\Dictionary_OOP\\dictionaries.txt");
+            FileWriter fileWriter = new FileWriter("dictionaries.txt");
             List<Word> words = this.dictionary.getWords();
             Iterator var3 = words.iterator();
 
