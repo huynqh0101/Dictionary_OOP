@@ -9,12 +9,13 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class gamecomandline {
+public class game1comandline {
     private List<Question> questions = new ArrayList<>();
 
     // đọc file game
     public void readFileQuestion() {
-        String path = "game1.txt";
+        String path = "Dictionary\\src\\main\\java\\com\\example\\demo\\dictionary\\game1\\game1.txt";
+        //String path = "game1.txt";
         try (BufferedReader bf = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = bf.readLine()) != null) {
@@ -70,7 +71,7 @@ public class gamecomandline {
         } else next = true;
     }
 
-    public void playgame() {
+    public void play() {
         readFileQuestion();
         Collections.shuffle(questions);
         boolean next = true;

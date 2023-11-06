@@ -22,4 +22,8 @@ public class game2comandline {
             System.out.println("Lỗi đọc file " + path);
         }
     }
+
+    public void play(){
+
+    }
 }
