@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21f0080f-72a5-49c5-9a9a-b0252e210c50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/DictionaryManagement.java" afterDir="false" />
+    <list default="true" id="1043d2db-d62f-4f13-98fc-965a96b532ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2Xl9LWgEFJcu72Xq2kpHdZHCKrp" />
+  <component name="ProjectId" id="2XlAOZj8ZqDN39eG2Sxc3jtfhc6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,32 +32,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "huyvu",
-    "last_opened_file_path": "C:/Users/FPTSHOP/Desktop/learn/Dictionary_OOP"
+    "last_opened_file_path": "C:/Users/FPTSHOP/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Dictionary_OOP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Dictionary_OOP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="21f0080f-72a5-49c5-9a9a-b0252e210c50" name="Changes" comment="" />
-      <created>1699192745284</created>
+      <changelist id="1043d2db-d62f-4f13-98fc-965a96b532ab" name="Changes" comment="" />
+      <created>1699193263053</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699192745284</updated>
+      <updated>1699193263053</updated>
     </task>
     <servers />
   </component>
