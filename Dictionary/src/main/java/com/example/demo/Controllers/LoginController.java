@@ -178,18 +178,6 @@ public class LoginController {
     private void exitBtnClick() {
         Platform.exit();
     }
-
-    @FXML
-    protected void loginBtnClick() {
-        Node currentNode = loginBtn1;
-        showComponent(currentNode, "login.fxml");
-    }
-
-    @FXML
-    protected void signupBtnClick() {
-        Node currentNode = signupBtn;
-        showComponent(currentNode, "signup.fxml");
-    }
     @FXML
     protected void showpassword1() {
         if(showPassword.isSelected()) {
@@ -205,6 +193,18 @@ public class LoginController {
         } else {
             showLabel2.setText("");
         }
+    }
+
+    @FXML
+    protected void loginBtnClick() {
+        Node currentNode = loginBtn1;
+        showComponent(currentNode, "/View/login.fxml");
+    }
+
+    @FXML
+    protected void signupBtnClick() {
+        Node currentNode = signupBtn;
+        showComponent(currentNode, "/View/signup.fxml");
     }
 
     @FXML
@@ -234,5 +234,6 @@ public class LoginController {
             e.printStackTrace();
         }
     }
+
 
 }

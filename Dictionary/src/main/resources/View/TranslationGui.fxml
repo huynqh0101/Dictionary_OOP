@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="510.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.TranslationController">
-    <Pane prefHeight="91.0" prefWidth="769.0" styleClass="header" stylesheets="@../../../name1.css">
+    <Pane prefHeight="91.0" prefWidth="769.0" styleClass="header" stylesheets="@../name1.css">
         <children>
          <Pane layoutX="240.0" layoutY="20.0">
             <children>
@@ -30,19 +30,19 @@
          </Pane>
             <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="185.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="@../../../image/person1.jpg" />
+                    <Image url="@../image/person1.jpg" />
                 </image>
             </ImageView>
             <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="550.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="@../../../image/person2.jpg" />
+                    <Image url="@../image/person2.jpg" />
                 </image>
             </ImageView>
         </children>
     </Pane>
     <AnchorPane layoutY="91.0" prefHeight="419.0" prefWidth="769.0">
         <children>
-            <Pane layoutX="2.0" prefHeight="45.0" prefWidth="764.0" styleClass="title" stylesheets="@../../../name1.css">
+            <Pane layoutX="2.0" prefHeight="45.0" prefWidth="764.0" styleClass="title" stylesheets="@../name1.css">
                 <children>
                     <Label layoutX="20.0" prefHeight="45.0" prefWidth="391.0" text="Phiên dịch " textFill="#c67abb">
                         <font>
@@ -51,7 +51,7 @@
                         <graphic>
                             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../../../Icons/icons8_google_translate_64px.png" />
+                                    <Image url="@../Icons/icons8_google_translate_64px.png" />
                                 </image>
                             </ImageView>
                         </graphic>
@@ -60,7 +60,7 @@
             </Pane>
             <Pane layoutX="65.0" layoutY="80.0">
                 <children>
-                    <Pane prefHeight="57.0" prefWidth="645.0" styleClass="header-translate" stylesheets="@../../../name1.css">
+                    <Pane prefHeight="57.0" prefWidth="645.0" styleClass="header-translate" stylesheets="@../name1.css">
                         <children>
                             <Label fx:id="englishLabel" layoutX="104.0" layoutY="13.0" prefHeight="37.0" prefWidth="100.0" text="English" textFill="#9f45b0">
                                 <font>
@@ -69,7 +69,7 @@
                                 <graphic>
                                     <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../Icons/icons8_great_britain_48px.png" />
+                                            <Image url="@../Icons/icons8_great_britain_48px.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
@@ -81,16 +81,16 @@
                                 <graphic>
                                     <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../Icons/icons8_vietnam_48px.png" />
+                                            <Image url="@../Icons/icons8_vietnam_48px.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
                             </Label>
-                            <Button fx:id="switchToggle" layoutX="302.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleOnClickSwitchToggle" styleClass="switch-button" stylesheets="@../../../name1.css">
+                            <Button fx:id="switchToggle" layoutX="302.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleOnClickSwitchToggle" styleClass="switch-button" stylesheets="@../name1.css">
                                 <graphic>
                                     <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../Icons/icons8_data_transfer_48px.png" />
+                                            <Image url="@../Icons/icons8_data_transfer_48px.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
@@ -102,7 +102,7 @@
                         <graphic>
                            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                 <Image url="@../../../Icons/icons8_speaker_64px.png" />
+                                 <Image url="@../Icons/icons8_speaker_64px.png" />
                               </image>
                            </ImageView>
                         </graphic>
@@ -117,7 +117,7 @@
                         <graphic>
                            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                 <Image url="@../../../Icons/icons8_speaker2_64px.png" />
+                                 <Image url="@../Icons/icons8_speaker2_64px.png" />
                               </image>
                            </ImageView>
                         </graphic>
@@ -127,13 +127,13 @@
                      </Button>
                         </children>
                     </Pane>
-                    <TextArea fx:id="sourceLangField" layoutY="55.0" prefHeight="207.0" prefWidth="323.0" promptText="Type.." styleClass="src-speech-field" stylesheets="@../../../name1.css" wrapText="true" />
-                    <TextArea fx:id="toLangField" layoutX="322.0" layoutY="55.0" prefHeight="207.0" prefWidth="323.0" styleClass="to-speech-field" stylesheets="@../../../name1.css" wrapText="true" />
-                    <Button fx:id="translateBtn" layoutX="275.0" layoutY="272.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" styleClass="trans-button" stylesheets="@../../../name1.css" text="Dịch">
+                    <TextArea fx:id="sourceLangField" layoutY="55.0" prefHeight="207.0" prefWidth="323.0" promptText="Type.." styleClass="src-speech-field" stylesheets="@../name1.css" wrapText="true" />
+                    <TextArea fx:id="toLangField" layoutX="322.0" layoutY="55.0" prefHeight="207.0" prefWidth="323.0" styleClass="to-speech-field" stylesheets="@../name1.css" wrapText="true" />
+                    <Button fx:id="translateBtn" layoutX="275.0" layoutY="272.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" styleClass="trans-button" stylesheets="@../name1.css" text="Dịch">
                         <graphic>
                             <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../../../Icons/icons8_arrow_64px.png" />
+                                    <Image url="@../Icons/icons8_arrow_64px.png" />
                                 </image>
                             </ImageView>
                         </graphic>
