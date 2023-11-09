@@ -86,6 +86,7 @@ public class DictionaryManagement {
         } else {
             System.out.println("Không tìm thấy từ trong từ điển.");
         }
+        //lan1
 
         //scanner.close();
     }
