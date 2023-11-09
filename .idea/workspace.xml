@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1043d2db-d62f-4f13-98fc-965a96b532ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/gamecomandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/game1comandline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/Dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/DictionaryCommandLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/DictionaryManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/Dictionary/dictionaries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/game1comandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game1/game1comandline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/UF.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/UF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/game2comandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/game2comandline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/dictionary/game2/word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com/example/demo/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

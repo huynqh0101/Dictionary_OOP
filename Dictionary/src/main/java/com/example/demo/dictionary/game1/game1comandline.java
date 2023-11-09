@@ -48,7 +48,7 @@ public class game1comandline {
         Scanner sc = new Scanner(System.in);
         String answer = sc.next().toUpperCase();
         while (!(answer.equals("A") || answer.equals("B") || answer.equals("C") || answer.equals("D"))) {
-            System.out.println(answer);
+            //System.out.println(answer);
             System.out.println("Invalid, please re-enter!");
             System.out.print("Your choice [A/B/C/D]: ");
             answer = sc.next().toUpperCase();
