@@ -14,7 +14,7 @@ public class LoginApplication extends Application {
     private double yOffset = 0;
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("/View/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("/View/TranslationGui.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.TRANSPARENT);
