@@ -52,7 +52,7 @@
                         <graphic>
                             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../../../../../../demo4/src/main/resources/Icons/icon8tl.png" />
+                                    <Image url="@../Icons/icon2.png" />
                                 </image>
                             </ImageView>
                         </graphic>
@@ -70,7 +70,7 @@
                                 <graphic>
                                     <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../../../../demo4/src/main/resources/Icons/iconUS.png" />
+                                            <Image url="@../Icons/iconUS.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
@@ -82,7 +82,7 @@
                                 <graphic>
                                     <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../../../../demo4/src/main/resources/Icons/iconVN.png" />
+                                            <Image url="@../Icons/iconVN.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
@@ -91,7 +91,7 @@
                                 <graphic>
                                     <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
-                                            <Image url="@../../../../../../demo4/src/main/resources/Icons/icon84.png" />
+                                            <Image url="@../Icons/icon84.png" />
                                         </image>
                                     </ImageView>
                                 </graphic>
@@ -103,7 +103,7 @@
                         <graphic>
                            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                 <Image url="@../../../../../../demo4/src/main/resources/Icons/iconspk2.png" />
+                                 <Image url="@../Icons/iconspk2.png" />
                               </image>
                            </ImageView>
                         </graphic>
@@ -118,7 +118,7 @@
                         <graphic>
                            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                 <Image url="@../../../../../../demo4/src/main/resources/Icons/iconspk1.png" />
+                                 <Image url="@../Icons/iconspk1.png" />
                               </image>
                            </ImageView>
                         </graphic>
@@ -134,7 +134,7 @@
                         <graphic>
                             <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
-                                    <Image url="@../../../../../../demo4/src/main/resources/Icons/icon85.png" />
+                                    <Image url="@../Icons/icon85.png" />
                                 </image>
                             </ImageView>
                         </graphic>
