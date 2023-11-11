@@ -145,3 +145,13 @@
     -fx-scale-x: 1.1;
     -fx-scale-y: 1.1;
 }
+.list-cell{
+    -fx-text-fill: #9f45b0;
+    -fx-font-size: 16;
+    -fx-font-weight: 700;
+    -fx-padding: 5;
+    -fx-border-color: #473db9;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-radius: 0 0 0 7;
+    -fx-border-radius: 0 0 0 7;
+}
