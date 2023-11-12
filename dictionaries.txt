@@ -1,18 +1,18 @@
-badminton	cau long
-bed	giuong
-bye	tam biet
-car	o to
-computer	may tinh
-computer science	khoa hoc may tinh
-factory	nha may
-frigde	tu lanh
-gorgeous	xinh dep
-hello	xin chao
-indicate	chi ra
-information technology	cong nghe thong tin
-merit	loi ich
-morning	buoi sang
-phone	dien thoai
+badminton	selected
+bed	selected
+bye	selected
+car	selected
+computer	selected
+computer science	selected
+factory	selected
+frigde	selected
+gorgeous	selected
+hello	selected
+indicate	selected
+information technology	selected
+merit	selected
+morning	selected
+phone	selected
 raincoat	ao mua
 shoes	doi giay
 soccer	bong da
