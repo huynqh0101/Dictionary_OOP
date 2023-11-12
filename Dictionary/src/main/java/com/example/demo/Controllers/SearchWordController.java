@@ -1,14 +1,15 @@
 package com.example.demo.Controllers;
 
+import com.example.demo.Alerts.Alerts;
 import com.example.demo.Dictionary.*;
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
@@ -17,14 +18,14 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class SearchWordController implements Initializable {
-    private static final String DATA_FILE_PATH = "data/dictionary.txt";
+    private static final String DATA_FILE_PATH = "data/dictionaries.txt";
     private Dictionary dictionary = new Dictionary();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
     private SwitchSceneController switchSceneController = new SwitchSceneController();
     private Alerts alerts = new Alerts();
+    ObservableList<String> list = FXCollections.observableArrayList();
     @FXML
     private ListView<String> listView;
-    ObservableList<String> list = FXCollections.observableArrayList();
     @FXML
     private TextField findWord;
     @FXML
@@ -42,23 +43,20 @@ public class SearchWordController implements Initializable {
     @FXML
     private Label englishWord;
     private int firstIndexOfListFound = 0;
-
     private int indexOfSelectedWord;
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         dictionaryManagement.insertFromFile(dictionary, DATA_FILE_PATH);
         setListDefault(0);
 
-        findWord.setOnKeyTyped(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent keyEvent) {
-                if (findWord.getText().isEmpty()) {
-                    setListDefault(0);
-                } else {
-                    handleOnKeyTyped();
-                }
+        findWord.setOnKeyTyped(event -> {
+            if (findWord.getText().isEmpty()) {
+                setListDefault(0);
+            } else {
+                handleOnKeyTyped();
             }
         });
+
         listenButton.setVisible(false);
         editButton.setVisible(false);
         deleteButton.setVisible(false);
@@ -71,9 +69,8 @@ public class SearchWordController implements Initializable {
     @FXML
     private void handleOnKeyTyped() {
         list.clear();
-        String searchWord = findWord.getText().trim();
+        String searchWord = findWord.getText().toLowerCase().trim();
         list = dictionaryManagement.lookupWord(dictionary, searchWord);
-
         if (list.isEmpty()) {
             setListDefault(firstIndexOfListFound);
             listenButton.setVisible(false);
@@ -108,36 +105,46 @@ public class SearchWordController implements Initializable {
     }
 
     @FXML
-    private void handleClickEditBtn() {
-        wordExplain.setEditable(true);
-        saveButton.setVisible(true);
-        cancelButton.setVisible(true);
-        alerts.showAlertInfo("Information", "Bạn đã cho phép chỉnh sửa nghĩa từ này!");
+    private void handleListenButton() {
+        System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+        Voice voice = VoiceManager.getInstance().getVoice("kevin");
+        voice.allocate();
+        voice.speak(dictionary.get(indexOfSelectedWord).getWordTarget());
     }
 
     @FXML
-    private void handleClickSaveBtn() {
-        Alert alertConfirm = alerts.alertConfirm("Update", "Bạn chắc chắn muốn cập nhật nghĩa từ này ?");
+    private void handleEditButton() {
+        wordExplain.setEditable(true);
+        saveButton.setVisible(true);
+        cancelButton.setVisible(true);
+        alerts.showAlertInfo("Information", "Bạn đã cho phép chỉnh sửa nghĩa của từ này!");
+    }
+
+    @FXML
+    private void handleSaveButton() {
+        Alert alertConfirm = alerts.alertConfirm("Update", "Bạn có chắc muốn cập nhật nghĩa của từ này ?");
         Optional<ButtonType> option = alertConfirm.showAndWait();
         if (option.get() == ButtonType.OK) {
             dictionaryManagement.updateWord(dictionary, indexOfSelectedWord, wordExplain.getText());
+            dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
             alerts.showAlertInfo("Information", "Cập nhập thành công!");
-        } else alerts.showAlertInfo("Information", "Thay đổi không được công nhận!");
+        } else alerts.showAlertInfo("Information", "Cập nhập KHÔNG thành công!");
         saveButton.setVisible(false);
         wordExplain.setEditable(false);
         wordExplain.setText("");
         cancelButton.setVisible(false);
+        wordExplain.setText(dictionary.get(indexOfSelectedWord).getWordExplain());
     }
 
     @FXML
-    private void handleClickCancelBtn() {
-        Alert alertConfirm = alerts.alertConfirm("Cancel", "Hủy chỉnh sửa nghĩa của từ ?");
+    private void handleCancelButton() {
+        Alert alertConfirm = alerts.alertConfirm("Cancel", "Bạn có chắc muốn hủy chỉnh sửa nghĩa của từ ?");
         Optional<ButtonType> option = alertConfirm.showAndWait();
         if (option.get() == ButtonType.OK) {
             wordExplain.setEditable(false);
             cancelButton.setVisible(false);
             saveButton.setVisible(false);
-            wordExplain.setText("");
+            wordExplain.setText(dictionary.get(indexOfSelectedWord).getWordExplain());
             alerts.showAlertInfo("Information", "Hủy chỉnh sửa!");
         } else {
             wordExplain.setEditable(true);
@@ -146,30 +153,30 @@ public class SearchWordController implements Initializable {
     }
 
     @FXML
-    private void handleClickDeleteBtn() {
-        Alert alertWarning = alerts.alertWarning("Delete", "Bạn chắc chắn muốn xóa từ này?");
+    private void handleDeleteButton() {
+        Alert alertWarning = alerts.alertWarning("Delete", "Bạn có chắc muốn xóa từ này?");
         alertWarning.getButtonTypes().add(ButtonType.CANCEL);
         Optional<ButtonType> option = alertWarning.showAndWait();
         if (option.get() == ButtonType.OK) {
             dictionaryManagement.deleteWord(dictionary, indexOfSelectedWord, DATA_FILE_PATH);
-            refreshAfterDeleting();
-            alerts.showAlertInfo("Information", "Xóa thành công");
-        } else alerts.showAlertInfo("Information", "Thay đổi không được công nhận");
-    }
-
-    private void refreshAfterDeleting() {
-        for (int i = 0; i < list.size(); i++)
-            if (list.get(i).equals(findWord.getText())) {
-                list.remove(i);
-                break;
+            dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i).equals(findWord.getText())) {
+                    list.remove(i);
+                    break;
+                }
             }
-        listView.setItems(list);
-        wordExplain.setVisible(false);
+            setListDefault(0);
+            wordExplain.setText("");
+            englishWord.setText("");
+            findWord.setText("");
+            alerts.showAlertInfo("Information", "Xóa thành công!");
+        } else alerts.showAlertInfo("Information", "Hủy bỏ xóa từ!");
     }
 
     private void setListDefault(int index) {
         list.clear();
-        for (int i = 0; i < dictionary.size(); i++) list.add(dictionary.get(i).getWordTarget());
+        for (int i = 0; i < index + 20; i++) list.add(dictionary.get(i).getWordTarget());
         listView.setItems(list);
     }
 
@@ -194,7 +201,7 @@ public class SearchWordController implements Initializable {
     }
 
     @FXML
-    private void menuExitButton(ActionEvent event) {
+    private void menuExitButton() {
         switchSceneController.Exit();
     }
 }

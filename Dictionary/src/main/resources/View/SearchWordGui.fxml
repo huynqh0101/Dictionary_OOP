@@ -104,7 +104,7 @@
             <ListView fx:id="listView" layoutY="61.0" onMouseClicked="#handleMouseClickAWord" prefHeight="400.0" prefWidth="240.0" />
             <Pane layoutX="240.0" layoutY="1.0" prefHeight="60.0" prefWidth="500.0">
                <children>
-                  <Button fx:id="deleteButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="426.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleClickDeleteBtn" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
+                  <Button fx:id="deleteButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="426.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
                      <graphic>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -113,7 +113,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="editButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="366.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleClickEditBtn" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
+                  <Button fx:id="editButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="366.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -122,7 +122,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="listenButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="306.0" layoutY="9.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
+                  <Button fx:id="listenButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="306.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleListenButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
                      <graphic>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -134,7 +134,7 @@
                   <Label fx:id="englishWord" layoutX="14.0" layoutY="11.0" prefHeight="40.0" prefWidth="200.0" />
                </children>
             </Pane>
-            <Button fx:id="saveButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="606.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleClickSaveBtn" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
+            <Button fx:id="saveButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="606.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -143,7 +143,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="666.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleClickCancelBtn" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
+            <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="666.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>

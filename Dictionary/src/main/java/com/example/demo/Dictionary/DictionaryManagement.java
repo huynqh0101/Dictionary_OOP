@@ -9,21 +9,20 @@ import java.util.*;
 public class DictionaryManagement {
     private Dictionary dictionary = new Dictionary();
 
-
     public DictionaryManagement(Dictionary dictionary) {
         this.dictionary = dictionary;
     }
 
     public void insertFromFile(Dictionary dictionary, String path) {
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String wordTarget = br.readLine();
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(path))) {
+            String wordTarget = bufferedReader.readLine();
             wordTarget = wordTarget.replace("|", "");
             String line;
-            while ((line = br.readLine()) != null) {
+            while ((line = bufferedReader.readLine()) != null) {
                 Word word = new Word();
                 word.setWordTarget(wordTarget.trim());
                 String wordExplain = line + "\n";
-                while ((line = br.readLine()) != null)
+                while ((line = bufferedReader.readLine()) != null)
                     if (!line.startsWith("|")) wordExplain += line + "\n";
                     else {
                         wordTarget = line.replace("|", "");
@@ -38,10 +37,10 @@ public class DictionaryManagement {
     }
 
     public ObservableList<String> lookupWord(Dictionary dictionary, String key) {
-        Iterator var4 = dictionary.iterator();
+        Iterator wordIterator = dictionary.iterator();
         ObservableList<String> list = FXCollections.observableArrayList();
-        while (var4.hasNext()) {
-            Word word = (Word) var4.next();
+        while (wordIterator.hasNext()) {
+            Word word = (Word) wordIterator.next();
             String wordTarget = word.getWordTarget().toLowerCase();
             if (wordTarget.length() >= key.length()) {
                 String firstLetter = wordTarget.substring(0, key.length());
