@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AddWordController implements Initializable {
-    private static final String DATA_FILE_PATH = "data/dictionaries.txt";
+    private static final String DATA_FILE_PATH = "data/dictionary.txt";
     private Dictionary dictionary = new Dictionary();
     private Alerts alerts = new Alerts();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
@@ -24,7 +24,7 @@ public class AddWordController implements Initializable {
     private Button addButton;
 
     @FXML
-    private TextArea wordTargetInput;
+    private TextField wordTargetInput;
 
     @FXML
     private TextArea wordExplainInput;

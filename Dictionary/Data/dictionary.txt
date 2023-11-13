@@ -19,6 +19,8 @@ Máy tính
 Cửa
 |Fan
 Cái quạt
+|Fat
+Béo
 |Hello
 Chào
 |House
@@ -37,9 +39,9 @@ Gối
 Đôi giày
 |Trousers
 Quần dài
-|Water
-Nước
-|Fat
-Béo
 |Wash
 Rửa
+|Water
+Nước
+|huy
+huy2
