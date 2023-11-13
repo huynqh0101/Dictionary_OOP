@@ -1,4 +1,4 @@
-package com.example.demo.dictionary.game1;
+package com.example.demo.game1;
 
 public class main {
     public static void main(String[] args) {

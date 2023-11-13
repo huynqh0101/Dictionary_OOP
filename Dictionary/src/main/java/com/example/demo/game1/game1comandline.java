@@ -1,4 +1,4 @@
-package com.example.demo.dictionary.game1;
+package com.example.demo.game1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,8 +14,8 @@ public class game1comandline {
 
     // đọc file game
     public void readFileQuestion() {
-        String path = "Dictionary\\src\\main\\java\\com\\example\\demo\\dictionary\\game1\\game1.txt";
-        //String path = "game1.txt";
+        String path = "Dictionary\\src\\main\\java\\com\\example\\demo\\game1\\game1.txt";
+        //String path = "com.example.demo.game1.txt";
         try (BufferedReader bf = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = bf.readLine()) != null) {

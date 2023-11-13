@@ -1,4 +1,4 @@
-package com.example.demo.dictionary.game1;
+package com.example.demo.game1;
 
 public class Question {
     private String question;

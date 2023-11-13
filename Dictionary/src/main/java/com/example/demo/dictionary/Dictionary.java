@@ -8,6 +8,7 @@ public class Dictionary {
     private List<Word> words = new ArrayList();
 
     public Dictionary() {
+
     }
 
     public void addWord(Word word) {
