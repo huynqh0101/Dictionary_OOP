@@ -104,6 +104,8 @@
 .volume-button:hover{
     -fx-background-color: #edeff1;
     -fx-effect: dropshadow(three-pass-box, #2b2b2b, 3, 0, 0, 1) ;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
 }
 .edit-button:pressed, .delete-button:pressed,
 .volume-button:pressed{
@@ -155,4 +157,36 @@
     -fx-background-radius: 0 0 0 7;
     -fx-border-radius: 0 0 0 7;
 }
-
+.root{
+     -fx-background-color: linear-gradient(to top right,#6e57ac,#211da1);
+     -fx-background-radius: 5;
+     -fx-border-radius: 5;
+}
+.container{
+    -fx-background-color:  #fff;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+.exit-button{
+     -fx-background-color: transparent;
+     -fx-background-radius: 25;
+     -fx-background-insets: 0;
+     -fx-text-fill: #fff;
+     -fx-underline: false;
+     -fx-font-weight: bold;
+}
+.exit-button:hover {
+    -fx-background-color: #3f67e1;
+}
+.menu-item1{
+ -fx-background-color: transparent;
+ -fx-background-radius: 25;
+ -fx-padding: 0 0 0 10;
+ -fx-background-insets: 0;
+ -fx-text-fill: #fff;
+ -fx-font-weight: bold;
+}
+.menu-item1:hover,
+.menu-item1:focused{
+ -fx-background-color: #3f67e1;
+}

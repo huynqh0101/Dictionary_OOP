@@ -68,6 +68,9 @@ public class LoginController {
         System.out.println(username + " " + password);
         if (authenticate(username, password)) {
             showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+            Node currentNode = loginBtn2;
+            showComponent(currentNode, "/View/DictionariesGui.fxml");
+
         } else {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
