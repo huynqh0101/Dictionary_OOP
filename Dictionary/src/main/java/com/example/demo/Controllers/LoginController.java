@@ -18,7 +18,6 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
-    private SwitchSceneController switchSceneController = new SwitchSceneController();
     private static final String fileName = "data/credentials.txt";
     @FXML
     private Button signupBtn;
@@ -64,7 +63,6 @@ public class LoginController {
         System.out.println(username + " " + password);
         if (authenticate(username, password)) {
             showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
-            switchSceneController.switchToMenuScene(event);
         } else {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
@@ -180,7 +178,7 @@ public class LoginController {
 
     @FXML
     private void exitBtnClick() {
-        switchSceneController.Exit();
+        Platform.exit();
     }
 
     @FXML
