@@ -3,113 +3,96 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.effect.Light.Distant?>
-<?import javafx.scene.effect.Lighting?>
-<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.AddWordController">
-   <children>
-      <Pane layoutX="60.0" prefHeight="600.0" prefWidth="740.0">
-         <children>
-            <TextArea fx:id="wordTargetInput" layoutX="71.0" layoutY="260.0" prefHeight="200.0" prefWidth="300.0" promptText="Enter word you want to add" styleClass="to-speech-field" stylesheets="@../style.css" />
-            <TextArea fx:id="wordExplainInput" layoutX="371.0" layoutY="260.0" prefHeight="200.0" prefWidth="300.0" promptText="Enter explanation" styleClass="to-speech-field" stylesheets="@../style.css" />
-            <Pane layoutX="71.0" layoutY="210.0" prefHeight="50.0" prefWidth="300.0" styleClass="to-speech-field" stylesheets="@../style.css">
+<AnchorPane prefHeight="510.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.AddWordController">
+    <children>
+        <Pane layoutX="3.0" prefHeight="91.0" prefWidth="764.0" styleClass="header" stylesheets="@../name1.css">
+            <children>
+            <Pane layoutX="316.0" layoutY="20.0">
                <children>
-                  <Label layoutX="125.0" layoutY="12.0" text="Word " />
+                      <Label layoutX="3.0" prefHeight="30.0" prefWidth="221.0" text="Wish you all the best" textFill="#4d48ac">
+                          <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                          </font>
+                      </Label>
+                  <Label layoutY="21.0" prefHeight="30.0" prefWidth="212.0" text="Chúc bạn mọi điều tốt đẹp" textFill="#4d48ac">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
-            <Pane layoutX="371.0" layoutY="210.0" prefHeight="50.0" prefWidth="300.0" styleClass="to-speech-field" stylesheets="@../style.css">
-               <children>
-                  <Label layoutX="104.0" layoutY="12.0" text="Explanation" />
-               </children>
-            </Pane>
-            <Button fx:id="addButton" layoutX="345.0" layoutY="500.0" mnemonicParsing="false" onAction="#clickAddButton" styleClass="root" stylesheets="@../style.css" text="ADD" />
-            <Label fx:id="successAlert" alignment="CENTER" layoutX="403.0" layoutY="496.0" prefHeight="32.0" prefWidth="273.0" stylesheets="@../style.css" text="Thành công">
+                <ImageView fitHeight="78.0" fitWidth="110.0" layoutX="206.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image2.jpg" />
+               </image></ImageView>
+            </children>
+        </Pane>
+        <AnchorPane layoutX="-1.0" layoutY="91.0" prefHeight="421.0" prefWidth="769.0">
+            <children>
+                <Pane layoutX="2.0" prefHeight="45.0" prefWidth="764.0" styleClass="title1-title" stylesheets="@../name1.css">
+                    <children>
+                        <Label layoutX="20.0" prefHeight="45.0" prefWidth="240.0" text="Thêm từ vựng mới" textFill="#dce2f7">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/iconadd.png" />
+                           </image></ImageView>
+                            </graphic>
+                        </Label>
+                    </children>
+                </Pane>
+                <Label layoutX="31.0" layoutY="55.0" text="Từ tiếng anh " textFill="#4d48ac">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icon1.png" />
+                     </image></ImageView>
+                    </graphic>
+                </Label>
+                <TextField fx:id="wordTargetInput" layoutX="31.0" layoutY="85.0" prefHeight="32.0" prefWidth="394.0" promptText="Nhập từ tiếng anh..." styleClass="eWord-input" stylesheets="@../name1.css" />
+                <Label layoutX="30.0" layoutY="125.0" text="Giải nghĩa" textFill="#4d48ac">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icon3.png" />
+                     </image></ImageView>
+                    </graphic>
+                </Label>
+                <TextArea fx:id="wordExplainInput" layoutX="31.0" layoutY="163.0" prefHeight="200.0" prefWidth="394.0" promptText="Nhập giải nghĩa của từ...." styleClass="meanword1-input" stylesheets="@../name1.css" wrapText="true" />
+                <Button fx:id="addButton" layoutX="31.0" layoutY="363.0" mnemonicParsing="false" onAction="#clickAddButton" prefHeight="32.0" prefWidth="60.0" styleClass="add1-button" stylesheets="@../name1.css" text="Thêm " textFill="#471fd7" />
+            <ImageView fitHeight="200.0" fitWidth="296.0" layoutX="435.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image4.jpg" />
+               </image></ImageView>
+            <Label fx:id="successAlert" alignment="CENTER" layoutX="141.0" layoutY="363.0" prefHeight="32.0" prefWidth="273.0" styleClass="result-alert" stylesheets="@../name1.css" text="Thành công">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Icons/icon4.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Label>
-         </children>
-      </Pane>
-      <Pane prefHeight="600.0" prefWidth="60.0" styleClass="root" stylesheets="@../style.css">
-         <children>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="3.0" layoutY="550.0" mnemonicParsing="false" onAction="#menuExitButton" prefHeight="35.0" prefWidth="35.0" styleClass="exit-button" stylesheets="@../style.css">
-               <effect>
-                  <Lighting>
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                  </Lighting>
-               </effect>
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/exit1.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="260.0" mnemonicParsing="false" onAction="#menuTranslationButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/ggtranslate.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="80.0" mnemonicParsing="false" onAction="#menuSearchWordButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/find.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" styleClass="selected-Icon" stylesheets="@../style.css">
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/add.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="140.0" mnemonicParsing="false" onAction="#menuGameButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/game.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenuButton" prefHeight="35.0" prefWidth="60.0" styleClass="exit-button" stylesheets="@../style.css">
-               <effect>
-                  <Lighting>
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                  </Lighting>
-               </effect>
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/back.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-         </children>
-      </Pane>
-   </children>
+                     </image></ImageView>
+               </graphic></Label>
+            <ImageView fitHeight="144.0" fitWidth="296.0" layoutX="435.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image3.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
 </AnchorPane>
