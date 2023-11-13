@@ -21,7 +21,6 @@ public class SearchWordController implements Initializable {
     private static final String DATA_FILE_PATH = "data/dictionaries.txt";
     private Dictionary dictionary = new Dictionary();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
-    private SwitchSceneController switchSceneController = new SwitchSceneController();
     private Alerts alerts = new Alerts();
     ObservableList<String> list = FXCollections.observableArrayList();
     @FXML
@@ -180,28 +179,4 @@ public class SearchWordController implements Initializable {
         listView.setItems(list);
     }
 
-    @FXML
-    private void menuAddWordButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToAddWordScene(event);
-    }
-
-    @FXML
-    private void backToMenuButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToMenuScene(event);
-    }
-
-    @FXML
-    private void menuGameButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToGameScene(event);
-    }
-
-    @FXML
-    private void menuTranslationButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToTranslationScene(event);
-    }
-
-    @FXML
-    private void menuExitButton() {
-        switchSceneController.Exit();
-    }
 }

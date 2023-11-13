@@ -1,5 +1,7 @@
 package com.example.demo.Controllers;
 
+
+import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -7,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -18,7 +21,6 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
-    private SwitchSceneController switchSceneController = new SwitchSceneController();
     private static final String fileName = "data/credentials.txt";
     @FXML
     private Button signupBtn;
@@ -45,6 +47,8 @@ public class LoginController {
     private Label showLabel;
     @FXML
     private Label showLabel2;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @FXML
     public void registerButtonClicked() {
@@ -64,7 +68,6 @@ public class LoginController {
         System.out.println(username + " " + password);
         if (authenticate(username, password)) {
             showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
-            switchSceneController.switchToMenuScene(event);
         } else {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
@@ -122,6 +125,11 @@ public class LoginController {
         return false; // Đăng nhập thất bại
     }
 
+    @FXML
+    private void exitBtnClick() {
+        Platform.exit();
+    }
+
     private boolean checkIfUserExists(String fileName, String targetUsername) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
@@ -177,12 +185,6 @@ public class LoginController {
         alert.setContentText(message);
         alert.showAndWait();
     }
-
-    @FXML
-    private void exitBtnClick() {
-        switchSceneController.Exit();
-    }
-
     @FXML
     protected void showpassword1() {
         if (showPassword.isSelected()) {
@@ -231,6 +233,21 @@ public class LoginController {
                     stage.setScene(scene);
                     root.requestFocus();
                     stage.show();
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

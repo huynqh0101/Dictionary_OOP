@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="" />
+    <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "huynqh",
+    "git-widget-placeholder": "huy1505",
     "last_opened_file_path": "C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary"
   }
 }]]></component>
