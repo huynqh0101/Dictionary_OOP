@@ -1,11 +1,13 @@
 package com.example.demo.Controllers;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -42,6 +44,8 @@ public class LoginController {
     private Label showLabel;
     @FXML
     private Label showLabel2;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @FXML
     public void registerButtonClicked() {
@@ -225,6 +229,21 @@ public class LoginController {
                     stage.setScene(scene);
                     root.requestFocus();
                     stage.show();
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
