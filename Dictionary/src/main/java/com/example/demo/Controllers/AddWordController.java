@@ -19,7 +19,7 @@ public class AddWordController implements Initializable {
     private Dictionary dictionary = new Dictionary();
     private Alerts alerts = new Alerts();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
-    private SwitchSceneController switchSceneController = new SwitchSceneController();
+
 
     @FXML
     private Button addButton;
@@ -103,28 +103,4 @@ public class AddWordController implements Initializable {
         dictionaryManagement.setTimeout(() -> successAlert.setVisible(false), 1500);
     }
 
-    @FXML
-    private void menuSearchWordButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToSearchWordScene(event);
-    }
-
-    @FXML
-    private void backToMenuButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToMenuScene(event);
-    }
-
-    @FXML
-    private void menuGameButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToGameScene(event);
-    }
-
-    @FXML
-    private void menuTranslationButton(ActionEvent event) throws IOException {
-        switchSceneController.switchToTranslationScene(event);
-    }
-
-    @FXML
-    private void menuExitButton(ActionEvent event) {
-        switchSceneController.Exit();
-    }
 }
