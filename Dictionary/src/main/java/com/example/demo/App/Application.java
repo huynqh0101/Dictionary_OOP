@@ -13,7 +13,7 @@ public class Application extends javafx.application.Application {
     private double yOffset = 0;
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("/View/SearchWordGui.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("/View/AddWordGui.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.TRANSPARENT);
