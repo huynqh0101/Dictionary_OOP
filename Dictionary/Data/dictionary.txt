@@ -1,0 +1,45 @@
+|Bag
+Cặp sách
+|Bed
+Giường
+|Bedroom
+Phòng ngủ
+|Book
+Sách
+|Cake
+Bánh ngọt
+|Candy
+Kẹo
+= Kẹo
+|Car
+Ô tô
+|Computer
+Máy tính
+|Door
+Cửa
+|Fan
+Cái quạt
+|Hello
+Chào
+|House
+Ngôi nhà
+|Livingroom
+Phòng khách
+|Paper
+Giấy
+|Phone
+Điện thoại
+|Pillow
+Gối
+|Raincoat
+Áo mưa
+|Shoes
+Đôi giày
+|Trousers
+Quần dài
+|Water
+Nước
+|Fat
+Béo
+|Wash
+Rửa
