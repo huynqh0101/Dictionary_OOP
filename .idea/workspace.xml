@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/output_en.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/output_en.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/output_vi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/output_vi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/selectedWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/selectedWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/NoticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/change.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/icons8_delete_bin_64px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/saved.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/View/SearchWordGui.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "huy1505",
-    "last_opened_file_path": "C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;huy1505&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

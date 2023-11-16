@@ -22,7 +22,7 @@
             <Tooltip fx:id="t6" text="Thoát!" />
          </tooltip>
         </Button>
-          <Button fx:id="searchBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="162.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Search">
+          <Button fx:id="searchBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Search">
               <font>
                   <Font name="System Bold" size="12.0" />
               </font>
@@ -40,7 +40,7 @@
                   <Tooltip fx:id="t1" text="Tra từ điển" />
               </tooltip>
           </Button>
-          <Button fx:id="addBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="232.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
+          <Button fx:id="addBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="232.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
               <font>
                   <Font name="System Bold" size="12.0" />
               </font>
@@ -58,7 +58,7 @@
                   </ImageView>
          </graphic>
           </Button>
-          <Button fx:id="transBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="297.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="    Translate">
+          <Button fx:id="transBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="    Translate">
               <font>
                   <Font name="System Bold" size="12.0" />
               </font>
@@ -77,8 +77,7 @@
          </graphic>
           </Button>
       <AnchorPane fx:id="container1" layoutX="52.0" layoutY="9.0" prefHeight="527.0" prefWidth="783.0" styleClass="container" stylesheets="@../name1.css" />
-      <Button layoutX="1.0" layoutY="122.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" />
-      <Button fx:id="gameBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="102.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
+      <Button fx:id="gameBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -96,7 +95,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="tbaoBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-3.0" layoutY="363.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css">
+      <Button fx:id="tbaoBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="97.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -114,5 +113,10 @@
             </ImageView>
          </graphic>
       </Button>
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="3.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/h.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

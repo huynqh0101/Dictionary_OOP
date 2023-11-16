@@ -40,7 +40,7 @@ public class SearchWordController implements Initializable {
     @FXML
     private Button cancelButton;
     @FXML
-    private Label englishWord;
+    private Label englishWord, labelWar;
     private int firstIndexOfListFound = 0;
     private int indexOfSelectedWord;
 
@@ -62,6 +62,7 @@ public class SearchWordController implements Initializable {
         saveButton.setVisible(false);
         cancelButton.setVisible(false);
         wordExplain.setEditable(false);
+        labelWar.setVisible(false);
         englishWord.setText("");
     }
 
@@ -80,6 +81,8 @@ public class SearchWordController implements Initializable {
             wordExplain.setEditable(false);
             wordExplain.setText("");
             englishWord.setText("");
+            labelWar.setVisible(true);
+            dictionaryManagement.setTimeout(() -> labelWar.setVisible(false), 2000);
         } else {
             listView.setItems(list);
             firstIndexOfListFound = dictionaryManagement.dictionarySearcher(dictionary, list.get(0));

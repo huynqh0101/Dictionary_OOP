@@ -51,7 +51,7 @@ public class   DictionaryController implements Initializable {
         t4.setShowDelay(Duration.seconds(0.4));
         t5.setShowDelay(Duration.seconds(0.4));
         t6.setShowDelay(Duration.seconds(0.4));
-        showComponent("/View/TranslationGui.fxml");
+        showComponent("/View/SearchWordGui.fxml");
 
         exitBtn.setOnMouseClicked(e -> {
             System.exit(0);

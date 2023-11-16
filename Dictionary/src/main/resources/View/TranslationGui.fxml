@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.TranslationController">
-    <Pane prefHeight="91.0" prefWidth="769.0" styleClass="header" stylesheets="@../name1.css">
+    <Pane prefHeight="91.0" prefWidth="789.0" styleClass="header" stylesheets="@../name1.css">
         <children>
          <Pane layoutX="240.0" layoutY="20.0">
             <children>
@@ -28,17 +28,16 @@
                   </Label>
             </children>
          </Pane>
-            <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="185.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@../image/person1.jpg" />
-                </image>
+            <ImageView fitHeight="91.0" fitWidth="147.0" layoutX="96.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/8262271.jpg" />
+            </image>
             </ImageView>
-            <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="550.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-                <image>
-                    <Image url="@../image/person2.jpg" />
-                </image>
+            <ImageView fitHeight="91.0" fitWidth="157.0" layoutX="550.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/21421.jpg" />
+            </image>
             </ImageView>
-         <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="-15.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
         </children>
     </Pane>
     <AnchorPane layoutY="91.0" prefHeight="419.0" prefWidth="769.0">
