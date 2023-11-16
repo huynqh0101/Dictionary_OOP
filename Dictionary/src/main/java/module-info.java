@@ -4,8 +4,16 @@ module com.example.demo {
 
     requires com.almasb.fxgl.all;
     requires javafx.media;
+
     requires org.apache.httpcomponents.httpcore;
     requires org.apache.httpcomponents.httpclient;
+
+    opens com.example.demo.game to javafx.fxml;
+    exports com.example.demo.game;
+    exports com.example.demo.game.game1;
+    opens com.example.demo.game.game1 to javafx.fxml;
+    exports com.example.demo.game.game2;
+    opens com.example.demo.game.game2 to javafx.fxml;
 
     opens com.example.demo to javafx.fxml;
     exports com.example.demo;

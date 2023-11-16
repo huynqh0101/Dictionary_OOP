@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
+    <children>
+        <Button fx:id="backtochoosegame" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#BacktoChoosegame" text="Back" />
+        <Button fx:id="playgame1" layoutX="341.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#Playgame1" prefHeight="56.0" prefWidth="107.0" text="Play">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="howtoplaygame1" layoutX="326.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#Howtoplaygame1" prefHeight="33.0" prefWidth="29.0" text="?" />
+        <Button fx:id="settingGame1" layoutX="420.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#Settinggame1" prefHeight="33.0" prefWidth="55.0" text="Setting" />
+    </children>
+</AnchorPane>
