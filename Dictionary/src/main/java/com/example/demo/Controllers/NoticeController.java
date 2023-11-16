@@ -41,7 +41,8 @@ public class NoticeController {
 
             Random random = new Random(currentDate.getTime());
             List<String> selectedWords = readSelectedWords(selectedWordsFileName);
-            if (selectedWords.isEmpty() || selectedWords.size() >= lines.size()) {
+            //System.out.println(currentDateStr +" "+ selectedWords.get(0));
+            if (!currentDateStr.equals(selectedWords.get(0))) {
                 int startIndex = random.nextInt(lines.size() - 15 + 1);
                 selectedWords.clear();
                 selectedWords.add(currentDateStr);
@@ -55,6 +56,7 @@ public class NoticeController {
                 }
 
                 writeSelectedWords(selectedWords, selectedWordsFileName);
+                //System.out.println("khác");
             }
 
             for (int i = 1; i < selectedWords.size(); i++) {

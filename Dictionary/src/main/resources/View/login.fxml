@@ -125,7 +125,7 @@
                            <Font size="14.0" />
                         </font>
                      </CheckBox>
-                            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="151.0" styleClass="text1-text" text="Forgot Password ?" textFill="#b1b1b1">
+                            <Button fx:id="changePass" mnemonicParsing="false" onAction="#changeBtnClick" prefHeight="35.0" prefWidth="151.0" styleClass="text1-text" text="Change Password ?" textFill="#b1b1b1">
                                 <HBox.margin>
                                     <Insets right="15.0" top="-60.0" />
                                 </HBox.margin>

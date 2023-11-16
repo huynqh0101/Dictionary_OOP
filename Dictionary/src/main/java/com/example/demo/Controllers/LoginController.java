@@ -14,39 +14,26 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.*;
-
-import javafx.util.Duration;
-import javafx.animation.PauseTransition;
 import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
     private static final String fileName = "data/credentials.txt";
     @FXML
-    private Button signupBtn;
+    private Button signupBtn, changePass, changePass2;
     @FXML
-    private Button loginBtn1;
+    private Button loginBtn1, loginBtn2, loginBtn3;
     @FXML
-    private Button loginBtn2;
-    @FXML
-    private PasswordField passWord1;
+    private PasswordField passWord1, passWord2,passWord3;
     private boolean focusLost = false;
     @FXML
-    private PasswordField confirmPassWord1;
+    private PasswordField confirmPassWord1, newPassWord2;
     @FXML
-    private TextField userNameBtn2;
+    private TextField userNameBtn2, userNameBtn,userNameBtn3;
     @FXML
-    private PasswordField passWord2;
+    private CheckBox showPassword2, showPassword3, showPassword;
     @FXML
-    private TextField userNameBtn;
-    @FXML
-    private CheckBox showPassword;
-    @FXML
-    private CheckBox showPassword2;
-    @FXML
-    private Label showLabel;
-    @FXML
-    private Label showLabel2;
+    private Label showLabel2, showLabel3, showLabel;
     private double xOffset = 0;
     private double yOffset = 0;
 
@@ -65,9 +52,27 @@ public class LoginController {
         String username = userNameBtn2.getText();
         String password = passWord2.getText();
 
+        //System.out.println(username + " " + password);
+        if (authenticate(username, password)) {
+            //showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+            Node currentNode = loginBtn2;
+            showComponent(currentNode, "/View/DictionariesGui.fxml");
+
+        } else {
+            showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
+        }
+    }
+    @FXML
+    public void ChangeButtonclick2(ActionEvent event) throws IOException {
+        String username = userNameBtn2.getText();
+        String password = passWord2.getText();
+
         System.out.println(username + " " + password);
         if (authenticate(username, password)) {
-            showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+           // showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+            Node currentNode = loginBtn2;
+            showComponent(currentNode, "/View/DictionariesGui.fxml");
+
         } else {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
@@ -162,6 +167,20 @@ public class LoginController {
     }
 
     @FXML
+    public boolean checkPasswordUsername() {
+        String username = userNameBtn3.getText();
+        String password = passWord3.getText();
+
+        System.out.println(username + " " + password);
+        if (authenticate(username, password)) {
+            return true;
+        } else {
+            showAlert("Tài khoản hoặc mật khẩu không chính xác hãy kiểm tra lại!", AlertType.ERROR);
+            return false;
+        }
+    }
+
+    @FXML
     private boolean comparePasswords() {
         String s2 = "";
         String password1 = passWord1.getText();
@@ -185,6 +204,7 @@ public class LoginController {
         alert.setContentText(message);
         alert.showAndWait();
     }
+
     @FXML
     protected void showpassword1() {
         if (showPassword.isSelected()) {
@@ -204,8 +224,30 @@ public class LoginController {
     }
 
     @FXML
+    protected void showpassword3() {
+        if (showPassword3.isSelected()) {
+            showLabel3.setText(newPassWord2.getText());
+        } else {
+            showLabel3.setText("");
+        }
+    }
+
+
+    @FXML
     protected void loginBtnClick() {
         Node currentNode = loginBtn1;
+        showComponent(currentNode, "/View/login.fxml");
+    }
+
+    @FXML
+    protected void changeBtnClick() {
+        Node currentNode = changePass;
+        showComponent(currentNode, "/View/changePass.fxml");
+    }
+
+    @FXML
+    protected void loginBtnClick2() {
+        Node currentNode = loginBtn3;
         showComponent(currentNode, "/View/login.fxml");
     }
 
@@ -215,12 +257,9 @@ public class LoginController {
         showComponent(currentNode, "/View/signup.fxml");
     }
 
+
     @FXML
     private void showComponent(Node currentNode, String path) {
-        try {
-            // Tạo một PauseTransition để tạo độ trễ trước khi thay đổi màn hình
-            PauseTransition delay = new PauseTransition(Duration.seconds(0.2));
-            delay.setOnFinished(event -> {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource(path));
                     Parent root = loader.load();
@@ -251,10 +290,6 @@ public class LoginController {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            });
-            delay.play();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 }
