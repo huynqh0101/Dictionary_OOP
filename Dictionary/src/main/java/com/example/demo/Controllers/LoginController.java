@@ -1,11 +1,15 @@
 package com.example.demo.Controllers;
 
+
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -17,6 +21,7 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
+    private static final String fileName = "data/credentials.txt";
     @FXML
     private Button signupBtn;
     @FXML
@@ -42,24 +47,27 @@ public class LoginController {
     private Label showLabel;
     @FXML
     private Label showLabel2;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @FXML
     public void registerButtonClicked() {
         String userNameText = userNameBtn.getText();
         String passwordText = passWord1.getText();
-        boolean ktra = comparePasswords();
-        if(ktra) {
+        boolean check = comparePasswords();
+        if (check) {
             saveCredentialsToFile(userNameText, passwordText);
         }
     }
+
     @FXML
-    public void loginButtonclick() {
+    public void loginButtonclick(ActionEvent event) throws IOException {
         String username = userNameBtn2.getText();
         String password = passWord2.getText();
 
-        System.out.println(username + " " +password);
+        System.out.println(username + " " + password);
         if (authenticate(username, password)) {
-            showAlert("Bạn đã tạo tài khoản thành công !", AlertType.INFORMATION);
+            showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
         } else {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
@@ -67,8 +75,6 @@ public class LoginController {
 
     private void saveCredentialsToFile(String userName, String password) {
         try {
-            String fileName = "Data/credentials.txt";
-
             boolean userExists = checkIfUserExists(fileName, userName);
 
             if (!userExists) {
@@ -81,6 +87,7 @@ public class LoginController {
                 writer.newLine();
                 writer.close();
                 showAlert("Bạn đã tạo tài khoản thành công !", AlertType.INFORMATION);
+
             } else {
                 showAlert("Tài khoản này đã tồn tại !", AlertType.INFORMATION);
             }
@@ -90,7 +97,7 @@ public class LoginController {
     }
 
     private boolean authenticate(String username, String password) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("Data/credentials.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
             String storedUsername = null;
             String storedPassword = null;
@@ -118,6 +125,11 @@ public class LoginController {
         return false; // Đăng nhập thất bại
     }
 
+    @FXML
+    private void exitBtnClick() {
+        Platform.exit();
+    }
+
     private boolean checkIfUserExists(String fileName, String targetUsername) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
@@ -140,7 +152,6 @@ public class LoginController {
         return false; // Tài khoản chưa tồn tại
     }
 
-
     @FXML
     public void handlePasswordKeyReleased() {
         String password1 = passWord1.getText();
@@ -152,20 +163,21 @@ public class LoginController {
 
     @FXML
     private boolean comparePasswords() {
-        String s2="";
+        String s2 = "";
         String password1 = passWord1.getText();
         String password2 = confirmPassWord1.getText();
-            if(password1.equals(s2) && password2.equals(s2)) {
-                showAlert("Bạn phải nhập mật khẩu !", AlertType.ERROR);
-                return false;
-            }
-            if (password1.equals(password2)) {
-                return true;
-            } else {
-                showAlert("Mật khẩu không giống nhau !", AlertType.ERROR);
-                return false;
-            }
+        if (password1.equals(s2) && password2.equals(s2)) {
+            showAlert("Bạn phải nhập mật khẩu !", AlertType.ERROR);
+            return false;
+        }
+        if (password1.equals(password2)) {
+            return true;
+        } else {
+            showAlert("Mật khẩu không giống nhau !", AlertType.ERROR);
+            return false;
+        }
     }
+
     private void showAlert(String message, AlertType alertType) {
         Alert alert = new Alert(alertType);
         alert.setTitle("Thông báo:");
@@ -173,22 +185,18 @@ public class LoginController {
         alert.setContentText(message);
         alert.showAndWait();
     }
-
-    @FXML
-    private void exitBtnClick() {
-        Platform.exit();
-    }
     @FXML
     protected void showpassword1() {
-        if(showPassword.isSelected()) {
+        if (showPassword.isSelected()) {
             showLabel.setText(passWord2.getText());
         } else {
             showLabel.setText("");
         }
     }
+
     @FXML
     protected void showpassword2() {
-        if(showPassword2.isSelected()) {
+        if (showPassword2.isSelected()) {
             showLabel2.setText(passWord1.getText());
         } else {
             showLabel2.setText("");
@@ -225,6 +233,21 @@ public class LoginController {
                     stage.setScene(scene);
                     root.requestFocus();
                     stage.show();
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -234,6 +257,4 @@ public class LoginController {
             e.printStackTrace();
         }
     }
-
-
 }

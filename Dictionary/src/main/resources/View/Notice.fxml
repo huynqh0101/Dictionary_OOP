@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.NoticeController">
+    <Pane prefHeight="91.0" prefWidth="769.0" styleClass="header" stylesheets="@../name1.css">
+        <children>
+         <Pane layoutX="240.0" layoutY="20.0">
+            <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" prefHeight="40.0" prefWidth="308.0" text="Education is the key to success" textFill="#473db9">
+                      <font>
+                          <Font name="System Bold Italic" size="20.0" />
+                      </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="22.0" prefHeight="40.0" prefWidth="308.0" text="Knowledge is power" textFill="#473db9">
+                      <font>
+                          <Font name="System Italic" size="18.0" />
+                      </font>
+                  </Label>
+            </children>
+         </Pane>
+         <ImageView fitHeight="83.0" fitWidth="140.0" layoutX="160.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/image5.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="83.0" fitWidth="140.0" layoutX="543.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/image6.jpg" />
+            </image>
+         </ImageView>
+        </children>
+    </Pane>
+    <AnchorPane layoutY="97.0" prefHeight="419.0" prefWidth="769.0">
+        <children>
+            <Pane layoutX="65.0" layoutY="48.0" prefHeight="342.0" prefWidth="658.0">
+                <children>
+                    <TextArea fx:id="toLangField" layoutX="287.0" layoutY="45.0" prefHeight="300.0" prefWidth="360.0" styleClass="to-speech-field" stylesheets="@../name1.css" wrapText="true" />
+               <Pane layoutY="-2.0" prefHeight="47.0" prefWidth="647.0" styleClass="header-translate" stylesheets="@../name1.css">
+                  <children>
+                     <Label alignment="CENTER" layoutX="27.0" layoutY="4.0" prefHeight="40.0" prefWidth="244.0" text="Vocabulary To Learn" textFill="#4e46b0">
+                        <font>
+                           <Font name="System Bold" size="16.0" />
+                        </font>
+                     </Label>
+                     <Line endX="49.79998779296875" endY="47.0" layoutX="238.0" startX="49.79998779296875" stroke="#473db9" />
+                     <ImageView fitHeight="29.0" fitWidth="55.0" layoutX="40.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Icons/icon3.png" />
+                        </image>
+                     </ImageView>
+                     <Label alignment="CENTER" layoutX="361.0" layoutY="4.0" prefHeight="45.0" prefWidth="230.0" text="Study Methods And Tips" textFill="#4e46b0">
+                        <font>
+                           <Font name="System Bold" size="16.0" />
+                        </font>
+                     </Label>
+                     <ImageView fitHeight="29.0" fitWidth="54.0" layoutX="347.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Icons/icon1.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </Pane>
+               <Line endX="267.79998779296875" layoutX="-1.0" layoutY="45.0" startX="1.899993896484375" stroke="#473db9" />
+               <TextArea fx:id="explanation" layoutX="1.0" layoutY="45.0" prefHeight="300.0" prefWidth="286.0" styleClass="src-speech-field2" stylesheets="@../name1.css" />
+               <Label layoutX="327.0" layoutY="128.0" prefHeight="29.0" prefWidth="308.0" text="Listen and repeat, write every day. " textFill="#080ba6">
+                  <font>
+                     <Font name="System Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="327.0" layoutY="90.0" prefHeight="29.0" prefWidth="308.0" text="Establish clear motivation for learning English." textFill="#080ba6">
+                  <font>
+                     <Font name="System Italic" size="15.0" />
+                  </font>
+                  <padding>
+                     <Insets top="10.0" />
+                  </padding>
+               </Label>
+               <Label layoutX="327.0" layoutY="61.0" prefHeight="29.0" prefWidth="308.0" text="Balancing study schedules." textFill="#080ba6">
+                  <font>
+                     <Font name="System Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="324.0" layoutY="195.0" prefHeight="29.0" prefWidth="308.0" text="Success has no footsteps for the lazy." textFill="#080ba6">
+                  <font>
+                     <Font name="System Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="327.0" layoutY="156.0" prefHeight="29.0" prefWidth="308.0" text="Learn by doing, English for life. " textFill="#080ba6">
+                  <font>
+                     <Font name="System Italic" size="15.0" />
+                  </font>
+                  <padding>
+                     <Insets top="10.0" />
+                  </padding>
+               </Label>
+               <ImageView fitHeight="162.0" fitWidth="136.0" layoutX="315.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../image/image7.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="117.0" fitWidth="184.0" layoutX="451.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../image/image8.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="62.0" fitWidth="35.0" layoutX="287.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Icons/icon87.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="62.0" fitWidth="35.0" layoutX="609.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Icons/icon87.png" />
+                  </image>
+               </ImageView>
+                </children>
+            </Pane>
+         <Pane layoutX="3.0" prefHeight="40.0" prefWidth="764.0" style="-fx-background-color: #554dc1;" styleClass="title" stylesheets="@../name1.css">
+            <children>
+               <Label layoutX="22.0" layoutY="-2.0" prefHeight="45.0" prefWidth="391.0" text="Tasks to do:" textFill="#ece7f4">
+                  <font>
+                     <Font name="System Bold Italic" size="18.0" />
+                  </font>
+                  <graphic>
+                     <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Icons/icon86.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Label>
+            </children>
+         </Pane>
+        </children>
+    </AnchorPane>
+</AnchorPane>

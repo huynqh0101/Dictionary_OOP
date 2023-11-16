@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c639a641-c85d-4eb5-8a3f-7fac013c23f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/game/ChoosegameController.java" beforeDir="false" />
@@ -16,6 +17,12 @@
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Howtoplaygame1.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Playgame1.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Settinggame1.fxml" beforeDir="false" />
+=======
+    <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" afterDir="false" />
+>>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +59,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "huyvu",
     "last_opened_file_path": "C:/Users/FPTSHOP/Desktop/learn/Dictionary_OOP/Dictionary/src/main/resources",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+=======
+    "git-widget-placeholder": "huy1505",
+    "last_opened_file_path": "C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary"
+>>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
   }
 }]]></component>
   <component name="RecentsManager">

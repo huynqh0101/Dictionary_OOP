@@ -7,6 +7,7 @@ module com.example.demo {
 
     requires org.apache.httpcomponents.httpcore;
     requires org.apache.httpcomponents.httpclient;
+    requires freetts;
 
     opens com.example.demo.game to javafx.fxml;
     exports com.example.demo.game;
@@ -16,9 +17,10 @@ module com.example.demo {
     opens com.example.demo.game.game2 to javafx.fxml;
 
     opens com.example.demo to javafx.fxml;
-    exports com.example.demo;
     exports com.example.demo.Controllers;
     opens com.example.demo.Controllers to javafx.fxml;
     exports com.example.demo.App;
     opens com.example.demo.App to javafx.fxml;
+    exports com.example.demo.Alerts;
+    opens com.example.demo.Alerts to javafx.fxml;
 }
