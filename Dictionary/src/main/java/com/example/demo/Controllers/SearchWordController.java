@@ -12,13 +12,17 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class SearchWordController implements Initializable {
-    private static final String DATA_FILE_PATH = "data/dictionaries.txt";
+    private LoginController loginController = new LoginController();
+    private static final String DATA_FILE_PATH = "data/dictionary.txt";
+    private String dataChangedFile = loginController.getFileDataOfAccount();
     private Dictionary dictionary = new Dictionary();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
     private Alerts alerts = new Alerts();
@@ -126,6 +130,7 @@ public class SearchWordController implements Initializable {
         if (option.get() == ButtonType.OK) {
             dictionaryManagement.updateWord(dictionary, indexOfSelectedWord, wordExplain.getText());
             dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
+            saveChangeToFile("Edit", dictionary.get(indexOfSelectedWord), dataChangedFile);
             alerts.showAlertInfo("Information", "Cập nhập thành công!");
         } else alerts.showAlertInfo("Information", "Cập nhập KHÔNG thành công!");
         saveButton.setVisible(false);
@@ -157,8 +162,9 @@ public class SearchWordController implements Initializable {
         alertWarning.getButtonTypes().add(ButtonType.CANCEL);
         Optional<ButtonType> option = alertWarning.showAndWait();
         if (option.get() == ButtonType.OK) {
-            dictionaryManagement.deleteWord(dictionary, indexOfSelectedWord, DATA_FILE_PATH);
+            dictionaryManagement.deleteWord(dictionary, indexOfSelectedWord);
             dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
+            saveChangeToFile("Delete", dictionary.get(indexOfSelectedWord), dataChangedFile);
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).equals(findWord.getText())) {
                     list.remove(i);
@@ -171,6 +177,26 @@ public class SearchWordController implements Initializable {
             findWord.setText("");
             alerts.showAlertInfo("Information", "Xóa thành công!");
         } else alerts.showAlertInfo("Information", "Hủy bỏ xóa từ!");
+    }
+
+    private void saveChangeToFile(String change, Word word, String path) {
+        try (FileWriter fileWriter = new FileWriter(path, true);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            if (change.equals("Delete")) {
+                bufferedWriter.write("Delete: " + word.getWordTarget());
+                bufferedWriter.newLine();
+            } else if (change.equals("Edit")) {
+                bufferedWriter.write("Edit: |" + word.getWordTarget() + "\n" + word.getWordExplain());
+                bufferedWriter.newLine();
+            } else if (change.equals("Add")) {
+                bufferedWriter.write("Add: |" + word.getWordTarget() + "\n" + word.getWordExplain());
+                bufferedWriter.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("IOException.");
+        } catch (NullPointerException e) {
+            System.out.println("Null Exception.");
+        }
     }
 
     private void setListDefault(int index) {

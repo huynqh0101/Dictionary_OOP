@@ -1,9 +1,7 @@
-|Bag
-Cặp sách
 |Bed
 Giường
 |Bedroom
-Phòng ngủ
+Phòng ngủuuuuu
 |Book
 Sách
 |Cake

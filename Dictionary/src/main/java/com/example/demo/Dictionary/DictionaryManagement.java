@@ -83,7 +83,7 @@ public class DictionaryManagement {
         }
     }
 
-    public void deleteWord(Dictionary dictionary, int index, String path) {
+    public void deleteWord(Dictionary dictionary, int index) {
         try {
             dictionary.remove(index);
         } catch (NullPointerException e) {

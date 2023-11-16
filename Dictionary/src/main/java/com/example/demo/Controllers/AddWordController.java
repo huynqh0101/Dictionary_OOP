@@ -2,20 +2,17 @@ package com.example.demo.Controllers;
 
 import com.example.demo.Alerts.Alerts;
 import com.example.demo.Dictionary.*;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyEvent;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AddWordController implements Initializable {
-    private static final String DATA_FILE_PATH = "data/dictionary.txt";
+    private LoginController loginController = new LoginController();
+    private String DATA_FILE_PATH = loginController.getFileDataOfAccount();
     private Dictionary dictionary = new Dictionary();
     private Alerts alerts = new Alerts();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);

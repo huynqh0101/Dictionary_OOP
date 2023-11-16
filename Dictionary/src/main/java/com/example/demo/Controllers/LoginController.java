@@ -1,6 +1,8 @@
 package com.example.demo.Controllers;
 
 
+import com.example.demo.Dictionary.Dictionary;
+import com.example.demo.Dictionary.DictionaryManagement;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,6 +24,10 @@ import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
     private static final String fileName = "data/credentials.txt";
+    private static final String dataFileName = "data/dictionaries.txt";
+    private Dictionary dictionary = new Dictionary();
+    private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
+
     @FXML
     private Button signupBtn;
     @FXML
@@ -49,6 +55,8 @@ public class LoginController {
     private Label showLabel2;
     private double xOffset = 0;
     private double yOffset = 0;
+
+    public LoginController(){}
 
     @FXML
     public void registerButtonClicked() {
@@ -85,6 +93,12 @@ public class LoginController {
                 writer.newLine();
                 writer.write("Password: " + password);
                 writer.newLine();
+                writer.write("Data: dataAccount/" + userName + ".txt");
+                writer.newLine();
+
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("dataAccount/" + userName + ".txt"));
+                bufferedWriter.write("");
+                bufferedWriter.close();
                 writer.close();
                 showAlert("Bạn đã tạo tài khoản thành công !", AlertType.INFORMATION);
 
@@ -101,21 +115,31 @@ public class LoginController {
             String line;
             String storedUsername = null;
             String storedPassword = null;
+            String storedData = null;
 
             while ((line = reader.readLine()) != null) {
                 if (line.contains("Username")) {
+                    String temp = line.split(":", 2)[0].trim();
                     storedUsername = line.split(":", 2)[1].trim();
                 }
                 if (line.contains("Password")) {
                     storedPassword = line.split(":", 2)[1].trim();
                 }
+                if (line.contains("Data")) {
+                    storedData = line.split(":", 2)[1].trim();
+                }
 
-                if (storedUsername != null && storedPassword != null) {
+                if (storedUsername != null && storedPassword != null && storedData != null) {
                     if (username.equals(storedUsername) && password.equals(storedPassword)) {
+                        BufferedWriter writer = new BufferedWriter(new FileWriter("data/loginAccount.txt"));
+                        writer.write(storedUsername);
+                        writer.close();
+                        getFileDataOfAccount();
                         return true;
                     }
                     storedUsername = null;
                     storedPassword = null;
+                    storedData = null;
                 }
             }
         } catch (IOException e) {
@@ -152,6 +176,20 @@ public class LoginController {
         return false; // Tài khoản chưa tồn tại
     }
 
+    public String getFileDataOfAccount() {
+        String path = "";
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("data/loginAccount.txt"));
+            String line = reader.readLine();
+            path += "dataAccount/" + line + ".txt";
+            System.out.println(path);
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return path;
+    }
+
     @FXML
     public void handlePasswordKeyReleased() {
         String password1 = passWord1.getText();
@@ -186,6 +224,7 @@ public class LoginController {
         alert.showAndWait();
     }
 
+    @FXML
     protected void showpassword1() {
         if (showPassword.isSelected()) {
             showLabel.setText(passWord2.getText());
