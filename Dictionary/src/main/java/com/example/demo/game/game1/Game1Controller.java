@@ -1,9 +1,9 @@
 package com.example.demo.game.game1;
 
-//import javafx.application.Platform;
-
+import com.example.demo.Controllers.DictionaryController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -11,83 +11,63 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.AnchorPane;
+
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class Game1Controller {
+public class Game1Controller  {
 
-    private Parent game1;
-    private Stage window;
+    private AnchorPane game1;
 
+    private AnchorPane container1;
     public Game1Controller() {
 
     }
 
-    public void BacktoChoosegame(MouseEvent mouseEvent) {
+    public void show(MouseEvent mouseEvent,String path){
         try {
-            game1 = FXMLLoader.load(getClass().getResource("/game/Choosegame.fxml"));
-            Scene playgame1 = new Scene(game1);
-            window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-            window.setScene(playgame1);
-            window.setTitle("Game !!!");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
+            Parent dictionariesGui = loader.load();
+            DictionaryController dictionaryController = loader.getController();
 
-            window.show();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            FXMLLoader game1Loader = new FXMLLoader(getClass().getResource(path));
+            AnchorPane game1Pane = game1Loader.load();
+            dictionaryController.setNode(game1Pane);
+
+            Scene scene = new Scene(dictionariesGui);
+            Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(scene);
         }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void BacktoChoosegame(MouseEvent mouseEvent) {
+        show(mouseEvent,"/game/Choosegame.fxml");
     }
 
 
     public void Howtoplaygame1(MouseEvent mouseEvent) {
-        try {
-            game1 = FXMLLoader.load(getClass().getResource("/game/game1/Howtoplaygame1.fxml"));
-            Scene playgame1 = new Scene(game1);
-            window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-            window.setScene(playgame1);
-            window.setTitle("Game 1");
-
-            window.show();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        show(mouseEvent,"/game/game1/Howtoplaygame1.fxml");
     }
 
 
     public void Settinggame1(MouseEvent mouseEvent) {
-        try {
-            game1 = FXMLLoader.load(getClass().getResource("/game/game1/Settinggame1.fxml"));
-            Scene playgame1 = new Scene(game1);
-            window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-            window.setScene(playgame1);
-            window.setTitle("Game 1");
-
-            window.show();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        show(mouseEvent,"/game/game1/Settinggame1.fxml");
     }
 
     public void Backtogame1(MouseEvent mouseEvent) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/game/game1/Game1.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.setTitle("Game 1");
-
-            stage.show();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            System.out.println("lỗi");
-        }
+        show(mouseEvent,"/game/game1/Game1.fxml");
     }
 
 
@@ -133,21 +113,29 @@ public class Game1Controller {
 
     }
 
+
+
     public void Playgame1(MouseEvent mouseEvent) throws Exception {
         try {
-            game1 = FXMLLoader.load(getClass().getResource("/game/game1/Playgame1.fxml"));
-            Scene playgame1 = new Scene(game1);
-            window = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-            window.setScene(playgame1);
-            window.setTitle("Game 1");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
+            Parent dictionariesGui = loader.load();
+            DictionaryController dictionaryController = loader.getController();
+
+            // Load Game1.fxml và set nó vào container1 trong DictionariesGui
+            FXMLLoader game1Loader = new FXMLLoader(getClass().getResource("/game/game1/Playgame1.fxml"));
+            game1 = game1Loader.load();
+            dictionaryController.setNode(game1);
+
+            Scene scene = new Scene(dictionariesGui);
+            Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+            currentStage.setScene(scene);
             innitialize();
             readFileQuestion();
-            ShowQuestion(1);
-
-            window.show();
+            reset();
+            //window.show();
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -264,9 +252,6 @@ public class Game1Controller {
     }
 
     public void cleanAnswer() {
-        //a.setStyle("-fx-text-fill: 0x333333ff;");
-        //Color customColor = Color.web("#ff6347");
-        //Color customColor = Color.web("#333333ff");
         setColorAnswer("A", "white");
         setColorAnswer("B", "white");
         setColorAnswer("C", "white");
@@ -314,8 +299,6 @@ public class Game1Controller {
                 cleanAnswer();
                 setDisableCheckBox(true, true, true, true);
                 submitanswer.setDisable(true);
-
-                System.out.println(a.getStyle());
                 setColorAnswer(player1.getChooseAnswer(), "tomato");
                 setColorAnswer(q.getCorrect_answer(), "mediumspringgreen");
 
@@ -325,14 +308,11 @@ public class Game1Controller {
                 //setColorAnswer("A","white");
             }
 
-
         } catch (
                 Exception e) {
             e.printStackTrace();
-            System.out.println("lỗi showquestion");
         }
     }
-
 
     @FXML
     public void Back_question(MouseEvent mouseEvent) throws Exception {
@@ -356,10 +336,7 @@ public class Game1Controller {
         }
     }
 
-    @FXML
-    public void Restart(MouseEvent mouseEvent) {
-        Collections.shuffle(questions);
-        this.count_question = 1;
+    public void reset(){
         ShowQuestion(1);
         submitanswer.setDisable(true);
         player = new ArrayList<>();
@@ -368,6 +345,12 @@ public class Game1Controller {
         setDisableCheckBox(false, false, false, false);
         setSelectCheckBox(false, false, false, false);
         cleanAnswer();
+    }
+    @FXML
+    public void Restart(MouseEvent mouseEvent) {
+        Collections.shuffle(questions);
+        this.count_question = 1;
+        reset();
     }
 
     private static List<Player> player = new ArrayList<>();
@@ -391,4 +374,6 @@ public class Game1Controller {
         player.get(count_question - 1).setCheckSubmit(true);
         ShowQuestion(count_question);
     }
+
+
 }

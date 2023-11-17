@@ -2311,21 +2311,21 @@ Charm /tʃɑːrm/: những vật trang trí nhỏ
 Charm bracelet: vòng đeo tay (gắn nhiều đồ trang trí nhỏ xung quanh
 Clasp: cái móc, cái gài
 Cufflink: khuy cài cổ tay áo (măng sét)
-Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)
-Engagement ring: nhẫn đính hôn
-Hoop earrings: vòng đeo Tai
-Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)
-Pearl necklace: dây chuyền ngọc trai
-Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu{)
-Pin /pɪn/: cái ghim cài áo
-Signet ring: nhẫn có khắc hình phía trên
-Wedding ring: nhẫn cưới
-Air (noun): không khí
-Area (noun): khu vực
-Art (noun): nghệ thuật
-Back (noun): phía sau
-Body (noun): cơ thể
-Book (noun): cuốn sách
+Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)///
+Engagement ring: nhẫn đính hôn///
+Hoop earrings: vòng đeo Tai///
+Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)///
+Pearl necklace: dây chuyền ngọc trai///
+Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu{)///
+Pin /pɪn/: cái ghim cài áo///
+Signet ring: nhẫn có khắc hình phía trên///
+Wedding ring: nhẫn cưới///
+Air (noun): không khí///
+Area (noun): khu vực///
+Art (noun): nghệ thuật///
+Back (noun): phía sau///
+Body (noun): cơ thể///
+Book (noun): cuốn sách///
 Business (noun): kinh doanh
 Car (noun): xe hơi
 Case (noun): trường hợp

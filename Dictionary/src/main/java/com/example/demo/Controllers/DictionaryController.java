@@ -44,6 +44,10 @@ public class   DictionaryController implements Initializable {
                 showComponent("/View/Notice.fxml");
             }
         });
+        gameBtn.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public void handle(ActionEvent event) {showComponent("/game/Choosegame.fxml");}
+        });
 
         t1.setShowDelay(Duration.seconds(0.4));
         t2.setShowDelay(Duration.seconds(0.4));
@@ -58,7 +62,7 @@ public class   DictionaryController implements Initializable {
         });
     }
 
-    private void setNode(Node n) {
+    public void setNode(Node n) {
         container1.getChildren().clear();
         container1.getChildren().add(n);
     }
@@ -79,6 +83,6 @@ public class   DictionaryController implements Initializable {
     private Tooltip t1, t2, t3, t4, t5, t6;
 
     @FXML
-    private Button addBtn, transBtn, searchBtn, exitBtn, tbaoBtn;
+    private Button addBtn, transBtn, searchBtn, exitBtn, tbaoBtn,gameBtn;
 
 }
