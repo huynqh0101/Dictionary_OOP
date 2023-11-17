@@ -1,23 +1,17 @@
-<<<<<<< HEAD
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-=======
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/*
 *.iws
 *.iml
 *.ipr
->>>>>>> b61774637d53b9d7bbd925ccba02de827b516461
 
 ### Eclipse ###
 .apt_generated
@@ -27,12 +21,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
-<<<<<<< HEAD
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-=======
->>>>>>> b61774637d53b9d7bbd925ccba02de827b516461
 
 ### NetBeans ###
 /nbproject/private/
