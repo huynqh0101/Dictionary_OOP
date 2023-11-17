@@ -19,8 +19,19 @@
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Settinggame1.fxml" beforeDir="false" />
 =======
     <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/App/LoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/output_en.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/output_en.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/output_vi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/output_vi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/Data/selectedWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/selectedWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/Controllers/NoticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/change.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/icons8_delete_bin_64px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/saved.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/View/SearchWordGui.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" afterDir="false" />
 >>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
     </list>
@@ -55,20 +66,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
 <<<<<<< HEAD
     "git-widget-placeholder": "huyvu",
     "last_opened_file_path": "C:/Users/FPTSHOP/Desktop/learn/Dictionary_OOP/Dictionary/src/main/resources",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
 =======
-    "git-widget-placeholder": "huy1505",
-    "last_opened_file_path": "C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary"
+    &quot;git-widget-placeholder&quot;: &quot;huy1505&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary&quot;
 >>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FPTSHOP\Desktop\learn\Dictionary_OOP\Dictionary\src\main\resources" />

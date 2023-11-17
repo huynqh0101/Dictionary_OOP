@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 
 import java.io.*;
@@ -18,6 +15,7 @@ import java.util.ResourceBundle;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -26,6 +24,9 @@ import org.apache.http.util.EntityUtils;
 
 
 public class TranslationController implements Initializable {
+
+    @FXML
+    private Tooltip tooltip1, tooltip2;
 
     private String sourceLanguage = "en";
     private String toLanguage = "vi";
@@ -56,6 +57,8 @@ public class TranslationController implements Initializable {
 
         translateBtn.setDisable(true);
         toLangField.setEditable(false);
+        tooltip1.setShowDelay(Duration.seconds(0.4));
+        tooltip2.setShowDelay(Duration.seconds(0.4));
     }
 
     @FXML

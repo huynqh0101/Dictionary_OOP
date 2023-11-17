@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="861.0" styleClass="root" stylesheets="@../name1.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.DictionaryController">
+    <children>
+        <Button fx:id="exitBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="469.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" styleClass="exit-button" stylesheets="@../name1.css" text="Exit">
+         <graphic>
+                <ImageView fitHeight="40.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/exit1.png" />
+               </image>
+                </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip fx:id="t6" text="Thoát!" />
+         </tooltip>
+        </Button>
+          <Button fx:id="searchBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Search">
+              <font>
+                  <Font name="System Bold" size="12.0" />
+              </font>
+              <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/find.png" />
+               </image>
+                  </ImageView>
+              </graphic>
+              <cursor>
+                  <Cursor fx:constant="HAND" />
+              </cursor>
+              <tooltip>
+                  <Tooltip fx:id="t1" text="Tra từ điển" />
+              </tooltip>
+          </Button>
+          <Button fx:id="addBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="232.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
+              <font>
+                  <Font name="System Bold" size="12.0" />
+              </font>
+              <cursor>
+                  <Cursor fx:constant="HAND" />
+              </cursor>
+              <tooltip>
+                  <Tooltip fx:id="t2" text="Thêm từ vựng mới" />
+              </tooltip>
+         <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/add.png" />
+               </image>
+                  </ImageView>
+         </graphic>
+          </Button>
+          <Button fx:id="transBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="    Translate">
+              <font>
+                  <Font name="System Bold" size="12.0" />
+              </font>
+              <cursor>
+                  <Cursor fx:constant="HAND" />
+              </cursor>
+              <tooltip>
+                  <Tooltip fx:id="t3" text="Phiên dịch" />
+              </tooltip>
+         <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/ggtranslate.png" />
+               </image>
+                  </ImageView>
+         </graphic>
+          </Button>
+      <AnchorPane fx:id="container1" layoutX="52.0" layoutY="9.0" prefHeight="527.0" prefWidth="783.0" styleClass="container" stylesheets="@../name1.css" />
+      <Button fx:id="gameBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css" text="     Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip fx:id="t5" text="Chơi trò chơi" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/game.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="tbaoBtn" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="97.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="menu-item1" stylesheets="@../name1.css">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <tooltip>
+            <Tooltip fx:id="t4" text="Thông báo!" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/notification.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="3.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/h.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
