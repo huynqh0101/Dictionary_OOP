@@ -14,22 +14,24 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.*;
+import java.util.ArrayList;
+
 import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
     private static final String fileName = "data/credentials.txt";
     @FXML
-    private Button signupBtn, changePass, changePass2;
+    private Button signupBtn, changePass,changescreen;
     @FXML
     private Button loginBtn1, loginBtn2, loginBtn3;
     @FXML
-    private PasswordField passWord1, passWord2,passWord3;
-    private boolean focusLost = false;
+    private PasswordField passWord1, passWord2, passWord3;
+    private boolean focusLost = false, focusLost2 = false;
     @FXML
-    private PasswordField confirmPassWord1, newPassWord2;
+    private PasswordField confirmPassWord1, newPassWord2,confirmpassWord2;
     @FXML
-    private TextField userNameBtn2, userNameBtn,userNameBtn3;
+    private TextField userNameBtn2, userNameBtn, userNameBtn3;
     @FXML
     private CheckBox showPassword2, showPassword3, showPassword;
     @FXML
@@ -41,9 +43,17 @@ public class LoginController {
     public void registerButtonClicked() {
         String userNameText = userNameBtn.getText();
         String passwordText = passWord1.getText();
-        boolean check = comparePasswords();
-        if (check) {
+        String password1 = passWord1.getText();
+        String password2 = confirmPassWord1.getText();
+        boolean check = comparePasswords(password1, password2);
+        if (check && focusLost == true) {
             saveCredentialsToFile(userNameText, passwordText);
+            userNameBtn.setText("");
+            passWord1.setText("");
+            confirmPassWord1.setText("");
+            showLabel2.setText("");
+        } else {
+            showAlert("Tạo tài khoản thất bại!!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
     }
 
@@ -62,19 +72,59 @@ public class LoginController {
             showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
     }
+
     @FXML
     public void ChangeButtonclick2(ActionEvent event) throws IOException {
-        String username = userNameBtn2.getText();
-        String password = passWord2.getText();
+        String username = userNameBtn3.getText();
+        String password = passWord3.getText();
+        String newpassWord = newPassWord2.getText();
+        String confirmPass = confirmpassWord2.getText();
 
-        System.out.println(username + " " + password);
-        if (authenticate(username, password)) {
-           // showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
-            Node currentNode = loginBtn2;
-            showComponent(currentNode, "/View/DictionariesGui.fxml");
 
+        boolean check = comparePasswords(newpassWord, confirmPass);
+        if (check && focusLost2 == true) {
+            changeCredentialsToFile(username,newpassWord);
+            System.out.println(check);
+            userNameBtn3.setText("");
+            passWord3.setText("");
+            newPassWord2.setText("");
+            confirmpassWord2.setText("");
+            showLabel3.setText("");
         } else {
-            showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
+            showAlert("Đổi mật khẩu thất bại!!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
+        }
+    }
+    private void changeCredentialsToFile(String userName, String passChange) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            String line;
+            ArrayList<String> fileContent = new ArrayList<>();
+
+            while ((line = reader.readLine()) != null) {
+                if (line.startsWith("Username: ")) {
+                    String existingUsername = line.substring("Username: ".length());
+                    fileContent.add(line);  // Add the existing Username line
+                    if (existingUsername.equals(userName)) {
+                        // Replace the existing password line with the new password
+                        fileContent.add("Password: " + passChange);
+                        reader.readLine();  // Skip the existing password line
+                    }
+                } else {
+                    fileContent.add(line);
+                }
+            }
+            reader.close();
+
+            // Write the updated content back to the file
+            FileWriter fileWriter = new FileWriter(fileName, false);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            for (String contentLine : fileContent) {
+                writer.write(contentLine);
+                writer.newLine();
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -94,7 +144,7 @@ public class LoginController {
                 showAlert("Bạn đã tạo tài khoản thành công !", AlertType.INFORMATION);
 
             } else {
-                showAlert("Tài khoản này đã tồn tại !", AlertType.INFORMATION);
+                showAlert("Tài khoản này đã tồn tại ! Hãy tạo tài khoản khác.", AlertType.INFORMATION);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -162,8 +212,19 @@ public class LoginController {
         String password1 = passWord1.getText();
         if (password1.length() < 8) {
             showAlert("Độ dài mật khẩu không đủ 8 ký tự !", AlertType.ERROR);
+        } else {
+            focusLost = true;
         }
-        focusLost = true;
+    }
+
+    @FXML
+    public void handlePasswordKeyReleased2() {
+        String password1 = newPassWord2.getText();
+        if (password1.length() < 8) {
+            showAlert("Độ dài mật khẩu không đủ 8 ký tự !", AlertType.ERROR);
+        } else {
+            focusLost2 = true;
+        }
     }
 
     @FXML
@@ -171,7 +232,7 @@ public class LoginController {
         String username = userNameBtn3.getText();
         String password = passWord3.getText();
 
-        System.out.println(username + " " + password);
+        //System.out.println(username + " " + password);
         if (authenticate(username, password)) {
             return true;
         } else {
@@ -181,18 +242,19 @@ public class LoginController {
     }
 
     @FXML
-    private boolean comparePasswords() {
+    private boolean comparePasswords(String password1, String password2) {
         String s2 = "";
-        String password1 = passWord1.getText();
-        String password2 = confirmPassWord1.getText();
-        if (password1.equals(s2) && password2.equals(s2)) {
-            showAlert("Bạn phải nhập mật khẩu !", AlertType.ERROR);
-            return false;
-        }
-        if (password1.equals(password2)) {
-            return true;
+        if (password2.length() >= 8) {
+            if (password1.equals(s2) && password2.equals(s2)) {
+                showAlert("Bạn phải nhập mật khẩu !", AlertType.ERROR);
+                return false;
+            }
+            if (password1.equals(password2)) {
+                return true;
+            } else {
+                return false;
+            }
         } else {
-            showAlert("Mật khẩu không giống nhau !", AlertType.ERROR);
             return false;
         }
     }
@@ -244,6 +306,11 @@ public class LoginController {
         Node currentNode = changePass;
         showComponent(currentNode, "/View/changePass.fxml");
     }
+    @FXML
+    protected void changeScreenClick() {
+        Node currentNode = changescreen;
+        showComponent(currentNode, "/View/changePass.fxml");
+    }
 
     @FXML
     protected void loginBtnClick2() {
@@ -260,36 +327,35 @@ public class LoginController {
 
     @FXML
     private void showComponent(Node currentNode, String path) {
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource(path));
-                    Parent root = loader.load();
-                    Scene scene = new Scene(root);
-                    Stage currentStage = (Stage) currentNode.getScene().getWindow();
-                    currentStage.close();
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(path));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage currentStage = (Stage) currentNode.getScene().getWindow();
+            currentStage.close();
 
-                    Stage stage = new Stage();
-                    stage.initStyle(StageStyle.TRANSPARENT);
-                    stage.setScene(scene);
-                    root.requestFocus();
-                    stage.show();
-                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
-                        @Override
-                        public void handle(MouseEvent event) {
-                            xOffset = event.getSceneX();
-                            yOffset = event.getSceneY();
-                        }
-                    });
-
-                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-                        @Override
-                        public void handle(MouseEvent event) {
-                            stage.setX(event.getScreenX() - xOffset);
-                            stage.setY(event.getScreenY() - yOffset);
-                        }
-                    });
-                } catch (IOException e) {
-                    e.printStackTrace();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.setScene(scene);
+            root.requestFocus();
+            stage.show();
+            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    xOffset = event.getSceneX();
+                    yOffset = event.getSceneY();
                 }
+            });
 
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    stage.setX(event.getScreenX() - xOffset);
+                    stage.setY(event.getScreenY() - yOffset);
+                }
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
