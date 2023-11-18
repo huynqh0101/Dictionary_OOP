@@ -18,7 +18,7 @@ public class Game2Controller {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
             Parent dictionariesGui = loader.load();
             DictionaryController dictionaryController = loader.getController();
-
+            
             FXMLLoader game1Loader = new FXMLLoader(getClass().getResource(path));
             AnchorPane game1Pane = game1Loader.load();
             dictionaryController.setNode(game1Pane);
@@ -34,5 +34,17 @@ public class Game2Controller {
 
     public void BacktoChoosegame(MouseEvent mouseEvent) {
         show(mouseEvent,"/game/Choosegame.fxml");
+    }
+
+    public void Easy(MouseEvent mouseEvent) {
+    }
+
+    public void Medium(MouseEvent mouseEvent) {
+    }
+
+    public void Hard(MouseEvent mouseEvent) {
+    }
+
+    public void Howtoplaygame2(MouseEvent mouseEvent) {
     }
 }
