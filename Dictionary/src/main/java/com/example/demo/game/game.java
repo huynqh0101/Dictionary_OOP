@@ -25,7 +25,7 @@ public class game extends Application {
 
             // Đặt Scene lên Stage
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Choose Game");
+            //primaryStage.setTitle("Choose Game");
 
             // Hiển thị Stage
             primaryStage.show();

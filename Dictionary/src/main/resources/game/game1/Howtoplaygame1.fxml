@@ -6,7 +6,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
+<AnchorPane prefHeight="527.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.game.game1.Game1Controller">
     <children>
         <Button fx:id="backfromHTPtogame1" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#Backtogame1" text="Back" />
       <Label layoutX="306.0" layoutY="101.0" prefHeight="54.0" prefWidth="178.0" text="HOW TO PLAY GAME">

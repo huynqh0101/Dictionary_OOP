@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.demo.game.game2.EasyController">
-
+<AnchorPane prefHeight="527.0" prefWidth="789.0" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game2.EasyController">
+   <children>
+      <HBox layoutY="5.0" prefHeight="33.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="backtogame2" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back" />
+            <Button fx:id="howtoplaygame2" mnemonicParsing="false" onMouseClicked="#Howtoplaygame2" text="?" />
+         </children>
+      </HBox>
+      <VBox layoutX="315.0" layoutY="99.0" prefHeight="335.0" prefWidth="159.0" spacing="24.0" stylesheets="@../../stylegame.css">
+         <children>
+            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+               <children>
+                  <Label fx:id="line1a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="line1b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+               <children>
+                  <Label fx:id="line2a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="line2b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+               <children>
+                  <Label fx:id="line3a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="line3b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+               <children>
+                  <Label fx:id="line4a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="line4b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

@@ -8,7 +8,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
+<AnchorPane prefHeight="527.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.game.game1.Game1Controller">
     <children>
         <Button fx:id="Backfromplaygametogame1" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#Backtogame1" text="Back" />
       <VBox layoutX="139.0" layoutY="103.0" prefHeight="245.0" prefWidth="511.0" spacing="13.0">

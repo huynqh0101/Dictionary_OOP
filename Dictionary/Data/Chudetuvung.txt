@@ -2082,21 +2082,21 @@ Install /ɪnˈstɔl/(verb): Cài đặt, lắp đặt
 Internet/ˈɪntərˌnɛt/ (noun): Mạng internet
 Keyboard /ˈkiˌbɔrd/(noun): Bàn phím máy tính
 keyboard: bàn phím
-Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay
-laptop: máy tính xách tay
-Link /lɪŋk/(noun): Đường dẫn
-Log in /lɔg ɪn/(phrasal verb): Đăng nhập
-monitor: phần màn hình
-Mouse /maʊs/(noun): Chuột máy tính
-mouse: chuột
-Password/ˈpæˌswɜrd/ (noun): Mật khẩu
-PC (viết tắt của personal computer): máy tính cá nhân
-power cable: cáp nguồn
-Printer /ˈprɪntər/(noun): Máy in
-printer: máy in
-Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)
-screen: màn hình
-Sign up/saɪn ʌp/ (phrasal verb): Đăng kí
+Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay///
+laptop: máy tính xách tay///
+Link /lɪŋk/(noun): Đường dẫn///
+Log in /lɔg ɪn/(phrasal verb): Đăng nhập///
+monitor: phần màn hình///
+Mouse /maʊs/(noun): Chuột máy tính///
+mouse: chuột///
+Password/ˈpæˌswɜrd/ (noun): Mật khẩu///
+PC (viết tắt của personal computer): máy tính cá nhân///
+power cable: cáp nguồn///
+Printer /ˈprɪntər/(noun): Máy in///
+printer: máy in///
+Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)///
+screen: màn hình///
+Sign up/saɪn ʌp/ (phrasal verb): Đăng kí///
 Smartphone /smärtˌfōn/(noun): Điện thoại thông minh
 Social network /ˈsoʊʃəl ˈnɛˌtwɜrk/(noun): Mạng xã hội
 Software/ˈsɔfˌtwɛr/ (noun): Phần mềm

@@ -114,7 +114,6 @@ public class Game1Controller  {
     }
 
 
-
     public void Playgame1(MouseEvent mouseEvent) throws Exception {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));

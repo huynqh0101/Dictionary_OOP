@@ -9,16 +9,18 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class Game2Controller {
+import java.util.List;
+
+public class Game2Controller extends game2 {
     private Parent game2;
     private Stage window;
 
-    public void show(MouseEvent mouseEvent,String path){
+    public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
             Parent dictionariesGui = loader.load();
             DictionaryController dictionaryController = loader.getController();
-            
+
             FXMLLoader game1Loader = new FXMLLoader(getClass().getResource(path));
             AnchorPane game1Pane = game1Loader.load();
             dictionaryController.setNode(game1Pane);
@@ -26,25 +28,28 @@ public class Game2Controller {
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
             currentStage.setScene(scene);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void BacktoChoosegame(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/Choosegame.fxml");
+        show(mouseEvent, "/game/Choosegame.fxml");
     }
 
     public void Easy(MouseEvent mouseEvent) {
+        show(mouseEvent, "/game/game2/Easy.fxml");
     }
 
     public void Medium(MouseEvent mouseEvent) {
+        show(mouseEvent, "/game/game2/Medium.fxml");
     }
 
     public void Hard(MouseEvent mouseEvent) {
+        show(mouseEvent, "/game/game2/Hard.fxml");
     }
 
     public void Howtoplaygame2(MouseEvent mouseEvent) {
+        show(mouseEvent, "/game/game2/Howtoplaygame2.fxml");
     }
 }

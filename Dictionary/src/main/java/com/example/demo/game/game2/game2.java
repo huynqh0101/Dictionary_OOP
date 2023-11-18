@@ -71,7 +71,7 @@ public class game2 {
     }
 
     // Hàm thực hiện Union-Find với danh sách từ đã đọc
-    public void UnionFind(List<String> wordList) {
+    public List<Answer> UnionFind(List<String> wordList) {
         UnionFind uf = new UnionFind();
 
         // Union các từ có ký tự gần giống nhau
@@ -117,6 +117,7 @@ public class game2 {
                 }
             }
         }
+        return answers;
     }
 
     // In ra kết quả

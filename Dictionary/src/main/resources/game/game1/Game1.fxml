@@ -4,7 +4,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="522.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
+<AnchorPane prefHeight="527.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.game.game1.Game1Controller">
     <children>
         <Button fx:id="backtochoosegame" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#BacktoChoosegame" text="Back" />
         <Button fx:id="playgame1" layoutX="341.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#Playgame1" prefHeight="56.0" prefWidth="107.0" text="Play">
