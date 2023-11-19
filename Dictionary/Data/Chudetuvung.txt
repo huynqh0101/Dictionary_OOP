@@ -533,7 +533,7 @@ Shortish: hơi lùn
 Skinny: ốm, gầy
 Slender: mảnh khảnh
 Slim: gầy, mảnh khảnh
-Smile: cười mỉm
+Smile: cười mỉm///
 Snub: mũi hếch
 Sparkling/twinkling: mắt lấp lánh
 Square: mặt vuông
@@ -669,21 +669,21 @@ Set: bố trí, để, đặt, bày (bàn ăn)
 Sew: may, khâu
 Shake: rung, lắc, run rẩy
 Shout: la hét, hò hét, reo hò
-Show: cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra
-Sing: hát
-Sit: ngồi
-Skate: trượt (băng, ván)
-Slap: tát
-Sleep: ngủ
-Slice: cắt, thái
-Slip: trượt ngã
+Show: cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra///
+Sing: hát///
+Sit: ngồi///
+Skate: trượt (băng, ván)///
+Slap: tát///
+Sleep: ngủ///
+Slice: cắt, thái///
+Slip: trượt ngã///
 Smile: cười
-Sneeze: hắt hơi
-Spin: quay
-Squat: ngồi xổm
-Stand: đứng
-Step: bước đi
-Stop: ngừng, nghỉ, thôi
+Sneeze: hắt hơi///
+Spin: quay///
+Squat: ngồi xổm///
+Stand: đứng///
+Step: bước đi///
+Stop: ngừng, nghỉ, thôi///
 Stretch: duỗi ra, căng ra
 Stroke: vuốt ve
 Sweep: quét
