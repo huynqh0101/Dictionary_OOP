@@ -1,16 +1,16 @@
-20231117
-Show: cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra
-Sing: hát
-Sit: ngồi
-Skate: trượt (băng, ván)
-Slap: tát
-Sleep: ngủ
-Slice: cắt, thái
-Slip: trượt ngã
-Smile: cười
-Sneeze: hắt hơi
-Spin: quay
-Squat: ngồi xổm
-Stand: đứng
-Step: bước đi
-Stop: ngừng, nghỉ, thôi
+20231119
+Orange (noun): Màu cam
+Paint (noun): Sơn, màu vẽ
+Pink (noun): Màu hồng
+Purple (noun): Màu tím
+Red (noun): Màu đỏ
+Shade (noun): Sắc độ
+White (noun): Màu trắng
+Yellow (noun): Màu vàng
+A fringe: Tóc cắt ngang trán
+A short-haired person: Người có mái tóc ngắn
+Angular: Mặt xương xương
+Attractive (adjective): Quyến rũ, hấp dẫn
+Baby: Em bé, trẻ con
+Bald: Hói
+Beard: Râu

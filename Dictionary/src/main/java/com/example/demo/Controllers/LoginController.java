@@ -1,6 +1,9 @@
 package com.example.demo.Controllers;
 
 
+import com.example.demo.Alerts.Alerts;
+import com.example.demo.Dictionary.Dictionary;
+import com.example.demo.Dictionary.DictionaryManagement;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,7 +17,11 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.*;
+
 import java.util.ArrayList;
+
+import java.util.Optional;
+
 
 import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
@@ -39,6 +46,8 @@ public class LoginController {
     private double xOffset = 0;
     private double yOffset = 0;
 
+    public LoginController(){}
+
     @FXML
     public void registerButtonClicked() {
         String userNameText = userNameBtn.getText();
@@ -62,9 +71,8 @@ public class LoginController {
         String username = userNameBtn2.getText();
         String password = passWord2.getText();
 
-        //System.out.println(username + " " + password);
         if (authenticate(username, password)) {
-            //showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+            showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
             Node currentNode = loginBtn2;
             showComponent(currentNode, "/View/DictionariesGui.fxml");
 
@@ -90,6 +98,7 @@ public class LoginController {
             newPassWord2.setText("");
             confirmpassWord2.setText("");
             showLabel3.setText("");
+            showAlert("Đổi mật khẩu thành công !", AlertType.INFORMATION);
         } else {
             showAlert("Đổi mật khẩu thất bại!!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
         }
@@ -140,7 +149,14 @@ public class LoginController {
                 writer.newLine();
                 writer.write("Password: " + password);
                 writer.newLine();
+                writer.write("Data: dataAccount/" + userName + ".txt");
+                writer.newLine();
+
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("dataAccount/" + userName + ".txt"));
+                bufferedWriter.write("");
+                bufferedWriter.close();
                 writer.close();
+
                 showAlert("Bạn đã tạo tài khoản thành công !", AlertType.INFORMATION);
 
             } else {
@@ -156,21 +172,31 @@ public class LoginController {
             String line;
             String storedUsername = null;
             String storedPassword = null;
+            String storedData = null;
 
             while ((line = reader.readLine()) != null) {
                 if (line.contains("Username")) {
+                    String temp = line.split(":", 2)[0].trim();
                     storedUsername = line.split(":", 2)[1].trim();
                 }
                 if (line.contains("Password")) {
                     storedPassword = line.split(":", 2)[1].trim();
                 }
+                if (line.contains("Data")) {
+                    storedData = line.split(":", 2)[1].trim();
+                }
 
-                if (storedUsername != null && storedPassword != null) {
+                if (storedUsername != null && storedPassword != null && storedData != null) {
                     if (username.equals(storedUsername) && password.equals(storedPassword)) {
+                        BufferedWriter writer = new BufferedWriter(new FileWriter("data/loginAccount.txt"));
+                        writer.write(storedUsername);
+                        writer.close();
+                        getFileDataOfAccount();
                         return true;
                     }
                     storedUsername = null;
                     storedPassword = null;
+                    storedData = null;
                 }
             }
         } catch (IOException e) {
@@ -182,7 +208,14 @@ public class LoginController {
 
     @FXML
     private void exitBtnClick() {
-        Platform.exit();
+        Alerts alerts = new Alerts();
+        Alert alertConfirm = alerts.alertConfirm("Exit", "Bạn có chắc muốn thoát ứng dụng ?");
+        Optional<ButtonType> option = alertConfirm.showAndWait();
+        if (option.get() == ButtonType.OK) {
+            System.exit(0);
+        } else {
+            alerts.showAlertInfo("Exit", "Tiếp tục sử dụng ứng dụng!");
+        }
     }
 
     private boolean checkIfUserExists(String fileName, String targetUsername) {
@@ -205,6 +238,19 @@ public class LoginController {
         }
 
         return false; // Tài khoản chưa tồn tại
+    }
+
+    public String getFileDataOfAccount() {
+        String path = "";
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("data/loginAccount.txt"));
+            String line = reader.readLine();
+            path += "dataAccount/" + line + ".txt";
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return path;
     }
 
     @FXML

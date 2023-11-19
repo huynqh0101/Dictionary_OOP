@@ -444,21 +444,21 @@ Light blue: Màu xanh da trời nhạt
 Light brown: Màu nâu nhạt
 Light green: Màu xanh lá cây nhạt
 Light (adjective): Sáng (màu)
-Orange (noun): Màu cam
-Paint (noun): Sơn, màu vẽ
-Pink (noun): Màu hồng
-Purple (noun): Màu tím
-Red (noun): Màu đỏ
-Shade (noun): Sắc độ
-White (noun): Màu trắng
-Yellow (noun): Màu vàng
-A fringe: Tóc cắt ngang trán
-A short-haired person: Người có mái tóc ngắn
-Angular: Mặt xương xương
-Attractive (adjective): Quyến rũ, hấp dẫn
-Baby: Em bé, trẻ con
-Bald: Hói
-Beard: Râu
+Orange (noun): Màu cam///
+Paint (noun): Sơn, màu vẽ///
+Pink (noun): Màu hồng///
+Purple (noun): Màu tím///
+Red (noun): Màu đỏ///
+Shade (noun): Sắc độ///
+White (noun): Màu trắng///
+Yellow (noun): Màu vàng///
+A fringe: Tóc cắt ngang trán///
+A short-haired person: Người có mái tóc ngắn///
+Angular: Mặt xương xương///
+Attractive (adjective): Quyến rũ, hấp dẫn///
+Baby: Em bé, trẻ con///
+Bald: Hói///
+Beard: Râu///
 Beautiful (adjective): Đẹp, xinh đẹp
 Birthmark: Vết bớt
 Blonde: Tóc vàng
@@ -533,7 +533,7 @@ Shortish: hơi lùn
 Skinny: ốm, gầy
 Slender: mảnh khảnh
 Slim: gầy, mảnh khảnh
-Smile: cười mỉm///
+Smile: cười mỉm
 Snub: mũi hếch
 Sparkling/twinkling: mắt lấp lánh
 Square: mặt vuông
@@ -669,21 +669,21 @@ Set: bố trí, để, đặt, bày (bàn ăn)
 Sew: may, khâu
 Shake: rung, lắc, run rẩy
 Shout: la hét, hò hét, reo hò
-Show: cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra///
-Sing: hát///
-Sit: ngồi///
-Skate: trượt (băng, ván)///
-Slap: tát///
-Sleep: ngủ///
-Slice: cắt, thái///
-Slip: trượt ngã///
+Show: cho xem, cho thấy, trưng bày, đưa cho xem; tỏ ra
+Sing: hát
+Sit: ngồi
+Skate: trượt (băng, ván)
+Slap: tát
+Sleep: ngủ
+Slice: cắt, thái
+Slip: trượt ngã
 Smile: cười
-Sneeze: hắt hơi///
-Spin: quay///
-Squat: ngồi xổm///
-Stand: đứng///
-Step: bước đi///
-Stop: ngừng, nghỉ, thôi///
+Sneeze: hắt hơi
+Spin: quay
+Squat: ngồi xổm
+Stand: đứng
+Step: bước đi
+Stop: ngừng, nghỉ, thôi
 Stretch: duỗi ra, căng ra
 Stroke: vuốt ve
 Sweep: quét
@@ -1501,21 +1501,21 @@ Graduate /ˈgræʤuɪt/(verb): Tốt nghiệp
 High school /haɪ skul/(noun): Trường trung học phổ thông
 History /ˈhɪstəri/(noun): Môn lịch sử, lịch sử
 Kindergarten/ˈkɪndərˌgɑrtən/ (noun): Trường mầm non, mẫu giáo
-Laboratory/Lab/ˈlæbrəˌtɔri/ – /læb/ (noun): Phòng thí nghiệm///
-Learn/lɜrn/ (verb): Học hỏi///
-Lecture /ˈlɛkʧər/(noun): Bài giảng///
-Lecturer /ˈlɛkʧərər/(noun): Giảng viên///
-Literature /ˈlɪtərəʧər/(noun): Văn học///
-Mathematics/Maths /ˌmæθəˈmætɪks/ – /mæθ/(noun): Toán học///
-Mid-term exam/mɪd-tɜrm ɪgˈzæm/: Bài thi giữa kì///
-Notebook/ˈnoʊtˌbʊk/ (noun): Quyển vở, quyển sổ///
-Pen/pɛn/ (noun): Bút mực, bút bi///
-Pencil/ˈpɛnsəl/ (noun): Bút chì///
-Period /ˈpɪriəd/(noun): Tiết học///
-Physical education/ˈfɪzɪkəl ˌɛʤəˈkeɪʃən/: Môn thể dục///
-Physics /ˈfɪzɪks/(noun): Môn vật lí///
-Primary school /ˈpraɪˌmɛri skul/(noun): Trường tiểu học///
-Principal /ˈprɪnsəpəl/(noun): Hiệu trưởng///
+Laboratory/Lab/ˈlæbrəˌtɔri/ – /læb/ (noun): Phòng thí nghiệm
+Learn/lɜrn/ (verb): Học hỏi
+Lecture /ˈlɛkʧər/(noun): Bài giảng
+Lecturer /ˈlɛkʧərər/(noun): Giảng viên
+Literature /ˈlɪtərəʧər/(noun): Văn học
+Mathematics/Maths /ˌmæθəˈmætɪks/ – /mæθ/(noun): Toán học
+Mid-term exam/mɪd-tɜrm ɪgˈzæm/: Bài thi giữa kì
+Notebook/ˈnoʊtˌbʊk/ (noun): Quyển vở, quyển sổ
+Pen/pɛn/ (noun): Bút mực, bút bi
+Pencil/ˈpɛnsəl/ (noun): Bút chì
+Period /ˈpɪriəd/(noun): Tiết học
+Physical education/ˈfɪzɪkəl ˌɛʤəˈkeɪʃən/: Môn thể dục
+Physics /ˈfɪzɪks/(noun): Môn vật lí
+Primary school /ˈpraɪˌmɛri skul/(noun): Trường tiểu học
+Principal /ˈprɪnsəpəl/(noun): Hiệu trưởng
 Professor/prəˈfɛsər/ (noun): Giáo sư
 Ruler /ˈrulər/(noun): Thước kẻ
 School year /skul jɪr/(noun): Năm học
@@ -2022,21 +2022,21 @@ Composer/kəmˈpoʊzər/ (noun): Nhà soạn nhạc
 Concert /kənˈsɜrt/(noun): Buổi trình diễn âm nhạc
 Creative /kriˈeɪtɪv/(adjective): tính sáng tạo
 Culture /ˈkʌlʧər/(noun): Văn hóa
-Design /dɪˈzaɪn/(verb): Thiết kế///
-Drawing /ˈdrɔɪŋ/(noun): Bức vẽ///
-Exhibition/ˌɛksəˈbɪʃən/ (noun): Triển lãm///
-Film /fɪlm/(noun): Bộ phim///
-Gallery/ˈgæləri/ (noun): Phòng triển lãm, trưng bày///
-Illustration /ˌɪləˈstreɪʃən/(noun): Hình minh họa///
-Image/ˈɪmɪʤ/ (noun): Bức ảnh///
-Inspiration/ˌɪnspəˈreɪʃən/ (noun): Nguồn cảm hứng///
-Inspire /ɪnˈspaɪr/(verb): Truyền cảm hứng///
-Literature/ˈlɪtərəʧər/ (noun): Văn học, văn chương///
-Masterpiece/ˈmæstərˌpis/ (noun): Kiệt tác///
-Model /ˈmɑdəl/(noun): Mẫu (vẽ), người mẫu///
-Movie /ˈmuvi/(noun): Bộ phim///
-Music/ˈmjuzɪk/ (noun): Âm nhạc///
-Musical Instrument /ˈmjuzɪkəl ˈɪnstrəmənt/(noun): Nhạc cụ///
+Design /dɪˈzaɪn/(verb): Thiết kế
+Drawing /ˈdrɔɪŋ/(noun): Bức vẽ
+Exhibition/ˌɛksəˈbɪʃən/ (noun): Triển lãm
+Film /fɪlm/(noun): Bộ phim
+Gallery/ˈgæləri/ (noun): Phòng triển lãm, trưng bày
+Illustration /ˌɪləˈstreɪʃən/(noun): Hình minh họa
+Image/ˈɪmɪʤ/ (noun): Bức ảnh
+Inspiration/ˌɪnspəˈreɪʃən/ (noun): Nguồn cảm hứng
+Inspire /ɪnˈspaɪr/(verb): Truyền cảm hứng
+Literature/ˈlɪtərəʧər/ (noun): Văn học, văn chương
+Masterpiece/ˈmæstərˌpis/ (noun): Kiệt tác
+Model /ˈmɑdəl/(noun): Mẫu (vẽ), người mẫu
+Movie /ˈmuvi/(noun): Bộ phim
+Music/ˈmjuzɪk/ (noun): Âm nhạc
+Musical Instrument /ˈmjuzɪkəl ˈɪnstrəmənt/(noun): Nhạc cụ
 Novel /ˈnɑvəl/(noun): Tiểu thuyết
 Painting /ˈpeɪntɪŋ/(noun): Bức vẽ, bức tranh
 Paper/ˈpeɪpər/ (noun): Tờ giấy
