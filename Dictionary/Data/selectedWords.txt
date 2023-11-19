@@ -1,16 +1,16 @@
-20231113
-Pink (noun): Màu hồng
-Purple (noun): Màu tím
-Red (noun): Màu đỏ
-Shade (noun): Sắc độ
-White (noun): Màu trắng
-Yellow (noun): Màu vàng
-A fringe: Tóc cắt ngang trán
-A short-haired person: Người có mái tóc ngắn
-Angular: Mặt xương xương
-Attractive (adjective): Quyến rũ, hấp dẫn
-Baby: Em bé, trẻ con
-Bald: Hói
-Beard: Râu
-Beautiful (adjective): Đẹp, xinh đẹp
-Birthmark: Vết bớt
+20231117
+Pregnant (adjective): Mang thai
+Relative (noun): Họ hàng
+Sibling (noun): Anh chị em
+Sister (noun): Chị em gái
+Sister-in-law: chị/em dâu
+Son (noun): Con trai
+Son-in-law: con rể
+Stepbrother: con trai của bố dượng/mẹ kế
+Stepdaughter: con gái riêng của chồng/vợ
+Stepfather: bố dượng
+Step-mom (noun): Mẹ kế, dì ghẻ
+Stepmother: mẹ kế
+Stepsister: con gái của bố dượng/mẹ kế
+Stepson: con trai riêng của chồng/vợ
+Uncle (noun): Người chú/cậu/bác

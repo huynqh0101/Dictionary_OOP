@@ -9,11 +9,11 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Application extends javafx.application.Application {
-    private double xOffset = 0;
-    private double yOffset = 0;
+    private double x = 0;
+    private double y = 0;
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("/View/SearchWordGui.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("/View/login.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.TRANSPARENT);
@@ -23,17 +23,17 @@ public class Application extends javafx.application.Application {
 
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
-            public void handle(MouseEvent event) {
-                xOffset = event.getSceneX();
-                yOffset = event.getSceneY();
+            public void handle(MouseEvent e) {
+                x = e.getSceneX();
+                y = e.getSceneY();
             }
         });
 
         root.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                stage.setX(event.getScreenX() - xOffset);
-                stage.setY(event.getScreenY() - yOffset);
+                stage.setX(event.getScreenX() - x);
+                stage.setY(event.getScreenY() - y);
             }
         });
     }
