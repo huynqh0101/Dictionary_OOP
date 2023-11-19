@@ -19,11 +19,11 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.LoginController">
-    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
         <right>
             <VBox prefWidth="332.0" styleClass="vbox_background_right" stylesheets="@../name1.css" BorderPane.alignment="CENTER">
                 <children>
-                    <VBox alignment="BOTTOM_CENTER" prefHeight="135.0" prefWidth="332.0">
+                    <VBox alignment="BOTTOM_CENTER" prefHeight="126.0" prefWidth="332.0">
                         <children>
                             <Text fill="#d39d50" strokeType="OUTSIDE" strokeWidth="0.0" text="Space" wrappingWidth="105.03076076507568">
                                 <font>
@@ -39,7 +39,7 @@
                     </VBox>
                     <HBox alignment="CENTER" prefHeight="66.0" prefWidth="332.0">
                         <children>
-                            <TextField fx:id="userNameBtn3" prefHeight="38.0" prefWidth="267.0" promptText="    Username" style="-fx-background-radius: 50; -fx-background-color: #FFFFFF;" styleClass="text-TextField">
+                            <TextField fx:id="userNameBtn3" prefHeight="47.0" prefWidth="267.0" promptText="    Username" style="-fx-background-radius: 50; -fx-background-color: #FFFFFF;" styleClass="text-TextField">
                                 <font>
                                     <Font name="System Italic" size="14.0" />
                                 </font>
@@ -47,7 +47,7 @@
                                     <Insets top="10.0" />
                                 </padding>
                                 <HBox.margin>
-                                    <Insets top="15.0" />
+                                    <Insets top="12.0" />
                                 </HBox.margin>
                             </TextField>
                         </children>
@@ -66,7 +66,7 @@
                             <Insets top="10.0" />
                         </padding>
                         <children>
-                            <PasswordField fx:id="passWord3" prefHeight="38.0" prefWidth="267.0" promptText="    Old Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" styleClass="text-PasswordField">
+                            <PasswordField fx:id="passWord3" prefHeight="47.0" prefWidth="267.0" promptText="    Old Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" styleClass="text-PasswordField">
                                 <font>
                                     <Font name="System Italic" size="14.0" />
                                 </font>
@@ -94,7 +94,7 @@
                             <Insets top="-10.0" />
                         </VBox.margin>
                     </HBox>
-                    <HBox alignment="CENTER" layoutX="10.0" layoutY="268.0" prefHeight="19.0" prefWidth="332.0">
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="268.0" prefHeight="60.0" prefWidth="332.0">
                         <opaqueInsets>
                             <Insets top="10.0" />
                         </opaqueInsets>
@@ -102,17 +102,14 @@
                             <Insets top="10.0" />
                         </padding>
                   <children>
-                     <Label fx:id="showLabel3" alignment="CENTER" prefHeight="25.0" prefWidth="196.0" styleClass="label-Label" textAlignment="CENTER">
+                     <PasswordField fx:id="confirmpassWord2" onMouseClicked="#handlePasswordKeyReleased2" prefHeight="46.0" prefWidth="267.0" promptText="    Confirm Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" styleClass="text-PasswordField">
                         <font>
-                           <Font size="14.0" />
+                           <Font name="System Italic" size="14.0" />
                         </font>
-                        <HBox.margin>
-                           <Insets top="-5.0" />
-                        </HBox.margin>
-                     </Label>
+                     </PasswordField>
                   </children>
                     </HBox>
-                    <HBox alignment="CENTER" layoutX="10.0" layoutY="212.0" prefHeight="82.0" prefWidth="332.0">
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="212.0" prefHeight="33.0" prefWidth="332.0">
                         <opaqueInsets>
                             <Insets top="10.0" />
                         </opaqueInsets>
@@ -120,7 +117,25 @@
                             <Insets top="10.0" />
                         </padding>
                         <children>
-                            <Button fx:id="changePass2" mnemonicParsing="false" prefHeight="45.0" prefWidth="267.0" style="-fx-background-radius: 50;" styleClass="login1-button" stylesheets="@../name1.css" text="Change" textFill="WHITE">
+                     <Label fx:id="showLabel3" alignment="CENTER" prefHeight="9.0" prefWidth="196.0" styleClass="label-Label" textAlignment="CENTER">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets top="-5.0" />
+                        </HBox.margin>
+                     </Label>
+                        </children>
+                    </HBox>
+               <HBox alignment="CENTER" prefHeight="55.0" prefWidth="332.0">
+                  <opaqueInsets>
+                     <Insets top="10.0" />
+                  </opaqueInsets>
+                  <padding>
+                     <Insets top="10.0" />
+                  </padding>
+                  <children>
+                            <Button mnemonicParsing="false" onAction="#ChangeButtonclick2" prefHeight="5.0" prefWidth="267.0" style="-fx-background-radius: 50;" styleClass="login1-button" stylesheets="@../name1.css" text="Change" textFill="WHITE">
                                 <HBox.margin>
                                     <Insets top="-30.0" />
                                 </HBox.margin>
@@ -135,8 +150,8 @@
                                     </DropShadow>
                                 </effect>
                             </Button>
-                        </children>
-                    </HBox>
+                  </children>
+               </HBox>
                <HBox alignment="CENTER" prefHeight="26.0" prefWidth="332.0">
                   <opaqueInsets>
                      <Insets top="10.0" />
@@ -147,7 +162,7 @@
                   <children>
                      <CheckBox fx:id="showPassword3" mnemonicParsing="false" onAction="#showpassword3" styleClass="text1-text" text="Show Password" textFill="#b1b1b1">
                         <HBox.margin>
-                           <Insets right="-5.0" top="-45.0" />
+                           <Insets right="-5.0" top="-15.0" />
                         </HBox.margin>
                         <font>
                            <Font size="14.0" />
@@ -189,6 +204,9 @@
                                                 </color>
                                             </DropShadow>
                                         </effect>
+                              <HBox.margin>
+                                 <Insets top="-30.0" />
+                              </HBox.margin>
                                     </Button>
                                     <Button fx:id="loginBtn3" mnemonicParsing="false" onAction="#loginBtnClick2" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50;" styleClass="signup-button" stylesheets="@../name1.css" text="Login" textFill="WHITE">
                                         <font>
@@ -197,6 +215,9 @@
                                         <cursor>
                                             <Cursor fx:constant="HAND" />
                                         </cursor>
+                              <HBox.margin>
+                                 <Insets top="-30.0" />
+                              </HBox.margin>
                                     </Button>
                                 </children>
                             </HBox>
@@ -253,6 +274,9 @@
                               <image>
                                  <Image url="@../image/h.png" />
                               </image>
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
                            </ImageView>
                         </children>
                      </HBox>
