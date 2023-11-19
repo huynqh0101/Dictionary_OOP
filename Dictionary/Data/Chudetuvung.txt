@@ -884,21 +884,21 @@ Mother-in-law (noun): Mẹ chồng
 Mother-in-law: mẹ chồng/mẹ vợ
 Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)
 Parents (noun): Cha mẹ, phụ huynh
-Pregnant (adjective): Mang thai
-Relative (noun): Họ hàng
-Sibling (noun): Anh chị em
-Sister (noun): Chị em gái
-Sister-in-law: chị/em dâu
-Son (noun): Con trai
-Son-in-law: con rể
-Stepbrother: con trai của bố dượng/mẹ kế
-Stepdaughter: con gái riêng của chồng/vợ
-Stepfather: bố dượng
-Step-mom (noun): Mẹ kế, dì ghẻ
-Stepmother: mẹ kế
-Stepsister: con gái của bố dượng/mẹ kế
-Stepson: con trai riêng của chồng/vợ
-Uncle (noun): Người chú/cậu/bác
+Pregnant (adjective): Mang thai///
+Relative (noun): Họ hàng///
+Sibling (noun): Anh chị em///
+Sister (noun): Chị em gái///
+Sister-in-law: chị/em dâu///
+Son (noun): Con trai///
+Son-in-law: con rể///
+Stepbrother: con trai của bố dượng/mẹ kế///
+Stepdaughter: con gái riêng của chồng/vợ///
+Stepfather: bố dượng///
+Step-mom (noun): Mẹ kế, dì ghẻ///
+Stepmother: mẹ kế///
+Stepsister: con gái của bố dượng/mẹ kế///
+Stepson: con trai riêng của chồng/vợ///
+Uncle (noun): Người chú/cậu/bác///
 Wife (noun): Người vợ
 A circle of friend: một nhóm bạn
 Acquaintance (noun): Người quen

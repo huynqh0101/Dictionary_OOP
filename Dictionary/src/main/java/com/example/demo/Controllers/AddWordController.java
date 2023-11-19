@@ -2,24 +2,21 @@ package com.example.demo.Controllers;
 
 import com.example.demo.Alerts.Alerts;
 import com.example.demo.Dictionary.*;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyEvent;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AddWordController implements Initializable {
-    private static final String DATA_FILE_PATH = "data/dictionary.txt";
+    private LoginController loginController = new LoginController();
+    private static final String DATA_FILE_PATH = "data/dictionaries.txt";
+    private String dataChangedFile = loginController.getFileDataOfAccount();
     private Dictionary dictionary = new Dictionary();
     private Alerts alerts = new Alerts();
     private DictionaryManagement dictionaryManagement = new DictionaryManagement(dictionary);
-
 
     @FXML
     private Button addButton;
@@ -36,6 +33,7 @@ public class AddWordController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         dictionaryManagement.insertFromFile(dictionary, DATA_FILE_PATH);
+        dictionaryManagement.insertFromFileChange(dictionary, dataChangedFile);
         updateButtonState();
 
         wordTargetInput.setOnKeyTyped(event -> updateButtonState());
@@ -76,20 +74,20 @@ public class AddWordController implements Initializable {
 
             if (selection.get() == replaceButton) {
                 dictionary.get(indexOfWord).setWordExplain(wordExplain);
-                dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
+                dictionaryManagement.saveChangeToFile("Edit", dictionary.get(indexOfWord), dataChangedFile);
                 showSuccessAlert();
             }
             if (selection.get() == insertButton) {
                 String oldMeaning = dictionary.get(indexOfWord).getWordExplain();
                 dictionary.get(indexOfWord).setWordExplain(oldMeaning + "\n= " + wordExplain);
-                dictionaryManagement.exportToFile(dictionary, DATA_FILE_PATH);
+                dictionaryManagement.saveChangeToFile("Edit", dictionary.get(indexOfWord), dataChangedFile);
                 showSuccessAlert();
             }
             if (selection.get() == ButtonType.CANCEL)
                 alerts.showAlertInfo("Information", "Thay đổi không được công nhận.");
         } else {
             dictionary.add(word);
-            dictionaryManagement.addWord(word, DATA_FILE_PATH);
+            dictionaryManagement.saveChangeToFile("Add", word, dataChangedFile);
             showSuccessAlert();
         }
 
@@ -102,5 +100,4 @@ public class AddWordController implements Initializable {
         successAlert.setVisible(true);
         dictionaryManagement.setTimeout(() -> successAlert.setVisible(false), 1500);
     }
-
 }
