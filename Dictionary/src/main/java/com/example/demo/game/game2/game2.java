@@ -1,11 +1,27 @@
 package com.example.demo.game.game2;
 
+import javafx.scene.Scene;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
 public class game2 {
+    // Hàm kiểm tra xem 2 từ có ký tự gần giống nhau hay không
+    protected boolean areSimilar(String s1, String s2) {
+        int differenceCount = 0;
+        if (s1.length() != s2.length()) return false;
+        for (int i = 0; i < s1.length(); i++) {
+            if (s1.charAt(i) != s2.charAt(i)) {
+                differenceCount++;
+                if (differenceCount > 1) {
+                    return false;
+                }
+            }
+        }
+        return differenceCount == 1;
+    }
     class UnionFind {
         private Map<String, String> parent;
 
@@ -51,20 +67,7 @@ public class game2 {
         return wordList;
     }
 
-    // Hàm kiểm tra xem 2 từ có ký tự gần giống nhau hay không
-    private boolean areSimilar(String s1, String s2) {
-        int differenceCount = 0;
-        if (s1.length() != s2.length()) return false;
-        for (int i = 0; i < s1.length(); i++) {
-            if (s1.charAt(i) != s2.charAt(i)) {
-                differenceCount++;
-                if (differenceCount > 1) {
-                    return false;
-                }
-            }
-        }
-        return differenceCount == 1;
-    }
+
 
     private boolean eq(String s1,String s2){
         return s1.equals(s2);
@@ -131,9 +134,12 @@ public class game2 {
 
     public static void main(String[] args) {
         game2 game = new game2();
-        String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.3.txt";
+        String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.2.txt";
         List<String> wordList = game.readFile(path);
-        game.UnionFind(wordList);
-        game.printResult();
+        //game.UnionFind(wordList);
+        //game.printResult();
+        String s ="at";
+        System.out.println(wordList.contains(s));
+
     }
 }

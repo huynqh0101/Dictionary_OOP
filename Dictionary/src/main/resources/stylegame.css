@@ -28,3 +28,7 @@
     -fx-font-size: 16px;
     -fx-font-weight: 300;
 }
+
+.middle {
+    -fx-alignment: center;
+}
