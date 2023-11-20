@@ -18,22 +18,18 @@ import javafx.stage.Stage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.ResourceBundle;
 
-public class Game1Controller  {
+public class Game1Controller {
 
     private AnchorPane game1;
 
-    private AnchorPane container1;
     public Game1Controller() {
-
     }
 
-    public void show(MouseEvent mouseEvent,String path){
+    public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
             Parent dictionariesGui = loader.load();
@@ -46,30 +42,18 @@ public class Game1Controller  {
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
             currentStage.setScene(scene);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void BacktoChoosegame(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/Choosegame.fxml");
-    }
-
-
-    public void Howtoplaygame1(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/game1/Howtoplaygame1.fxml");
-    }
-
-
-    public void Settinggame1(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/game1/Settinggame1.fxml");
+        show(mouseEvent, "/game/Choosegame.fxml");
     }
 
     public void Backtogame1(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/game1/Game1.fxml");
+        show(mouseEvent, "/game/game1/Game1.fxml");
     }
-
 
     @FXML
     private Label questiongame;
@@ -105,22 +89,17 @@ public class Game1Controller  {
         c = (CheckBox) game1.lookup("#c");
         d = (CheckBox) game1.lookup("#d");
         score = (Label) game1.lookup("#score");
-        //result_answer = (Label) game1.lookup("#result_answer");
-
         submitanswer = (Button) game1.lookup("#submitanswer");
         back_question = (Button) game1.lookup("#back_question");
         next_question = (Button) game1.lookup("#next_question");
-
     }
-
 
     public void Playgame1(MouseEvent mouseEvent) throws Exception {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
             Parent dictionariesGui = loader.load();
             DictionaryController dictionaryController = loader.getController();
-
-            // Load Game1.fxml và set nó vào container1 trong DictionariesGui
+            // Load Game1.fxml
             FXMLLoader game1Loader = new FXMLLoader(getClass().getResource("/game/game1/Playgame1.fxml"));
             game1 = game1Loader.load();
             dictionaryController.setNode(game1);
@@ -131,17 +110,14 @@ public class Game1Controller  {
             innitialize();
             readFileQuestion();
             reset();
-            //window.show();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    // đọc file game
+    // read file game
     public void readFileQuestion() {
         String path = "src\\main\\java\\com\\example\\demo\\game\\game1\\game1.txt";
-        //String path = "com.example.demo.game1.txt";
         try (BufferedReader bf = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = bf.readLine()) != null) {
@@ -156,9 +132,8 @@ public class Game1Controller  {
                 newPlayer();
             }
             Collections.shuffle(questions);
-            //System.out.println("đọc file thành công");
         } catch (IOException e) {
-            System.out.println("Lỗi đọc file " + path);
+            e.printStackTrace();
         }
     }
 
@@ -186,7 +161,6 @@ public class Game1Controller  {
             player.get(count_question - 1).setChooseAnswer("NO");
             submitanswer.setDisable(true);
         }
-        //System.out.println(player.get(count_question).getChooseAnswer());
     }
 
     public void ChooseanswerC(MouseEvent mouseEvent) {
@@ -203,11 +177,6 @@ public class Game1Controller  {
     }
 
     public void ChooseanswerD(MouseEvent mouseEvent) {
-        //d.setDisable(true);
-        // mediumspringgreen
-        //d.setStyle("-fx-background-color: lightblue;");
-        //d.setStyle("-fx-background-color: mediumspringgreen;");
-        //d.setStyle("-fx-background-color: tomato;");
         submitanswer.setDisable(true);
         if (d.isSelected()) {
             player.get(count_question - 1).setChooseAnswer("D");
@@ -251,10 +220,10 @@ public class Game1Controller  {
     }
 
     public void cleanAnswer() {
-        setColorAnswer("A", "white");
-        setColorAnswer("B", "white");
-        setColorAnswer("C", "white");
-        setColorAnswer("D", "white");
+        setColorAnswer("A", "transparent");
+        setColorAnswer("B", "transparent");
+        setColorAnswer("C", "transparent");
+        setColorAnswer("D", "transparent");
     }
 
     @FXML
@@ -267,7 +236,6 @@ public class Game1Controller  {
             c.setText("C. " + q.getC());
             d.setText("D. " + q.getD());
             score.setText("Score: " + Score);
-
             if (i == 1) {
                 back_question.setDisable(true);
             } else back_question.setDisable(false);
@@ -276,7 +244,6 @@ public class Game1Controller  {
                 next_question.setDisable(true);
             } else next_question.setDisable(false);
             Player player1 = player.get(i - 1);
-
 
             if (player1.getChooseAnswer().equals("NO")) {
                 submitanswer.setDisable(true);
@@ -300,13 +267,10 @@ public class Game1Controller  {
                 submitanswer.setDisable(true);
                 setColorAnswer(player1.getChooseAnswer(), "tomato");
                 setColorAnswer(q.getCorrect_answer(), "mediumspringgreen");
-
             } else {
                 setDisableCheckBox(false, false, false, false);
                 cleanAnswer();
-                //setColorAnswer("A","white");
             }
-
         } catch (
                 Exception e) {
             e.printStackTrace();
@@ -335,7 +299,7 @@ public class Game1Controller  {
         }
     }
 
-    public void reset(){
+    public void reset() {
         ShowQuestion(1);
         submitanswer.setDisable(true);
         player = new ArrayList<>();
@@ -345,6 +309,7 @@ public class Game1Controller  {
         setSelectCheckBox(false, false, false, false);
         cleanAnswer();
     }
+
     @FXML
     public void Restart(MouseEvent mouseEvent) {
         Collections.shuffle(questions);
@@ -363,7 +328,6 @@ public class Game1Controller  {
         }
     }
 
-
     public void Submitanswer(MouseEvent mouseEvent) {
         String Correct_answer = questions.get(count_question - 1).getCorrect_answer();
         String Player_answer = player.get(count_question - 1).getChooseAnswer();
@@ -373,6 +337,4 @@ public class Game1Controller  {
         player.get(count_question - 1).setCheckSubmit(true);
         ShowQuestion(count_question);
     }
-
-
 }

@@ -12,9 +12,6 @@ import javafx.stage.Stage;
 import java.util.List;
 
 public class Game2Controller extends game2 {
-    private Parent game2;
-    private Stage window;
-
     public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));

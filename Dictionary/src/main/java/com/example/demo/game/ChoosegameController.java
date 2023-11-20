@@ -29,20 +29,19 @@ public class ChoosegameController {
     }
 
     public void Choosegame1(MouseEvent mouseEvent) throws Exception {
-        show(mouseEvent,"/game/game1/Game1.fxml");
+        show(mouseEvent, "/game/game1/Game1.fxml");
     }
 
     public void Choosegame2(MouseEvent mouseEvent) {
-        show(mouseEvent,"/game/game2/Game2.fxml");
+        show(mouseEvent, "/game/game2/Game2.fxml");
     }
 
-    public void show(MouseEvent mouseEvent,String path){
+    public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
             Parent dictionariesGui = loader.load();
             DictionaryController dictionaryController = loader.getController();
-
-            // Load Game1.fxml và set nó vào container1 trong DictionariesGui
+            // Load Game1.fxml
             FXMLLoader game1Loader = new FXMLLoader(getClass().getResource(path));
             AnchorPane game1Pane = game1Loader.load();
             dictionaryController.setNode(game1Pane);
@@ -50,10 +49,8 @@ public class ChoosegameController {
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
             currentStage.setScene(scene);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
