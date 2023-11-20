@@ -155,7 +155,7 @@ public class MediumController extends game2 implements Initializable {
                 if (check.equals(a.getAnswer4())) {
                     return "Use the same letters from the above word row, only altering one";
                 }
-                if (areSimilar(check, playerAnswer3.get(1))) {
+                if (areSimilar(check, playerAnswer3.get(1))&&areSimilar(check,a.getAnswer4())) {
                     setline(check, line3a, line3b, line3c);
                     playerAnswer3.add(check);
                     checkLine3 = true;

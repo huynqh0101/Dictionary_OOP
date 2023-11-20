@@ -153,7 +153,7 @@ public class EasyController extends game2 implements Initializable {
                 if (check.equals(a.getAnswer4())) {
                     return "Use the same letters from the above word row, only altering one";
                 }
-                if (areSimilar(check, playerAnswer2.get(1))) {
+                if (areSimilar(check, playerAnswer2.get(1))&&areSimilar(check,a.getAnswer4())) {
                     setline(check, eline3a, eline3b);
                     playerAnswer2.add(check);
                     checkLine3 = true;

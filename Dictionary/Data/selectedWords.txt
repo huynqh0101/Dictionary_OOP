@@ -1,27 +1,16 @@
-<<<<<<< HEAD
 20231120
-Light blue: Màu xanh da trời nhạt
-Light brown: Màu nâu nhạt
-Light green: Màu xanh lá cây nhạt
-Light (adjective): Sáng (màu)
-=======
-20231119
->>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
-Orange (noun): Màu cam
-Paint (noun): Sơn, màu vẽ
-Pink (noun): Màu hồng
-Purple (noun): Màu tím
-Red (noun): Màu đỏ
-Shade (noun): Sắc độ
-White (noun): Màu trắng
-Yellow (noun): Màu vàng
-A fringe: Tóc cắt ngang trán
-A short-haired person: Người có mái tóc ngắn
-Angular: Mặt xương xương
-<<<<<<< HEAD
-=======
-Attractive (adjective): Quyến rũ, hấp dẫn
-Baby: Em bé, trẻ con
-Bald: Hói
-Beard: Râu
->>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
+Travel – /ˈtræv: Du lịch
+Watching + TV/movie/wɑʧɪŋ/ + ˈtiˈvi/ˈmuvi (verb): Xem TV/phim
+Afford/əˈfɔrd/ (verb): Có khả năng chi trả
+Affordable /əˈfɔrdəbəl/(adjective): Giá cả hợp lí, phải chăng
+Aisle /aɪl/: lối đi giữa các dãy hàng
+Bargain/ˈbɑrgən/ (verb): Trả giá, mặc cả
+Basket /ˈbæskɪt/: cái rổ, cái giỏ, cái thúng
+Basket/ˈbæskət/ (noun): Giỏ hàng
+Bookstore /ˈbʊkˌstɔr/(noun): Hiệu sách
+Cart/kɑrt/ (noun): Xe đẩy trong siêu thị
+Cash /kæʃ/: tiền mặt
+Cashier /kæˈʃɪr/: nhân viên thu ngân
+Cashier/kæˈʃɪr/ (noun): Nhân viên thu ngân
+Cheap/ʧip/ (adjective): Rẻ
+Clerk/klɜrk/ (noun): Nhân viên bán hàng
