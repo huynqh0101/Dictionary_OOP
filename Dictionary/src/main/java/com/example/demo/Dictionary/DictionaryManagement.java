@@ -83,7 +83,7 @@ public class DictionaryManagement {
         }
     }
 
-    public void deleteWord(Dictionary dictionary, int index, String path) {
+    public void deleteWord(Dictionary dictionary, int index) {
         try {
             dictionary.remove(index);
         } catch (NullPointerException e) {
@@ -122,6 +122,83 @@ public class DictionaryManagement {
             }
         }
         return false;
+    }
+
+    public void saveChangeToFile(String change, Word word, String path) {
+        try (FileWriter fileWriter = new FileWriter(path, true);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            if (change.equals("Delete")) {
+                bufferedWriter.write("|Delete: " + word.getWordTarget() + "\n__________");
+                bufferedWriter.newLine();
+            } else if (change.equals("Edit")) {
+                bufferedWriter.write("|Edit: " + word.getWordTarget() + "\n" + word.getWordExplain());
+                bufferedWriter.newLine();
+            } else if (change.equals("Add")) {
+                bufferedWriter.write("|Add: " + word.getWordTarget() + "\n" + word.getWordExplain());
+                bufferedWriter.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("IOException.");
+        } catch (NullPointerException e) {
+            System.out.println("Null Exception.");
+        }
+    }
+
+    public void insertFromFileChange(Dictionary dictionary, String fileName) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))) {
+            String line = bufferedReader.readLine();
+            if(line == null) return;
+            String querry = line.split(":", 2)[0].trim();
+            String wordTarget = line.split(":", 2)[1].trim();
+            String wordExplain;
+            String temp;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (querry.contains("|Delete")) {
+                    int index = dictionarySearcher(dictionary, wordTarget);
+                    if (index != -1) {
+                        deleteWord(dictionary, index);
+                    }
+                    line = bufferedReader.readLine();
+                    if (line != null){
+                        querry = line.split(":", 2)[0].trim();
+                        wordTarget = line.split(":", 2)[1].trim();
+                    }
+
+                }
+                else if (querry.contains("|Edit")) {
+                    temp = wordTarget;
+                    wordExplain = "";
+                    do {
+                        if (!line.startsWith("|")) wordExplain += line + "\n";
+                        else {
+                            querry = line.split(":", 2)[0].trim();
+                            wordTarget = line.split(":", 2)[1].trim();
+                            break;
+                        }
+                    } while ((line = bufferedReader.readLine()) != null);
+                    int index = dictionarySearcher(dictionary, temp);
+                    if (index != -1) {
+                        updateWord(dictionary, index, wordExplain);
+                    }
+                }
+                else if (querry.contains("|Add")) {
+                    temp = wordTarget;
+                    wordExplain = "";
+                    do {
+                        if (!line.startsWith("|")) wordExplain += line + "\n";
+                        else {
+                            querry = line.split(":", 2)[0].trim();
+                            wordTarget = line.split(":", 2)[1].trim();
+                            break;
+                        }
+                    } while ((line = bufferedReader.readLine()) != null);
+                    Word word = new Word(temp, wordExplain);
+                    dictionary.add(word);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setTimeout(Runnable runnable, int delay) {

@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 20231120
 Light blue: Màu xanh da trời nhạt
 Light brown: Màu nâu nhạt
 Light green: Màu xanh lá cây nhạt
 Light (adjective): Sáng (màu)
+=======
+20231119
+>>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
 Orange (noun): Màu cam
 Paint (noun): Sơn, màu vẽ
 Pink (noun): Màu hồng
@@ -14,3 +18,10 @@ Yellow (noun): Màu vàng
 A fringe: Tóc cắt ngang trán
 A short-haired person: Người có mái tóc ngắn
 Angular: Mặt xương xương
+<<<<<<< HEAD
+=======
+Attractive (adjective): Quyến rũ, hấp dẫn
+Baby: Em bé, trẻ con
+Bald: Hói
+Beard: Râu
+>>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34

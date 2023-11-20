@@ -1,9 +1,7 @@
-|Bag
-Cặp sách
 |Bed
 Giường
 |Bedroom
-Phòng ngủ
+Phòng ngủuuuuu
 |Book
 Sách
 |Cake
@@ -45,3 +43,9 @@ Rửa
 Nước
 |huy
 huy1
+|Fuck
+you
+|Library
+thư viện
+|jfdhfdkjg
+fdjdfgdfgjkd
