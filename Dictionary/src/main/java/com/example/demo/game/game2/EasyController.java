@@ -22,28 +22,28 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class EasyController extends game2 implements Initializable {
-    private static List<String> wordList;
-    private static List<Answer> answers;
+    private static List<String> wordList2;
+    private static List<Answer> answers2;
     private static Answer a;
-    private static List<String> playerAnswer;
+    private static List<String> playerAnswer2;
 
     private static final int height_answer = 4;
     private static final int weight_answer = 2;
 
+
     @FXML
-    private Label line1a, line1b;
+    private Label eline1a, eline1b;
     @FXML
-    private Label line2a, line2b;
+    private Label eline2a, eline2b;
     @FXML
-    private Label line3a, line3b;
+    private Label eline3a, eline3b;
     @FXML
-    private Label line4a, line4b;
+    private Label eline4a, eline4b;
     @FXML
     private Label notification;
 
     private boolean checkLine2, checkLine3;
     private boolean win;
-
 
     public void setline(String s, Label l1, Label l2) {
         if (s.length() == 2) {
@@ -58,11 +58,14 @@ public class EasyController extends game2 implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            playerAnswer = new ArrayList<>();
+            if (wordList2!=null) wordList2.clear();
+            if (answers2!=null) answers2.clear();
+            if (a!=null) a=null;
+            playerAnswer2 = new ArrayList<>();
             String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.2.txt";
-            wordList = readFile(path);
-            answers = UnionFind(wordList);
-            Collections.shuffle(answers);
+            wordList2 = readFile(path);
+            answers2 = UnionFind(wordList2);
+            Collections.shuffle(answers2);
             begin();
         } catch (Exception e) {
             e.printStackTrace();
@@ -70,12 +73,12 @@ public class EasyController extends game2 implements Initializable {
     }
 
     public void begin() {
-        a = answers.remove(0);
-        playerAnswer.add(a.getAnswer1());
-        setline(a.getAnswer1(), line1a, line1b);
-        setline("", line2a, line2b);
-        setline("", line3a, line3b);
-        setline(a.getAnswer4(), line4a, line4b);
+        a = answers2.remove(0);
+        playerAnswer2.add(a.getAnswer1());
+        setline(a.getAnswer1(), eline1a, eline1b);
+        setline("", eline2a, eline2b);
+        setline("", eline3a, eline3b);
+        setline(a.getAnswer4(), eline4a, eline4b);
         textgame2.setText("");
         notification.setText("");
         checkLine2 = false;
@@ -104,6 +107,17 @@ public class EasyController extends game2 implements Initializable {
 
     public void Backtogame2(MouseEvent mouseEvent) {
         show(mouseEvent, "/game/game2/Game2.fxml");
+        textgame2.setText("");
+        notification.setText("");
+        playerAnswer2 = new ArrayList<>();
+        wordList2.clear();
+        answers2.clear();
+        a = null;
+        checkLine2 = false;
+        checkLine3 = false;
+        win = false;
+        hintgame = 1;
+        System.gc();
     }
 
     @FXML
@@ -114,7 +128,6 @@ public class EasyController extends game2 implements Initializable {
 
             String check = textgame2.getText();
             if (check.length() == weight_answer) {
-                System.out.println(wordList.contains(check));
                 if (!win) notification.setText(result(check));
                 textgame2.setText("");
             } else {
@@ -124,16 +137,15 @@ public class EasyController extends game2 implements Initializable {
         }
     }
 
-
     public String result(String check) {
-        if (wordList.contains(check)) {
+        if (wordList2.contains(check)) {
             if (!checkLine2) {
-                if (areSimilar(check, playerAnswer.get(0))) {
-                    setline(check, line2a, line2b);
-                    playerAnswer.add(check);
+                if (areSimilar(check, playerAnswer2.get(0))) {
+                    setline(check, eline2a, eline2b);
+                    playerAnswer2.add(check);
                     checkLine2 = true;
                     return "";
-                } else if (check.equals(playerAnswer.get(0))) {
+                } else if (check.equals(playerAnswer2.get(0))) {
                     return "Please use a different word from the one above";
                 } else return "Use the same letters from the above word row, only altering one";
             }
@@ -141,15 +153,15 @@ public class EasyController extends game2 implements Initializable {
                 if (check.equals(a.getAnswer4())) {
                     return "Use the same letters from the above word row, only altering one";
                 }
-                if (areSimilar(check, playerAnswer.get(1))) {
-                    setline(check, line3a, line3b);
-                    playerAnswer.add(check);
+                if (areSimilar(check, playerAnswer2.get(1))) {
+                    setline(check, eline3a, eline3b);
+                    playerAnswer2.add(check);
                     checkLine3 = true;
                     if (checkLine2 && checkLine3) {
                         win = true;
-                        return "Conglatulation you win";
+                        return "Congratulation you win";
                     }
-                } else if (check.equals(playerAnswer.get(1))) {
+                } else if (check.equals(playerAnswer2.get(1))) {
                     return "Please use a different word from the one above";
                 }
                 return "Use the same letters from the above word row, only altering one";
@@ -160,14 +172,14 @@ public class EasyController extends game2 implements Initializable {
 
     public void Backspace(MouseEvent mouseEvent) {
         if (!win) {
-            if (playerAnswer.size() == 3) {
-                setline("", line3a, line3b);
-                playerAnswer.remove(playerAnswer.size() - 1);
+            if (playerAnswer2.size() == 3) {
+                setline("", eline3a, eline3b);
+                playerAnswer2.remove(playerAnswer2.size() - 1);
                 checkLine3 = false;
                 hintgame = 2;
-            } else if (playerAnswer.size() == 2) {
-                setline("", line2a, line2b);
-                playerAnswer.remove(playerAnswer.size() - 1);
+            } else if (playerAnswer2.size() == 2) {
+                setline("", eline2a, eline2b);
+                playerAnswer2.remove(playerAnswer2.size() - 1);
                 checkLine2 = false;
                 hintgame = 1;
             }
@@ -180,29 +192,29 @@ public class EasyController extends game2 implements Initializable {
     @FXML
     public void Hint(MouseEvent mouseEvent) {
         if (!win) {
-            if (playerAnswer.get(playerAnswer.size() - 1).equals(a.getAnswer2())
+            if (playerAnswer2.get(playerAnswer2.size() - 1).equals(a.getAnswer2())
                     && hintgame == 1) {
                 hintgame = 2;
                 checkLine2 = true;
             }
             if (hintgame == 2) {
-                if (playerAnswer.size() == 3) {
-                    playerAnswer.remove(playerAnswer.size() - 1);
+                if (playerAnswer2.size() == 3) {
+                    playerAnswer2.remove(playerAnswer2.size() - 1);
                 }
-                playerAnswer.add(a.getAnswer3());
-                setline(a.getAnswer3(), line3a, line3b);
-                notification.setText("Conglatulation you win");
+                playerAnswer2.add(a.getAnswer3());
+                setline(a.getAnswer3(), eline3a, eline3b);
+                notification.setText("Congratulation you win");
                 win = true;
                 checkLine3 = true;
                 hintgame++;
             }
             if (hintgame == 1) {
-                if (playerAnswer.size() == 2) {
-                    playerAnswer.remove(playerAnswer.size() - 1);
+                if (playerAnswer2.size() == 2) {
+                    playerAnswer2.remove(playerAnswer2.size() - 1);
                 }
-                playerAnswer.add(a.getAnswer2());
-                setline(a.getAnswer2(), line2a, line2b);
-                setline("", line3a, line3b);
+                playerAnswer2.add(a.getAnswer2());
+                setline(a.getAnswer2(), eline2a, eline2b);
+                setline("", eline3a, eline3b);
                 hintgame++;
                 checkLine2 = true;
             }
@@ -212,6 +224,7 @@ public class EasyController extends game2 implements Initializable {
     public void Next(MouseEvent mouseEvent) {
         try {
             begin();
+            playerAnswer2.clear();
         } catch (Exception e) {
             e.printStackTrace();
         }

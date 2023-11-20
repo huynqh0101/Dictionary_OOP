@@ -9,60 +9,60 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="527.0" prefWidth="789.0" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game2.EasyController">
-   <children>
-      <HBox layoutY="5.0" prefHeight="33.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Button fx:id="backtogame2" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back" />
-            <Button fx:id="hint" mnemonicParsing="false" onMouseClicked="#Hint" text="Hint" />
-         </children>
-      </HBox>
-      <VBox layoutX="315.0" layoutY="45.0" prefHeight="335.0" prefWidth="159.0" spacing="24.0" stylesheets="@../../stylegame.css">
-         <children>
-            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
-               <children>
-                  <Label fx:id="line1a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="line1b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
-               </children>
-            </HBox>
-            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
-               <children>
-                  <Label fx:id="line2a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="line2b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
-               </children>
-            </HBox>
-            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
-               <children>
-                  <Label fx:id="line3a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="line3b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
-               </children>
-            </HBox>
-            <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
-               <children>
-                  <Label fx:id="line4a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
-                     <font>
-                        <Font size="36.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="line4b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-      <TextField fx:id="textgame2" layoutX="319.0" layoutY="437.0" onKeyPressed="#check" />
-      <Label fx:id="notification" layoutX="175.0" layoutY="380.0" prefHeight="47.0" prefWidth="439.0" styleClass="middle" stylesheets="@../../stylegame.css" />
-      <Button fx:id="backspace" layoutX="381.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#Backspace" text="&lt;" />
-      <Button fx:id="nextquestion" layoutX="524.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#Next" text="Next" />
-   </children>
+    <children>
+        <HBox layoutY="5.0" prefHeight="33.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Button fx:id="backtogame2" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back" />
+                <Button fx:id="hint" mnemonicParsing="false" onMouseClicked="#Hint" text="Hint" />
+            </children>
+        </HBox>
+        <VBox layoutX="315.0" layoutY="45.0" prefHeight="335.0" prefWidth="159.0" spacing="24.0" stylesheets="@../../stylegame.css">
+            <children>
+                <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+                    <children>
+                        <Label fx:id="eline1a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="eline1b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+                    <children>
+                        <Label fx:id="eline2a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="eline2b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+                    <children>
+                        <Label fx:id="eline3a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="eline3b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
+                    <children>
+                        <Label fx:id="eline4a" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="eline4b" prefHeight="70.0" prefWidth="70.0" styleClass="label-with-border_red" stylesheets="@../../stylegame.css" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <TextField fx:id="textgame2" layoutX="319.0" layoutY="437.0" onKeyPressed="#check" />
+        <Label fx:id="notification" layoutX="175.0" layoutY="380.0" prefHeight="47.0" prefWidth="439.0" styleClass="middle" stylesheets="@../../stylegame.css" />
+        <Button fx:id="backspace" layoutX="381.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#Backspace" text="&lt;" />
+        <Button fx:id="nextquestion" layoutX="524.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#Next" text="Next" />
+    </children>
 </AnchorPane>

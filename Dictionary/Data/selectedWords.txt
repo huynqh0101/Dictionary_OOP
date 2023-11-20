@@ -1,16 +1,16 @@
-20231119
-Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay
-laptop: máy tính xách tay
-Link /lɪŋk/(noun): Đường dẫn
-Log in /lɔg ɪn/(phrasal verb): Đăng nhập
-monitor: phần màn hình
-Mouse /maʊs/(noun): Chuột máy tính
-mouse: chuột
-Password/ˈpæˌswɜrd/ (noun): Mật khẩu
-PC (viết tắt của personal computer): máy tính cá nhân
-power cable: cáp nguồn
-Printer /ˈprɪntər/(noun): Máy in
-printer: máy in
-Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)
-screen: màn hình
-Sign up/saɪn ʌp/ (phrasal verb): Đăng kí
+20231120
+Light blue: Màu xanh da trời nhạt
+Light brown: Màu nâu nhạt
+Light green: Màu xanh lá cây nhạt
+Light (adjective): Sáng (màu)
+Orange (noun): Màu cam
+Paint (noun): Sơn, màu vẽ
+Pink (noun): Màu hồng
+Purple (noun): Màu tím
+Red (noun): Màu đỏ
+Shade (noun): Sắc độ
+White (noun): Màu trắng
+Yellow (noun): Màu vàng
+A fringe: Tóc cắt ngang trán
+A short-haired person: Người có mái tóc ngắn
+Angular: Mặt xương xương

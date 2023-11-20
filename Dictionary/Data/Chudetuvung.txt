@@ -440,21 +440,21 @@ Dark green: Màu xanh lá cây đậm
 Gold (noun): Màu vàng óng
 Green (noun): Màu xanh lá
 Grey (noun): Màu xám
-Light blue: Màu xanh da trời nhạt
-Light brown: Màu nâu nhạt
-Light green: Màu xanh lá cây nhạt
-Light (adjective): Sáng (màu)
-Orange (noun): Màu cam
-Paint (noun): Sơn, màu vẽ
-Pink (noun): Màu hồng
-Purple (noun): Màu tím
-Red (noun): Màu đỏ
-Shade (noun): Sắc độ
-White (noun): Màu trắng
-Yellow (noun): Màu vàng
-A fringe: Tóc cắt ngang trán
-A short-haired person: Người có mái tóc ngắn
-Angular: Mặt xương xương
+Light blue: Màu xanh da trời nhạt///
+Light brown: Màu nâu nhạt///
+Light green: Màu xanh lá cây nhạt///
+Light (adjective): Sáng (màu)///
+Orange (noun): Màu cam///
+Paint (noun): Sơn, màu vẽ///
+Pink (noun): Màu hồng///
+Purple (noun): Màu tím///
+Red (noun): Màu đỏ///
+Shade (noun): Sắc độ///
+White (noun): Màu trắng///
+Yellow (noun): Màu vàng///
+A fringe: Tóc cắt ngang trán///
+A short-haired person: Người có mái tóc ngắn///
+Angular: Mặt xương xương///
 Attractive (adjective): Quyến rũ, hấp dẫn
 Baby: Em bé, trẻ con
 Bald: Hói

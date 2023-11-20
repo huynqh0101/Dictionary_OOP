@@ -10,15 +10,18 @@
     <children>
         <VBox layoutX="314.0" layoutY="155.0" prefHeight="217.0" prefWidth="153.0" spacing="30.0">
             <children>
-                <Button fx:id="easy" mnemonicParsing="false" onMouseClicked="#Easy" prefHeight="54.0" prefWidth="151.0" text="Easy" />
-                <Button fx:id="medium" mnemonicParsing="false" onMouseClicked="#Medium" prefHeight="54.0" prefWidth="151.0" text="Medium" />
-                <Button fx:id="hard" mnemonicParsing="false" onMouseClicked="#Hard" prefHeight="48.0" prefWidth="151.0" text="Hard" />
+                <Button fx:id="easy" mnemonicParsing="false" onMouseClicked="#Easy" prefHeight="54.0" prefWidth="151.0"
+                        text="Easy"/>
+                <Button fx:id="medium" mnemonicParsing="false" onMouseClicked="#Medium" prefHeight="54.0" prefWidth="151.0"
+                        text="Medium"/>
+                <Button fx:id="hard" mnemonicParsing="false" onMouseClicked="#Hard" prefHeight="48.0" prefWidth="151.0"
+                        text="Hard"/>
             </children>
         </VBox>
         <HBox layoutY="5.0" prefHeight="33.0" prefWidth="200.0" spacing="10.0">
             <children>
-                <Button fx:id="Backtochoosegame" mnemonicParsing="false" onMouseClicked="#BacktoChoosegame" text="Back" />
-                <Button fx:id="howtoplaygame2" mnemonicParsing="false" onMouseClicked="#Howtoplaygame2" text="?" />
+                <Button fx:id="Backtochoosegame" mnemonicParsing="false" onMouseClicked="#BacktoChoosegame" text="Back"/>
+                <Button fx:id="howtoplaygame2" mnemonicParsing="false" onMouseClicked="#Howtoplaygame2" text="?"/>
             </children>
         </HBox>
     </children>

@@ -6,17 +6,25 @@
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="527.0" prefWidth="789.0" styleClass="background-howtoplay" stylesheets="@../../stylegame.css"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game2.Howtoplaygame2">
-   <children>
-      <Label layoutX="262.0" layoutY="61.0" prefHeight="61.0" prefWidth="265.0" styleClass="label-with-border_black" stylesheets="@../../stylegame.css" text="How to play" />
-      <VBox layoutX="147.0" layoutY="146.0" prefHeight="248.0" prefWidth="495.0" spacing="16.0">
-         <children>
-            <Label prefHeight="57.0" prefWidth="498.0" styleClass="text-howtoplay" stylesheets="@../../stylegame.css" text="Objective: Transform the starting word into the ending word by changing one letter at a time" wrapText="true" />
-            <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css" text="Rules: each intermediate word must differ from the previous word by only one letter." wrapText="true" />
-            <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css" text="Hints: use hints if needed to overcome challenges." wrapText="true" />
-            <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css" text="Enjoy: Have fun while expanding your vocabulary and word skills" wrapText="true" />
-         </children>
-      </VBox>
-      <Button fx:id="backtogame2" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back" />
-   </children>
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.game.game2.Howtoplaygame2">
+    <children>
+        <Label layoutX="262.0" layoutY="61.0" prefHeight="61.0" prefWidth="265.0" styleClass="label-with-border_black"
+               stylesheets="@../../stylegame.css" text="How to play"/>
+        <VBox layoutX="147.0" layoutY="146.0" prefHeight="248.0" prefWidth="495.0" spacing="16.0">
+            <children>
+                <Label prefHeight="57.0" prefWidth="498.0" styleClass="text-howtoplay" stylesheets="@../../stylegame.css"
+                       text="Objective: Transform the starting word into the ending word by changing one letter at a time"
+                       wrapText="true"/>
+                <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css"
+                       text="Rules: each intermediate word must differ from the previous word by only one letter."
+                       wrapText="true"/>
+                <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css"
+                       text="Hints: use hints if needed to overcome challenges." wrapText="true"/>
+                <Label styleClass="text-howtoplay" stylesheets="@../../stylegame.css"
+                       text="Enjoy: Have fun while expanding your vocabulary and word skills" wrapText="true"/>
+            </children>
+        </VBox>
+        <Button fx:id="backtogame2" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back"/>
+    </children>
 </AnchorPane>

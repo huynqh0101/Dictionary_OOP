@@ -22,14 +22,13 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class MediumController extends game2 implements Initializable {
-    private static List<String> wordList;
-    private static List<Answer> answers;
+    private static List<String> wordList3;
+    private static List<Answer> answers3;
     private static Answer a;
-    private static List<String> playerAnswer;
+    private static List<String> playerAnswer3;
 
     private static final int height_answer = 4;
     private static final int weight_answer = 3;
-
 
     @FXML
     private Label line1a, line1b, line1c;
@@ -44,7 +43,6 @@ public class MediumController extends game2 implements Initializable {
 
     private boolean checkLine2, checkLine3;
     private boolean win;
-
 
     public void setline(String s, Label l1, Label l2, Label l3) {
         if (s.length() == 3) {
@@ -61,11 +59,14 @@ public class MediumController extends game2 implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            playerAnswer = new ArrayList<>();
+            if (wordList3 != null) wordList3.clear();
+            if (answers3 != null) answers3.clear();
+            if (a != null) a = null;
+            playerAnswer3 = new ArrayList<>();
             String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.3.txt";
-            wordList = readFile(path);
-            answers = UnionFind(wordList);
-            Collections.shuffle(answers);
+            wordList3 = readFile(path);
+            answers3 = UnionFind(wordList3);
+            Collections.shuffle(answers3);
             begin();
         } catch (Exception e) {
             e.printStackTrace();
@@ -73,8 +74,8 @@ public class MediumController extends game2 implements Initializable {
     }
 
     public void begin() {
-        a = answers.remove(0);
-        playerAnswer.add(a.getAnswer1());
+        a = answers3.remove(0);
+        playerAnswer3.add(a.getAnswer1());
         setline(a.getAnswer1(), line1a, line1b, line1c);
         setline("", line2a, line2b, line2c);
         setline("", line3a, line3b, line3c);
@@ -107,6 +108,17 @@ public class MediumController extends game2 implements Initializable {
 
     public void Backtogame2(MouseEvent mouseEvent) {
         show(mouseEvent, "/game/game2/Game2.fxml");
+        textgame2.setText("");
+        notification.setText("");
+        playerAnswer3.clear();
+        wordList3.clear();
+        answers3.clear();
+        a = null;
+        checkLine2 = false;
+        checkLine3 = false;
+        win = false;
+        hintgame = 1;
+        System.gc();
     }
 
     @FXML
@@ -117,7 +129,6 @@ public class MediumController extends game2 implements Initializable {
 
             String check = textgame2.getText();
             if (check.length() == weight_answer) {
-                System.out.println(wordList.contains(check));
                 if (!win) notification.setText(result(check));
                 textgame2.setText("");
             } else {
@@ -127,16 +138,15 @@ public class MediumController extends game2 implements Initializable {
         }
     }
 
-
     public String result(String check) {
-        if (wordList.contains(check)) {
+        if (wordList3.contains(check)) {
             if (!checkLine2) {
-                if (areSimilar(check, playerAnswer.get(0))) {
+                if (areSimilar(check, playerAnswer3.get(0))) {
                     setline(check, line2a, line2b, line2c);
-                    playerAnswer.add(check);
+                    playerAnswer3.add(check);
                     checkLine2 = true;
                     return "";
-                } else if (check.equals(playerAnswer.get(0))) {
+                } else if (check.equals(playerAnswer3.get(0))) {
                     return "Please use a different word from the one above";
                 } else return "Use the same letters from the above word row, only altering one";
             }
@@ -144,15 +154,15 @@ public class MediumController extends game2 implements Initializable {
                 if (check.equals(a.getAnswer4())) {
                     return "Use the same letters from the above word row, only altering one";
                 }
-                if (areSimilar(check, playerAnswer.get(1))) {
+                if (areSimilar(check, playerAnswer3.get(1))) {
                     setline(check, line3a, line3b, line3c);
-                    playerAnswer.add(check);
+                    playerAnswer3.add(check);
                     checkLine3 = true;
                     if (checkLine2 && checkLine3) {
                         win = true;
-                        return "Conglatulation you win";
+                        return "Congratulation you win";
                     }
-                } else if (check.equals(playerAnswer.get(1))) {
+                } else if (check.equals(playerAnswer3.get(1))) {
                     return "Please use a different word from the one above";
                 }
                 return "Use the same letters from the above word row, only altering one";
@@ -163,14 +173,14 @@ public class MediumController extends game2 implements Initializable {
 
     public void Backspace(MouseEvent mouseEvent) {
         if (!win) {
-            if (playerAnswer.size() == 3) {
+            if (playerAnswer3.size() == 3) {
                 setline("", line3a, line3b, line3c);
-                playerAnswer.remove(playerAnswer.size() - 1);
+                playerAnswer3.remove(playerAnswer3.size() - 1);
                 checkLine3 = false;
                 hintgame = 2;
-            } else if (playerAnswer.size() == 2) {
+            } else if (playerAnswer3.size() == 2) {
                 setline("", line2a, line2b, line2c);
-                playerAnswer.remove(playerAnswer.size() - 1);
+                playerAnswer3.remove(playerAnswer3.size() - 1);
                 checkLine2 = false;
                 hintgame = 1;
             }
@@ -183,27 +193,27 @@ public class MediumController extends game2 implements Initializable {
     @FXML
     public void Hint(MouseEvent mouseEvent) {
         if (!win) {
-            if (playerAnswer.get(playerAnswer.size() - 1).equals(a.getAnswer2())
+            if (playerAnswer3.get(playerAnswer3.size() - 1).equals(a.getAnswer2())
                     && hintgame == 1) {
                 hintgame = 2;
                 checkLine2 = true;
             }
             if (hintgame == 2) {
-                if (playerAnswer.size() == 3) {
-                    playerAnswer.remove(playerAnswer.size() - 1);
+                if (playerAnswer3.size() == 3) {
+                    playerAnswer3.remove(playerAnswer3.size() - 1);
                 }
-                playerAnswer.add(a.getAnswer3());
+                playerAnswer3.add(a.getAnswer3());
                 setline(a.getAnswer3(), line3a, line3b, line3c);
-                notification.setText("Conglatulation you win");
+                notification.setText("Congratulation you win");
                 win = true;
                 checkLine3 = true;
                 hintgame++;
             }
             if (hintgame == 1) {
-                if (playerAnswer.size() == 2) {
-                    playerAnswer.remove(playerAnswer.size() - 1);
+                if (playerAnswer3.size() == 2) {
+                    playerAnswer3.remove(playerAnswer3.size() - 1);
                 }
-                playerAnswer.add(a.getAnswer2());
+                playerAnswer3.add(a.getAnswer2());
                 setline(a.getAnswer2(), line2a, line2b, line2c);
                 setline("", line3a, line3b, line3c);
                 hintgame++;
@@ -215,6 +225,8 @@ public class MediumController extends game2 implements Initializable {
     public void Next(MouseEvent mouseEvent) {
         try {
             begin();
+            playerAnswer3.clear();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
