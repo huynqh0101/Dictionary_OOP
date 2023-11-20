@@ -440,10 +440,17 @@ Dark green: Màu xanh lá cây đậm
 Gold (noun): Màu vàng óng
 Green (noun): Màu xanh lá
 Grey (noun): Màu xám
+<<<<<<< HEAD
+Light blue: Màu xanh da trời nhạt///
+Light brown: Màu nâu nhạt///
+Light green: Màu xanh lá cây nhạt///
+Light (adjective): Sáng (màu)///
+=======
 Light blue: Màu xanh da trời nhạt
 Light brown: Màu nâu nhạt
 Light green: Màu xanh lá cây nhạt
 Light (adjective): Sáng (màu)
+>>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
 Orange (noun): Màu cam///
 Paint (noun): Sơn, màu vẽ///
 Pink (noun): Màu hồng///
@@ -455,10 +462,17 @@ Yellow (noun): Màu vàng///
 A fringe: Tóc cắt ngang trán///
 A short-haired person: Người có mái tóc ngắn///
 Angular: Mặt xương xương///
+<<<<<<< HEAD
+Attractive (adjective): Quyến rũ, hấp dẫn
+Baby: Em bé, trẻ con
+Bald: Hói
+Beard: Râu
+=======
 Attractive (adjective): Quyến rũ, hấp dẫn///
 Baby: Em bé, trẻ con///
 Bald: Hói///
 Beard: Râu///
+>>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
 Beautiful (adjective): Đẹp, xinh đẹp
 Birthmark: Vết bớt
 Blonde: Tóc vàng
@@ -1600,21 +1614,21 @@ Sing – /sɪŋ/: Hát
 Sleep – /slip/: Ngủ
 Surf net – /sɜːf nɛt/: Lướt net
 Take photographs – /teɪk ˈfəʊ: Chụp ảnh
-Travel – /ˈtræv: Du lịch
-Watching + TV/movie/wɑʧɪŋ/ + ˈtiˈvi/ˈmuvi (verb): Xem TV/phim
-Afford/əˈfɔrd/ (verb): Có khả năng chi trả
-Affordable /əˈfɔrdəbəl/(adjective): Giá cả hợp lí, phải chăng
-Aisle /aɪl/: lối đi giữa các dãy hàng
-Bargain/ˈbɑrgən/ (verb): Trả giá, mặc cả
-Basket /ˈbæskɪt/: cái rổ, cái giỏ, cái thúng
-Basket/ˈbæskət/ (noun): Giỏ hàng
-Bookstore /ˈbʊkˌstɔr/(noun): Hiệu sách
-Cart/kɑrt/ (noun): Xe đẩy trong siêu thị
-Cash /kæʃ/: tiền mặt
-Cashier /kæˈʃɪr/: nhân viên thu ngân
-Cashier/kæˈʃɪr/ (noun): Nhân viên thu ngân
-Cheap/ʧip/ (adjective): Rẻ
-Clerk/klɜrk/ (noun): Nhân viên bán hàng
+Travel – /ˈtræv: Du lịch///
+Watching + TV/movie/wɑʧɪŋ/ + ˈtiˈvi/ˈmuvi (verb): Xem TV/phim///
+Afford/əˈfɔrd/ (verb): Có khả năng chi trả///
+Affordable /əˈfɔrdəbəl/(adjective): Giá cả hợp lí, phải chăng///
+Aisle /aɪl/: lối đi giữa các dãy hàng///
+Bargain/ˈbɑrgən/ (verb): Trả giá, mặc cả///
+Basket /ˈbæskɪt/: cái rổ, cái giỏ, cái thúng///
+Basket/ˈbæskət/ (noun): Giỏ hàng///
+Bookstore /ˈbʊkˌstɔr/(noun): Hiệu sách///
+Cart/kɑrt/ (noun): Xe đẩy trong siêu thị///
+Cash /kæʃ/: tiền mặt///
+Cashier /kæˈʃɪr/: nhân viên thu ngân///
+Cashier/kæˈʃɪr/ (noun): Nhân viên thu ngân///
+Cheap/ʧip/ (adjective): Rẻ///
+Clerk/klɜrk/ (noun): Nhân viên bán hàng///
 Clothing shop/Boutique: Cửa hàng quần áo, thời trang
 Complain /kəmˈpleɪn/(verb): Phàn nàn
 Complaint /kəmˈpleɪnt/: lời phàn nàn
@@ -2082,21 +2096,21 @@ Install /ɪnˈstɔl/(verb): Cài đặt, lắp đặt
 Internet/ˈɪntərˌnɛt/ (noun): Mạng internet
 Keyboard /ˈkiˌbɔrd/(noun): Bàn phím máy tính
 keyboard: bàn phím
-Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay
-laptop: máy tính xách tay
-Link /lɪŋk/(noun): Đường dẫn
-Log in /lɔg ɪn/(phrasal verb): Đăng nhập
-monitor: phần màn hình
-Mouse /maʊs/(noun): Chuột máy tính
-mouse: chuột
-Password/ˈpæˌswɜrd/ (noun): Mật khẩu
-PC (viết tắt của personal computer): máy tính cá nhân
-power cable: cáp nguồn
-Printer /ˈprɪntər/(noun): Máy in
-printer: máy in
-Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)
-screen: màn hình
-Sign up/saɪn ʌp/ (phrasal verb): Đăng kí
+Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay///
+laptop: máy tính xách tay///
+Link /lɪŋk/(noun): Đường dẫn///
+Log in /lɔg ɪn/(phrasal verb): Đăng nhập///
+monitor: phần màn hình///
+Mouse /maʊs/(noun): Chuột máy tính///
+mouse: chuột///
+Password/ˈpæˌswɜrd/ (noun): Mật khẩu///
+PC (viết tắt của personal computer): máy tính cá nhân///
+power cable: cáp nguồn///
+Printer /ˈprɪntər/(noun): Máy in///
+printer: máy in///
+Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)///
+screen: màn hình///
+Sign up/saɪn ʌp/ (phrasal verb): Đăng kí///
 Smartphone /smärtˌfōn/(noun): Điện thoại thông minh
 Social network /ˈsoʊʃəl ˈnɛˌtwɜrk/(noun): Mạng xã hội
 Software/ˈsɔfˌtwɛr/ (noun): Phần mềm
@@ -2311,21 +2325,21 @@ Charm /tʃɑːrm/: những vật trang trí nhỏ
 Charm bracelet: vòng đeo tay (gắn nhiều đồ trang trí nhỏ xung quanh
 Clasp: cái móc, cái gài
 Cufflink: khuy cài cổ tay áo (măng sét)
-Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)
-Engagement ring: nhẫn đính hôn
-Hoop earrings: vòng đeo Tai
-Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)
-Pearl necklace: dây chuyền ngọc trai
-Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu{)
-Pin /pɪn/: cái ghim cài áo
-Signet ring: nhẫn có khắc hình phía trên
-Wedding ring: nhẫn cưới
-Air (noun): không khí
-Area (noun): khu vực
-Art (noun): nghệ thuật
-Back (noun): phía sau
-Body (noun): cơ thể
-Book (noun): cuốn sách
+Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)///
+Engagement ring: nhẫn đính hôn///
+Hoop earrings: vòng đeo Tai///
+Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)///
+Pearl necklace: dây chuyền ngọc trai///
+Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu{)///
+Pin /pɪn/: cái ghim cài áo///
+Signet ring: nhẫn có khắc hình phía trên///
+Wedding ring: nhẫn cưới///
+Air (noun): không khí///
+Area (noun): khu vực///
+Art (noun): nghệ thuật///
+Back (noun): phía sau///
+Body (noun): cơ thể///
+Book (noun): cuốn sách///
 Business (noun): kinh doanh
 Car (noun): xe hơi
 Case (noun): trường hợp

@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="c639a641-c85d-4eb5-8a3f-7fac013c23f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/game/ChoosegameController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/game/game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/game/game1/Game1Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/demo/game/game1/game1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Choosegame.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Game1.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Howtoplaygame1.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Playgame1.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/game/Game1/Settinggame1.fxml" beforeDir="false" />
+=======
     <list default="true" id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/Chudetuvung.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/Data/dictionaries.txt" afterDir="false" />
@@ -16,11 +33,21 @@
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/Icons/saved.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/View/SearchWordGui.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/name1.css" afterDir="false" />
+>>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,9 +56,12 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2WDbfDdLLitQbuUx16AxWGWwUVe" />
+  <component name="ProjectId" id="2XzbixhvMS3rBlgsAfW5BZX9cEq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,18 +70,83 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
+    "git-widget-placeholder": "huyvu",
+    "last_opened_file_path": "C:/Users/FPTSHOP/Desktop/learn/Dictionary_OOP/Dictionary/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+=======
     &quot;git-widget-placeholder&quot;: &quot;huy1505&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Huy/IdeaProjects/Dictionary_OOP/Dictionary&quot;
+>>>>>>> 88f6cd6800f08f00428b0364cec2278c0767005e
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FPTSHOP\Desktop\learn\Dictionary_OOP\Dictionary\src\main\resources" />
+      <recent name="C:\Users\FPTSHOP\Desktop\learn\Dictionary_OOP\Dictionary\src\main\java\com\example\demo" />
+      <recent name="C:\Users\FPTSHOP\Desktop\learn\Dictionary_OOP\Dictionary\src\main\java\com\example\demo\game\game1" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.game">
+    <configuration name="LoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.App.LoginApplication" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.App.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.game.game" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.game1.main" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.game1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.game" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.LoginApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9555882b-46e2-48f0-af61-a92fa946bbee" name="Changes" comment="" />
-      <created>1696270198881</created>
+      <changelist id="c639a641-c85d-4eb5-8a3f-7fac013c23f9" name="Changes" comment="" />
+      <created>1699634986307</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696270198881</updated>
+      <updated>1699634986307</updated>
     </task>
     <servers />
   </component>
