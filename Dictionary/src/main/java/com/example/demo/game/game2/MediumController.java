@@ -62,6 +62,7 @@ public class MediumController extends game2 implements Initializable {
             if (wordList3 != null) wordList3.clear();
             if (answers3 != null) answers3.clear();
             if (a != null) a = null;
+            if (playerAnswer3!=null) playerAnswer3.clear();
             playerAnswer3 = new ArrayList<>();
             String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.3.txt";
             wordList3 = readFile(path);
@@ -224,9 +225,8 @@ public class MediumController extends game2 implements Initializable {
 
     public void Next(MouseEvent mouseEvent) {
         try {
-            begin();
             playerAnswer3.clear();
-
+            begin();
         } catch (Exception e) {
             e.printStackTrace();
         }

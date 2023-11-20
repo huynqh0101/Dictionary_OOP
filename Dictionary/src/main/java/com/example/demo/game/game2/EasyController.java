@@ -30,7 +30,6 @@ public class EasyController extends game2 implements Initializable {
     private static final int height_answer = 4;
     private static final int weight_answer = 2;
 
-
     @FXML
     private Label eline1a, eline1b;
     @FXML
@@ -61,6 +60,7 @@ public class EasyController extends game2 implements Initializable {
             if (wordList2!=null) wordList2.clear();
             if (answers2!=null) answers2.clear();
             if (a!=null) a=null;
+            if (playerAnswer2!=null) playerAnswer2.clear();
             playerAnswer2 = new ArrayList<>();
             String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.2.txt";
             wordList2 = readFile(path);
@@ -223,8 +223,8 @@ public class EasyController extends game2 implements Initializable {
 
     public void Next(MouseEvent mouseEvent) {
         try {
-            begin();
             playerAnswer2.clear();
+            begin();
         } catch (Exception e) {
             e.printStackTrace();
         }

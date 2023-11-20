@@ -64,18 +64,13 @@ public class HardController extends game2 implements Initializable {
             if (wordList4!=null) wordList4.clear();
             if (answers4!=null) answers4.clear();
             if (a!=null) a=null;
+            if (playerAnswer4!=null) playerAnswer4.clear();
             playerAnswer4 = new ArrayList<>();
             String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.4.txt";
             //wordList4=new ArrayList<>();
             wordList4 = readFile(path);
             answers4 = UnionFind(wordList4);
             Collections.shuffle(answers4);
-            a = answers4.remove(0);
-            playerAnswer4.add(a.getAnswer1());
-            setline(a.getAnswer1(), hline1a, hline1b, hline1c, hline1d);
-            setline("", hline2a, hline2b, hline2c, hline2d);
-            setline("", hline3a, hline3b, hline3c, hline3d);
-            setline(a.getAnswer4(), hline4a, hline4b, hline4c, hline4d);
             begin();
 
         } catch (Exception e) {
@@ -84,7 +79,12 @@ public class HardController extends game2 implements Initializable {
     }
 
     public void begin() {
-
+        a = answers4.remove(0);
+        playerAnswer4.add(a.getAnswer1());
+        setline(a.getAnswer1(), hline1a, hline1b, hline1c, hline1d);
+        setline("", hline2a, hline2b, hline2c, hline2d);
+        setline("", hline3a, hline3b, hline3c, hline3d);
+        setline(a.getAnswer4(), hline4a, hline4b, hline4c, hline4d);
         textgame2.setText("");
         notification.setText("");
         checkLine2 = false;
@@ -231,12 +231,6 @@ public class HardController extends game2 implements Initializable {
     public void Next(MouseEvent mouseEvent) {
         try {
             playerAnswer4.clear();
-            a = answers4.remove(0);
-            playerAnswer4.add(a.getAnswer1());
-            setline(a.getAnswer1(), hline1a, hline1b, hline1c, hline1d);
-            setline("", hline2a, hline2b, hline2c, hline2d);
-            setline("", hline3a, hline3b, hline3c, hline3d);
-            setline(a.getAnswer4(), hline4a, hline4b, hline4c, hline4d);
             begin();
         } catch (Exception e) {
             e.printStackTrace();
