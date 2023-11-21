@@ -124,6 +124,7 @@ public class DictionaryManagement {
         return false;
     }
 
+    
     public void saveChangeToFile(String change, Word word, String path) {
         try (FileWriter fileWriter = new FileWriter(path, true);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {

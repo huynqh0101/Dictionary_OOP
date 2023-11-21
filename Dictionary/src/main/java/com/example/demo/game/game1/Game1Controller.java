@@ -107,7 +107,7 @@ public class Game1Controller {
 
     // read file game
     public void readFileQuestion() {
-        String path = "src\\main\\java\\com\\example\\demo\\game\\game1\\game1.txt";
+        String path = "DataGame\\game1.txt";
         try (BufferedReader bf = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = bf.readLine()) != null) {
