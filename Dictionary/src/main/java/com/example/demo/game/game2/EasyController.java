@@ -62,7 +62,7 @@ public class EasyController extends game2 implements Initializable {
             if (a!=null) a=null;
             if (playerAnswer2!=null) playerAnswer2.clear();
             playerAnswer2 = new ArrayList<>();
-            String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.2.txt";
+            String path = "DataGame\\game2.2.txt";
             wordList2 = readFile(path);
             answers2 = UnionFind(wordList2);
             Collections.shuffle(answers2);

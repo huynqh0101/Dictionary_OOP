@@ -64,7 +64,7 @@ public class MediumController extends game2 implements Initializable {
             if (a != null) a = null;
             if (playerAnswer3!=null) playerAnswer3.clear();
             playerAnswer3 = new ArrayList<>();
-            String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.3.txt";
+            String path = "DataGame\\game2.3.txt";
             wordList3 = readFile(path);
             answers3 = UnionFind(wordList3);
             Collections.shuffle(answers3);

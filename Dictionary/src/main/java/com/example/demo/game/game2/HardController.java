@@ -66,7 +66,7 @@ public class HardController extends game2 implements Initializable {
             if (a!=null) a=null;
             if (playerAnswer4!=null) playerAnswer4.clear();
             playerAnswer4 = new ArrayList<>();
-            String path = "src\\main\\java\\com\\example\\demo\\game\\game2\\game2.4.txt";
+            String path = "DataGame\\game2.4.txt";
             //wordList4=new ArrayList<>();
             wordList4 = readFile(path);
             answers4 = UnionFind(wordList4);
