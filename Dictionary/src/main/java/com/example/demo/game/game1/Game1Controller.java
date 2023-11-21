@@ -58,24 +58,14 @@ public class Game1Controller {
     @FXML
     private Label questiongame;
     @FXML
-    private CheckBox a;
-    @FXML
-    private CheckBox b;
-    @FXML
-    private CheckBox c;
-    @FXML
-    private CheckBox d;
+    private CheckBox a,b,c,d;
+
     @FXML
     private Label score;
     private int Score = 0;
 
     @FXML
-    private Button submitanswer;
-
-    @FXML
-    private Button next_question;
-    @FXML
-    private Button back_question;
+    private Button submitanswer, next_question,back_question;
 
     private int max_count_question = 10;
     private int count_question = 1;

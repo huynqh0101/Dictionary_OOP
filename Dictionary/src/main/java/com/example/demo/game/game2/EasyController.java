@@ -126,13 +126,13 @@ public class EasyController extends game2 implements Initializable {
     public void check(KeyEvent keyEvent) {
         if (keyEvent.getCode() == KeyCode.ENTER) {
 
-            String check = textgame2.getText();
+            String check = textgame2.getText().toLowerCase();
             if (check.length() == weight_answer) {
                 if (!win) notification.setText(result(check));
                 textgame2.setText("");
             } else {
                 textgame2.setText("");
-                if (!win) notification.setText("invalid");
+                if (!win) notification.setText("Invalid.");
             }
         }
     }
@@ -146,12 +146,12 @@ public class EasyController extends game2 implements Initializable {
                     checkLine2 = true;
                     return "";
                 } else if (check.equals(playerAnswer2.get(0))) {
-                    return "Please use a different word from the one above";
-                } else return "Use the same letters from the above word row, only altering one";
+                    return "Please use a different word from the one above.";
+                } else return "Use the same letters from the above word row, only altering one.";
             }
             if (!checkLine3) {
                 if (check.equals(a.getAnswer4())) {
-                    return "Use the same letters from the above word row, only altering one";
+                    return "Use the same letters from the above word row, only altering one.";
                 }
                 if (areSimilar(check, playerAnswer2.get(1))&&areSimilar(check,a.getAnswer4())) {
                     setline(check, eline3a, eline3b);
@@ -159,15 +159,15 @@ public class EasyController extends game2 implements Initializable {
                     checkLine3 = true;
                     if (checkLine2 && checkLine3) {
                         win = true;
-                        return "Congratulation you win";
+                        return "Congratulation you win.";
                     }
                 } else if (check.equals(playerAnswer2.get(1))) {
-                    return "Please use a different word from the one above";
+                    return "Please use a different word from the one above.";
                 }
-                return "Use the same letters from the above word row, only altering one";
+                return "Use the same letters from the above word row, only altering one.";
             }
         }
-        return "Not a valid word";
+        return "Not a valid word.";
     }
 
     public void Backspace(MouseEvent mouseEvent) {
@@ -203,7 +203,7 @@ public class EasyController extends game2 implements Initializable {
                 }
                 playerAnswer2.add(a.getAnswer3());
                 setline(a.getAnswer3(), eline3a, eline3b);
-                notification.setText("Congratulation you win");
+                notification.setText("Congratulation you win.");
                 win = true;
                 checkLine3 = true;
                 hintgame++;

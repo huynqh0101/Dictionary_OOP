@@ -891,21 +891,21 @@ Grandparents (noun): Ông bà
 Half-brother: anh em cùng cha khác mẹ/cùng mẹ khác cha
 Half-sister: chị em cùng cha khác mẹ/cùng mẹ khác cha
 Husband (noun): Người chồng
-Kid/Child (noun): Con cái
-Marry (verb): Cưới
-Mother (noun): Mẹ
-Mother-in-law (noun): Mẹ chồng
-Mother-in-law: mẹ chồng/mẹ vợ
-Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)
-Parents (noun): Cha mẹ, phụ huynh
-Pregnant (adjective): Mang thai
-Relative (noun): Họ hàng
-Sibling (noun): Anh chị em
-Sister (noun): Chị em gái
-Sister-in-law: chị/em dâu
-Son (noun): Con trai
-Son-in-law: con rể
-Stepbrother: con trai của bố dượng/mẹ kế
+Kid/Child (noun): Con cái///
+Marry (verb): Cưới///
+Mother (noun): Mẹ///
+Mother-in-law (noun): Mẹ chồng///
+Mother-in-law: mẹ chồng/mẹ vợ///
+Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)///
+Parents (noun): Cha mẹ, phụ huynh///
+Pregnant (adjective): Mang thai///
+Relative (noun): Họ hàng///
+Sibling (noun): Anh chị em///
+Sister (noun): Chị em gái///
+Sister-in-law: chị/em dâu///
+Son (noun): Con trai///
+Son-in-law: con rể///
+Stepbrother: con trai của bố dượng/mẹ kế///
 Stepdaughter: con gái riêng của chồng/vợ
 Stepfather: bố dượng
 Step-mom (noun): Mẹ kế, dì ghẻ
