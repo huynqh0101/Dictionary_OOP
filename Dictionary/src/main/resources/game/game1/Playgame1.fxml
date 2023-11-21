@@ -31,19 +31,19 @@
                </font></Label>
             <CheckBox fx:id="a" mnemonicParsing="false" onMouseClicked="#ChooseanswerA" prefHeight="25.0" prefWidth="500.0" text="CheckBox" wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font></CheckBox>
             <CheckBox fx:id="b" mnemonicParsing="false" onMouseClicked="#ChooseanswerB" prefHeight="25.0" prefWidth="500.0" text="CheckBox" wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font></CheckBox>
             <CheckBox fx:id="c" mnemonicParsing="false" onMouseClicked="#ChooseanswerC" prefHeight="25.0" prefWidth="500.0" text="CheckBox" wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font></CheckBox>
             <CheckBox fx:id="d" mnemonicParsing="false" onMouseClicked="#ChooseanswerD" prefHeight="25.0" prefWidth="500.0" text="CheckBox" wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font></CheckBox>
          </children>
       </VBox>
