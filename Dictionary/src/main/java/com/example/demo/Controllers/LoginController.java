@@ -10,6 +10,8 @@ import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -60,6 +62,23 @@ public class LoginController {
             showLabel2.setText("");
         } else {
             showAlert("Tạo tài khoản thất bại!!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
+        }
+    }
+
+    @FXML
+    public void check(KeyEvent keyEvent) {
+        if (keyEvent.getCode() == KeyCode.ENTER) {
+            String username = userNameBtn2.getText();
+            String password = passWord2.getText();
+
+            if (authenticate(username, password)) {
+                showAlert("Bạn đã đăng nhập thành công !", AlertType.INFORMATION);
+                Node currentNode = loginBtn2;
+                showComponent(currentNode, "/View/DictionariesGui.fxml");
+
+            } else {
+                showAlert("Đăng nhập thất bại !!!, Kiểm tra lại tài khoản hoặc mật khẩu!", AlertType.ERROR);
+            }
         }
     }
 

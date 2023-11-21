@@ -102,7 +102,7 @@
 .submit-button{
          -fx-background-radius: 10px;
          -fx-font-weight: 700;
-         -fx-background-color: linear-gradient(to bottom left, #9579c9, #6e57ac);
+         -fx-background-color: linear-gradient(to bottom left, #9579c9, #7732a8);
          -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
 }
 
@@ -131,7 +131,7 @@
      -fx-background-size: cover;
  }
 .background-pane2 {
-      -fx-background-image: url("image/anh5.jpg");
+      -fx-background-image: url("image/1085.jpg");
       -fx-background-size: cover;
 }
 .text1-TextField {
