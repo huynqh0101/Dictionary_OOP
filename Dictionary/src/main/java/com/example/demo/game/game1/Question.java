@@ -2,10 +2,7 @@ package com.example.demo.game.game1;
 
 public class Question {
     private String question;
-    private String a;
-    private String b;
-    private String c;
-    private String d;
+    private String a, b, c, d;
     private String correct_answer;
 
     public Question() {

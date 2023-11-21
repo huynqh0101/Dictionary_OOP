@@ -3,19 +3,15 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="527.0" prefWidth="789.0" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game2.EasyController">
+<AnchorPane prefHeight="527.0" prefWidth="789.0" styleClass="background-pane2" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game2.EasyController">
     <children>
-        <HBox layoutY="5.0" prefHeight="33.0" prefWidth="200.0" spacing="10.0">
-            <children>
-                <Button fx:id="backtogame2" mnemonicParsing="false" onMouseClicked="#Backtogame2" text="Back" />
-                <Button fx:id="hint" mnemonicParsing="false" onMouseClicked="#Hint" text="Hint" />
-            </children>
-        </HBox>
         <VBox layoutX="315.0" layoutY="45.0" prefHeight="335.0" prefWidth="159.0" spacing="24.0" stylesheets="@../../stylegame.css">
             <children>
                 <HBox prefHeight="62.0" prefWidth="317.0" spacing="17.0">
@@ -60,9 +56,47 @@
                 </HBox>
             </children>
         </VBox>
-        <TextField fx:id="textgame2" layoutX="319.0" layoutY="437.0" onKeyPressed="#check" />
-        <Label fx:id="notification" layoutX="175.0" layoutY="380.0" prefHeight="47.0" prefWidth="439.0" styleClass="middle" stylesheets="@../../stylegame.css" />
-        <Button fx:id="backspace" layoutX="381.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#Backspace" text="&lt;" />
-        <Button fx:id="nextquestion" layoutX="524.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#Next" text="Next" />
+        <TextField fx:id="textgame2" alignment="CENTER" layoutX="303.0" layoutY="421.0" onKeyPressed="#check" prefHeight="35.0" prefWidth="182.0" styleClass="text1-TextField" stylesheets="@../../stylegame.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+        <Label fx:id="notification" alignment="CENTER" layoutX="89.0" layoutY="380.0" prefHeight="38.0" prefWidth="623.0" styleClass="middle" stylesheets="@../../stylegame.css">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Label>
+        <Button fx:id="backspace" layoutX="221.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#Backspace" prefHeight="46.0" prefWidth="58.0" styleClass="back-button">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/icons8-left-arrow-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button fx:id="nextquestion" layoutX="512.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#Next" prefHeight="46.0" prefWidth="58.0" styleClass="back-button" stylesheets="@../../stylegame.css">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/icons8-right-arrow-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+          <Button fx:id="hint" layoutX="746.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#Hint" prefHeight="38.0" prefWidth="42.0" styleClass="hint-button">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/icons8-hint-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+          <Button fx:id="backtogame2" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#Backtogame2" prefHeight="38.0" prefWidth="42.0" styleClass="back-button">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/icons8-back-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
     </children>
 </AnchorPane>

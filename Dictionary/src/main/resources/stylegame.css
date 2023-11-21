@@ -21,14 +21,120 @@
 }
 
 .background-howtoplay {
-    -fx-background-color: lightblue;
+    -fx-background-image: url("image/1085.jpg");
+    -fx-background-size: cover;
 }
 
 .text-howtoplay {
     -fx-font-size: 16px;
     -fx-font-weight: 300;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+}
+.background-pane {
+    -fx-background-image: url("image/1084.jpg");
+    -fx-background-size: cover;
+}
+.game1-button {
+    -fx-font-style: italic;
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-color: linear-gradient(to bottom left, #1e71b0, #211da1);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
 }
 
-.middle {
-    -fx-alignment: center;
+.game1-button:hover {
+    -fx-background-color: #b1b1b1;
+    -fx-text-fill: black;
+}
+.game2-button {
+    -fx-font-style: italic;
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-color: linear-gradient(to bottom left, #1e71b0, #211da1);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.game2-button:hover {
+    -fx-background-color: #b1b1b1;
+    -fx-text-fill: black;
+}
+.hint-button,
+.back-button{
+    -fx-padding:0;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.hint-button:hover {
+    -fx-background-color: #b1b1b1;
+}
+.back-button:hover {
+    -fx-background-color: #b1b1b1;
+}
+
+.background-pane2 {
+    -fx-background-image: url("image/1126.jpg");
+    -fx-background-size: cover;
+}
+.label1-label{
+    -fx-font-style: italic;
+    -fx-font-size: 14px;
+}
+.play-button{
+         -fx-background-radius: 10px;
+         -fx-font-weight: 700;
+         -fx-background-color: linear-gradient(to bottom left, #211da1, #6e57ac);
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+.play-button:hover {
+    -fx-background-color: #b1b1b1;
+    -fx-font-size: 26px;
+    -fx-font-style: italic;
+}
+
+.submit-button{
+         -fx-background-radius: 10px;
+         -fx-font-weight: 700;
+         -fx-background-color: linear-gradient(to bottom left, #9579c9, #6e57ac);
+         -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.medium-button,
+.hard-button,
+.level-button {
+    -fx-background-color: linear-gradient(to bottom left, #1e71b0, #211da1);
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.level-button:hover {
+    -fx-background-color: #138a35;
+    -fx-text-fill: #000;
+}
+.medium-button:hover {
+    -fx-background-color: #a8a616;
+    -fx-text-fill: #000;
+}
+.hard-button:hover {
+     -fx-background-color: #a81b16;
+     -fx-text-fill: #000;
+ }
+ .background-pane4 {
+     -fx-background-image: url("image/1083.jpg");
+     -fx-background-size: cover;
+ }
+.background-pane2 {
+      -fx-background-image: url("image/anh5.jpg");
+      -fx-background-size: cover;
+}
+.text1-TextField {
+    -fx-background-radius:10;
+    -fx-font-size: 18px;
 }

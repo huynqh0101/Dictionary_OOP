@@ -2,8 +2,6 @@ package com.example.demo.Controllers;
 
 
 import com.example.demo.Alerts.Alerts;
-import com.example.demo.Dictionary.Dictionary;
-import com.example.demo.Dictionary.DictionaryManagement;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,7 +21,6 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 
-import javafx.application.Platform;
 import javafx.scene.control.Alert.AlertType;
 
 public class LoginController {
