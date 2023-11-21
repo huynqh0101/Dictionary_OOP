@@ -66,7 +66,7 @@
                             <Insets top="10.0" />
                         </padding>
                         <children>
-                            <PasswordField fx:id="passWord2" prefHeight="38.0" prefWidth="267.0" promptText="    Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" styleClass="text-PasswordField">
+                            <PasswordField fx:id="passWord2" onKeyPressed="#check" prefHeight="38.0" prefWidth="267.0" promptText="    Password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;" styleClass="text-PasswordField">
                                 <font>
                                     <Font name="System Italic" size="14.0" />
                                 </font>
