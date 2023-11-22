@@ -5,7 +5,7 @@ Group HHH
 2. Vu Van Huy - 22021202
 3. Me Quang Huy - 22021142
 ## Description
-The application is designed to support learning English. The application is written in Java and uses the JavaFX library. The application is based on the MVC model. The application has two types of dictionaries: English-Vietnamese and Vietnamese-English. The application use E_V.txt and V_E.txt files to store data.
+The application is designed to support learning English. The application is written in Java and uses the JavaFX library. The application is based on the MVC model. The application has two types of dictionaries: English-Vietnamese and Vietnamese-English. The application use dictionary.txt files to store data.
 
 1. The application is designed to support learning English.
 2. The application is written in Java and uses the JavaFX library.
@@ -17,17 +17,16 @@ The application is designed to support learning English. The application is writ
 3. Run the project.
 4. If you want to change the data, you can change the dictionary.txt
 ## Usage
-1. Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
-2. Search for a word in the dictionary and click the Search button, then the right side of the window will display the meaning of the word.
-3. To add a new word, click the Add button (Plus icon).
-4. To delete a word, click the Delete button (Minus icon).
-5. To edit a word, click the Edit button (Pencil icon).
-6. To save the changes, click the Save button (Disk icon).
-7. To pronounce the word, click the Pronounce button (Speaker icon).
-8. To practice, click the Practice button (Play icon), then the application will display a Game window.
-
-
-9. To exit the application, click the Exit button (Cross icon).
+1. You will start with the login screen. If you do not have an account, please register an account to continue using.
+2. The display screen after logging in will show daily vocabulary for you to learn.
+4. To search for a word, tap the search button (Search icon).
+5. To add a new word, click the Add button (Plus icon).
+6. To translate, tap the translation button (Traslation icon).
+- Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
+- Search for a word in the dictionary and click the Search button, then the right side of the window will display the meaning of the word.
+- To pronounce the word, click the Pronounce button (Speaker icon).
+7. To practice, click the Practice button (Play icon), then the application will display a Game window.
+8. To exit the application, click the Exit button (Cross icon).
 
 ## Future improvements
 1. Add more dictionaries.
