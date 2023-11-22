@@ -163,21 +163,21 @@ Asparagus: Măng tây
 Basil: Cây húng quế
 Bay leaves: Lá nguyệt quế
 Bean sprouts: Giá
-Bean (noun): Đậu (quả)
-Beet: Củ dền
-Bell pepper (noun): Ớt chuông
-Bitter Herb: Rau Đắng
-Avocado: Avocado
-Broccoli: Bông cải xanh
-Pomelo/ grapefruit: Bưởi
-Cabbage: Bắp cải
-Orange: Cam
-Carrot (noun): Cà rốt
-Cauliflower: Súp lơ
-Celery (noun): Cần tây
-Lemon: Chanh vàng
-Lime: Chanh xanh
-Chili (noun): Ớt
+Bean (noun): Đậu (quả)///
+Beet: Củ dền///
+Bell pepper (noun): Ớt chuông///
+Bitter Herb: Rau Đắng///
+Avocado: Avocado///
+Broccoli: Bông cải xanh///
+Pomelo/ grapefruit: Bưởi///
+Cabbage: Bắp cải///
+Orange: Cam///
+Carrot (noun): Cà rốt///
+Cauliflower: Súp lơ///
+Celery (noun): Cần tây///
+Lemon: Chanh vàng///
+Lime: Chanh xanh///
+Chili (noun): Ớt///
 Banana: Chuối
 Cilantro: Ngò rí
 Cilantro: Ngò Gai

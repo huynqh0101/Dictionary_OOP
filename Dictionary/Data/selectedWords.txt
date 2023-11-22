@@ -1,16 +1,16 @@
-20231121
-Kid/Child (noun): Con cái
-Marry (verb): Cưới
-Mother (noun): Mẹ
-Mother-in-law (noun): Mẹ chồng
-Mother-in-law: mẹ chồng/mẹ vợ
-Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)
-Parents (noun): Cha mẹ, phụ huynh
-Pregnant (adjective): Mang thai
-Relative (noun): Họ hàng
-Sibling (noun): Anh chị em
-Sister (noun): Chị em gái
-Sister-in-law: chị/em dâu
-Son (noun): Con trai
-Son-in-law: con rể
-Stepbrother: con trai của bố dượng/mẹ kế
+20231122
+Bean (noun): Đậu (quả)
+Beet: Củ dền
+Bell pepper (noun): Ớt chuông
+Bitter Herb: Rau Đắng
+Avocado: Avocado
+Broccoli: Bông cải xanh
+Pomelo/ grapefruit: Bưởi
+Cabbage: Bắp cải
+Orange: Cam
+Carrot (noun): Cà rốt
+Cauliflower: Súp lơ
+Celery (noun): Cần tây
+Lemon: Chanh vàng
+Lime: Chanh xanh
+Chili (noun): Ớt
