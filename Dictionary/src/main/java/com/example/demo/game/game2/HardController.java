@@ -28,7 +28,7 @@ public class HardController extends game2 implements Initializable {
     private List<String> playerAnswer4;
 
     private static final int height_answer = 4;
-    private static final int weight_answer = 3;
+    private static final int weight_answer = 4;
 
     @FXML
     private Label hline1a, hline1b, hline1c, hline1d;
@@ -93,6 +93,9 @@ public class HardController extends game2 implements Initializable {
         hintgame = 1;
     }
 
+    private double xOffset = 0;
+    private double yOffset = 0;
+
     public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
@@ -105,7 +108,18 @@ public class HardController extends game2 implements Initializable {
 
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+
+            scene.setOnMousePressed(event -> {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            });
+
+            scene.setOnMouseDragged(event -> {
+                currentStage.setX(event.getScreenX() - xOffset);
+                currentStage.setY(event.getScreenY() - yOffset);
+            });
             currentStage.setScene(scene);
+            currentStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }

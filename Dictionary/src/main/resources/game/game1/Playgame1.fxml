@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="527.0" prefWidth="783.0" styleClass="background-pane2" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
+<AnchorPane prefHeight="527.0" prefWidth="783.0" styleClass="background-pane2" stylesheets="@../../stylegame.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.game.game1.Game1Controller">
     <children>
         <Button fx:id="Backfromplaygametogame1" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#Backtogame1" styleClass="back-button">
          <graphic>
@@ -21,7 +21,10 @@
             </ImageView>
          </graphic>
          <tooltip>
-            <Tooltip text="Back" />
+            <Tooltip text="Back !">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Tooltip>
          </tooltip></Button>
       <VBox layoutX="139.0" layoutY="103.0" prefHeight="229.0" prefWidth="511.0" spacing="13.0">
          <children>
@@ -56,7 +59,10 @@
             </ImageView>
          </graphic>
          <tooltip>
-            <Tooltip text="Restart" />
+            <Tooltip text="Restart">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Tooltip>
          </tooltip></Button>
       <Label fx:id="score" alignment="TOP_LEFT" layoutX="312.0" layoutY="33.0" prefHeight="39.0" prefWidth="147.0" text="Score:">
          <font>
@@ -68,7 +74,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="next_question" layoutX="582.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#Next_question" prefHeight="47.0" prefWidth="67.0" styleClass="back-button">
+      <Button fx:id="next_question" layoutX="594.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#Next_question" prefHeight="47.0" prefWidth="46.0" styleClass="back-button">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -77,10 +83,13 @@
             </ImageView>
          </graphic>
          <tooltip>
-            <Tooltip text="Continue" />
+            <Tooltip text="Continue">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Tooltip>
          </tooltip>
       </Button>
-      <Button fx:id="back_question" layoutX="150.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#Back_question" prefHeight="47.0" prefWidth="67.0" styleClass="back-button">
+      <Button fx:id="back_question" layoutX="150.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#Back_question" prefHeight="47.0" prefWidth="47.0" styleClass="back-button">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -89,7 +98,10 @@
             </ImageView>
          </graphic>
          <tooltip>
-            <Tooltip text="Back" />
+            <Tooltip text="Back question.">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Tooltip>
          </tooltip>
       </Button>
     </children>
