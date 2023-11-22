@@ -49,7 +49,7 @@ The application is designed to support learning English. The application is writ
 7. To exit the application, click the Exit button (Cross icon).
 
 ## Demo
-
+[demo](https://drive.google.com/drive/folders/18OJygaIYOzIkildworENussj6nA4nLts?usp=drive_link)
 ## Future improvements
 
 1. Add more dictionaries.  
