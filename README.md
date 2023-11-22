@@ -58,22 +58,22 @@ The application is designed to support learning English. The application is writ
 <img src="Dictionary/ImageReadme/login.png" alt="example" style="width:500px; height:314px;">       
 
 
--**Notice**          
+- **Notice**          
 
 <img src="Dictionary/ImageReadme/Notice.png" alt="example" style="width:500px; height:314px;">       
 
 
--**Add Word**        
+- **Add Word**        
 
 <img src="Dictionary/ImageReadme/AddWord.png" alt="example" style="width:500px; height:314px;">     
 
 
--**Translation**    
+- **Translation**    
 
 <img src="Dictionary/ImageReadme/Translation.png" alt="example" style="width:500px; height:314px;"> 
 
 
--**Game**            
+- **Game**            
 <img src="Dictionary/ImageReadme/game.png" alt="example" style="width:500px; height:314px;">         |
 
     
