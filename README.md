@@ -22,9 +22,9 @@ The application is designed to support learning English. The application is writ
 4. To search for a word, tap the search button (Search icon).
 5. To add a new word, click the Add button (Plus icon).
 6. To translate, tap the translation button (Traslation icon).
-  - Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
-  - Search for a word in the dictionary and click the Search button, then the right side of the window will display the meaning of the word.
-  - To pronounce the word, click the Pronounce button (Speaker icon).
+`  `- Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
+`  `- Search for a word in the dictionary and click the Search button, then the right side of the window will display the meaning of the word.
+`  `- To pronounce the word, click the Pronounce button (Speaker icon).
 7. To practice, click the Practice button (Play icon), then the application will display a Game window.
 8. To exit the application, click the Exit button (Cross icon).
 
