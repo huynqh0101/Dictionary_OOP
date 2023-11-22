@@ -53,7 +53,7 @@ The application is designed to support learning English. The application is writ
 
 **7.** To exit the application, click the Exit button (Cross icon).
 ## some screens
--**Login** 
+- **Login** 
 
 <img src="Dictionary/ImageReadme/login.png" alt="example" style="width:500px; height:314px;">       
 
@@ -74,7 +74,7 @@ The application is designed to support learning English. The application is writ
 
 
 - **Game**            
-<img src="Dictionary/ImageReadme/game.png" alt="example" style="width:500px; height:314px;">         |
+<img src="Dictionary/ImageReadme/game.png" alt="example" style="width:500px; height:314px;"> 
 
     
 ## Demo
