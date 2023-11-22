@@ -7,11 +7,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Tooltip;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -19,7 +23,7 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class   DictionaryController implements Initializable {
+public class DictionaryController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         searchBtn.setOnAction(new EventHandler<ActionEvent>() {
@@ -48,9 +52,11 @@ public class   DictionaryController implements Initializable {
                 showComponent("/View/Notice.fxml");
             }
         });
-        gameBtn.setOnAction(new EventHandler<ActionEvent>(){
+        gameBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event) {showComponent("/game/Choosegame.fxml");}
+            public void handle(ActionEvent event) {
+                showComponent("/game/Choosegame.fxml");
+            }
         });
 
         t1.setShowDelay(Duration.seconds(0.4));
@@ -63,15 +69,41 @@ public class   DictionaryController implements Initializable {
 
         exitBtn.setOnMouseClicked(e -> {
             Alerts alerts = new Alerts();
-            Alert alertConfirm = alerts.alertConfirm("Exit", "Bạn có chắc muốn thoát ứng dụng ?");
+            Alert alertConfirm = alerts.alertConfirm("Log out", "Bạn có chắc muốn đăng xuất ứng dụng ?");
             Optional<ButtonType> option = alertConfirm.showAndWait();
-            if (option.get() == ButtonType.OK) {
-                System.exit(0);
+            if (option.isPresent() && option.get() == ButtonType.OK) {
+                Stage currentStage = (Stage) exitBtn.getScene().getWindow();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/login.fxml"));
+                try {
+                    Parent loginScreen = loader.load();
+                    Scene loginScene = new Scene(loginScreen);
+                    currentStage.setScene(loginScene);
+                    loginScene.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+
+                    loginScreen.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            currentStage.setX(event.getScreenX() - xOffset);
+                            currentStage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
+
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
             } else {
                 alerts.showAlertInfo("Exit", "Tiếp tục sử dụng ứng dụng!");
             }
         });
     }
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     public void setNode(Node n) {
         container1.getChildren().clear();
@@ -87,6 +119,7 @@ public class   DictionaryController implements Initializable {
             e.printStackTrace();
         }
     }
+
     @FXML
     private AnchorPane container1;
 
@@ -94,6 +127,6 @@ public class   DictionaryController implements Initializable {
     private Tooltip t1, t2, t3, t4, t5, t6;
 
     @FXML
-    private Button addBtn, transBtn, searchBtn, exitBtn, tbaoBtn,gameBtn;
+    private Button addBtn, transBtn, searchBtn, exitBtn, tbaoBtn, gameBtn;
 
 }

@@ -57,15 +57,14 @@
 }
 .trans-button,
 .src-speech-field,
-.to-speech-field,
 .eWord-input,
 .meanword1-input,
+.to-speech-field,
 .result-alert {
     -fx-text-fill: #ecf0f1;
     -fx-font-size: 14px;
     -fx-border-width: 1.5;
 }
-
 .trans-button {
     -fx-background-radius: 5px;
     -fx-font-size: 13px;
@@ -94,7 +93,7 @@
 
 .eWord-input,
 .meanword1-input {
-    -fx-text-fill: #9f45b0;
+    -fx-text-fill: #4e46b0;
     -fx-border-color: #4d48ac;
     -fx-font-size: 14px;
     -fx-background-radius: 5;
@@ -138,7 +137,7 @@
 }
 
 .exit-button:hover {
-    -fx-background-color: #3f67e1;
+    -fx-background-color: #b1b1b1;
 }
 
 .menu-item1 {
