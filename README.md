@@ -15,7 +15,7 @@ The application is designed to support learning English. The application is writ
 
 4. The application use dictionaries.txt files to store data.
 ## UML diagram
-<img src="Dictionary/ImageReadme/diagram.png" alt="example" style="width:2300px; height:1300px;">
+<img src="Dictionary/ImageReadme/diagram.png" alt="example" style="width:1800px; height:1293px;">
 
 ## Installation
 1. Clone the project from the repository. ( link ``` https://github.com/huynqh0101/Dictionary_OOP.git ```)
