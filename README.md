@@ -72,9 +72,13 @@ The application is designed to support learning English. The application is writ
 
 <img src="Dictionary/ImageReadme/Translation.png" alt="example" style="width:500px; height:314px;"> 
 
+- **Search**
+
+<img src="Dictionary/ImageReadme/Search.png" alt="example" style="width:500px; height:314px;">
 
 - **Game**            
 <img src="Dictionary/ImageReadme/game.png" alt="example" style="width:500px; height:314px;"> 
+
 
     
 ## Demo
