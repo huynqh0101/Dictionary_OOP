@@ -154,6 +154,19 @@
     -fx-background-color: #f8f8f8;
 }
 
+.game1-button {
+-fx-background-color: transparent;
+    -fx-background-radius: 25;
+    -fx-padding: 0 0 0 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+.game1-button:hover
+{
+    -fx-background-color: #f8f8f8;
+}
+
 .search-button {
     -fx-background-image: url("/Icons/icons8-search.svg");
     -fx-background-color: transparent;
