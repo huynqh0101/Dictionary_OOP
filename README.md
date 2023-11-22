@@ -68,7 +68,7 @@ The application is designed to support learning English. The application is writ
 
 
 ## Demo
-[demo](https://drive.google.com/drive/folders/18OJygaIYOzIkildworENussj6nA4nLts?usp=drive_link)
+[Demo Application](https://drive.google.com/drive/folders/18OJygaIYOzIkildworENussj6nA4nLts?usp=drive_link)
 ## Future improvements
 
 **1.** Add more dictionaries.  
