@@ -1,4 +1,0 @@
-fan	quạt
-bottle	chai nước
-lock	khoa
-hand	bàn tay
