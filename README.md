@@ -31,10 +31,11 @@ The application is designed to support learning English. The application is writ
 2. The display screen after logging in will show daily vocabulary for you to learn.
 
 3. To search for a word, tap the search button (Search icon).
+   In addition, you can also edit words, delete words and update the dictionaries.txt file
 
-4. To add a new word, click the Add button (Plus icon). In addition, you can also edit words, delete words and update the dictionaries.txt file
+5. To add a new word, click the Add button (Plus icon).
 
-5. To translate, tap the translation button (Traslation icon).
+6. To translate, tap the translation button (Traslation icon).
 
 - Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
 
