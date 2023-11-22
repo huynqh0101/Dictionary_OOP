@@ -87,6 +87,9 @@ public class EasyController extends game2 implements Initializable {
         hintgame = 1;
     }
 
+    private double xOffset = 0;
+    private double yOffset = 0;
+
     public void show(MouseEvent mouseEvent, String path) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DictionariesGui.fxml"));
@@ -99,7 +102,18 @@ public class EasyController extends game2 implements Initializable {
 
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+
+            scene.setOnMousePressed(event -> {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            });
+
+            scene.setOnMouseDragged(event -> {
+                currentStage.setX(event.getScreenX() - xOffset);
+                currentStage.setY(event.getScreenY() - yOffset);
+            });
             currentStage.setScene(scene);
+            currentStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -25,6 +25,8 @@ import java.util.List;
 public class Game1Controller {
 
     private AnchorPane game1;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     public Game1Controller() {
     }
@@ -41,11 +43,24 @@ public class Game1Controller {
 
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+
+            scene.setOnMousePressed(event -> {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            });
+
+            scene.setOnMouseDragged(event -> {
+                currentStage.setX(event.getScreenX() - xOffset);
+                currentStage.setY(event.getScreenY() - yOffset);
+            });
+
             currentStage.setScene(scene);
+            currentStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     public void BacktoChoosegame(MouseEvent mouseEvent) {
         show(mouseEvent, "/game/Choosegame.fxml");
@@ -96,6 +111,17 @@ public class Game1Controller {
 
             Scene scene = new Scene(dictionariesGui);
             Stage currentStage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+
+            scene.setOnMousePressed(event -> {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            });
+
+            scene.setOnMouseDragged(event -> {
+                currentStage.setX(event.getScreenX() - xOffset);
+                currentStage.setY(event.getScreenY() - yOffset);
+            });
+
             currentStage.setScene(scene);
             innitialize();
             readFileQuestion();
