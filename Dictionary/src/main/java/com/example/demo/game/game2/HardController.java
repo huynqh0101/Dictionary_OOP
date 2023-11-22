@@ -28,7 +28,7 @@ public class HardController extends game2 implements Initializable {
     private List<String> playerAnswer4;
 
     private static final int height_answer = 4;
-    private static final int weight_answer = 3;
+    private static final int weight_answer = 4;
 
     @FXML
     private Label hline1a, hline1b, hline1c, hline1d;
