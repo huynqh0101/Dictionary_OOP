@@ -53,6 +53,7 @@ The application is designed to support learning English. The application is writ
 
 **7.** To exit the application, click the Exit button (Cross icon).
 ## some screens
+
     | function       |  Screen                                   |
     | :------------- | :---------------------------------------- |
     | Login          | <img src="Dictionary/ImageReadme/login.png" alt="example" style="width:64px; height:64px;">        |
@@ -60,6 +61,8 @@ The application is designed to support learning English. The application is writ
     | Add Word       | <img src="Dictionary/ImageReadme/AddWord.png" alt="example" style="width:64px; height:64px;">      |
     | Translation    | <img src="Dictionary/ImageReadmee/Translation.png" alt="example" style="width:64px; height:64px;"> |
     | Game           | <img src="Dictionary/ImageReadme/game.png" alt="example" style="width:64px; height:64px;">         |
+
+    
 ## Demo
 [Demo Application](https://drive.google.com/drive/folders/18OJygaIYOzIkildworENussj6nA4nLts?usp=drive_link)
 ## Future improvements
