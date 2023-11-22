@@ -53,14 +53,24 @@ The application is designed to support learning English. The application is writ
 
 **7.** To exit the application, click the Exit button (Cross icon).
 ## some screens
+Login 
 
-    | function       |  Screen                                   |
-    | :------------- | :---------------------------------------- |
-    | Login          | <img src="Dictionary/ImageReadme/login.png" alt="example" style="width:700px; height:440px;">        |
-    | Notice         | <img src="Dictionary/ImageReadme/Notice.png" alt="example" style="width:700px; height:440px;">       |
-    | Add Word       | <img src="Dictionary/ImageReadme/AddWord.png" alt="example" style="width:700px; height:440px;">      |
-    | Translation    | <img src="Dictionary/ImageReadme/Translation.png" alt="example" style="width:700px; height:440px;"> |
-    | Game           | <img src="Dictionary/ImageReadme/game.png" alt="example" style="width:700px; height:440px;">         |
+<img src="Dictionary/ImageReadme/login.png" alt="example" style="width:700px; height:440px;">       
+
+Notice          
+
+<img src="Dictionary/ImageReadme/Notice.png" alt="example" style="width:700px; height:440px;">       
+
+Add Word        
+
+<img src="Dictionary/ImageReadme/AddWord.png" alt="example" style="width:700px; height:440px;">     
+
+Translation    
+
+<img src="Dictionary/ImageReadme/Translation.png" alt="example" style="width:700px; height:440px;"> 
+
+Game            
+<img src="Dictionary/ImageReadme/game.png" alt="example" style="width:700px; height:440px;">         |
 
     
 ## Demo
