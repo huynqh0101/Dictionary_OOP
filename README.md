@@ -53,28 +53,19 @@ The application is designed to support learning English. The application is writ
 
 **7.** To exit the application, click the Exit button (Cross icon).
 ## some screens
-<div style="display: flex; justify-content: space-between;">
-  
-  <div>
-  
+
     | function |  Screen                                   |
     | :----------------------- | :--------------------------------------- |
     | Login  | <img src="Dictionary/ImageReadme/login.png" alt="example" style="width:64px; height:64px;"> |
     | Notice                | <img src="Dictionary/ImageReadme/Notice.png" alt="example" style="width:64px; height:64px;"> |
     | Add Word              | <img src="Dictionary/ImageReadme/AddWord.png" alt="example" style="width:64px; height:64px;"> |
 
-  </div>
 
-  <div>
-  
     | function |  Screen                                   |
     | :----------------------- | :--------------------------------------- |
     | Translation               | <img src="Dictionary/ImageReadmee/Translation.png" alt="example" style="width:64px; height:64px;"> |
     | Game        | <img src="Dictionary/ImageReadme/game.png" alt="example" style="width:64px; height:64px;"> |
 
-  </div>
-
-</div>
 
 ## Demo
 [demo](https://drive.google.com/drive/folders/18OJygaIYOzIkildworENussj6nA4nLts?usp=drive_link)
