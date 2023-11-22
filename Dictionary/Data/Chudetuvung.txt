@@ -440,39 +440,25 @@ Dark green: Màu xanh lá cây đậm
 Gold (noun): Màu vàng óng
 Green (noun): Màu xanh lá
 Grey (noun): Màu xám
-<<<<<<< HEAD
-Light blue: Màu xanh da trời nhạt///
-Light brown: Màu nâu nhạt///
-Light green: Màu xanh lá cây nhạt///
-Light (adjective): Sáng (màu)///
-=======
 Light blue: Màu xanh da trời nhạt
 Light brown: Màu nâu nhạt
 Light green: Màu xanh lá cây nhạt
 Light (adjective): Sáng (màu)
->>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
-Orange (noun): Màu cam///
-Paint (noun): Sơn, màu vẽ///
-Pink (noun): Màu hồng///
-Purple (noun): Màu tím///
-Red (noun): Màu đỏ///
-Shade (noun): Sắc độ///
-White (noun): Màu trắng///
-Yellow (noun): Màu vàng///
-A fringe: Tóc cắt ngang trán///
-A short-haired person: Người có mái tóc ngắn///
-Angular: Mặt xương xương///
-<<<<<<< HEAD
+Orange (noun): Màu cam
+Paint (noun): Sơn, màu vẽ
+Pink (noun): Màu hồng
+Purple (noun): Màu tím
+Red (noun): Màu đỏ
+Shade (noun): Sắc độ
+White (noun): Màu trắng
+Yellow (noun): Màu vàng
+A fringe: Tóc cắt ngang trán
+A short-haired person: Người có mái tóc ngắn
+Angular: Mặt xương xương
 Attractive (adjective): Quyến rũ, hấp dẫn
 Baby: Em bé, trẻ con
 Bald: Hói
 Beard: Râu
-=======
-Attractive (adjective): Quyến rũ, hấp dẫn///
-Baby: Em bé, trẻ con///
-Bald: Hói///
-Beard: Râu///
->>>>>>> f15337708c01c03ea6f99e902ed975bdb069cd34
 Beautiful (adjective): Đẹp, xinh đẹp
 Birthmark: Vết bớt
 Blonde: Tóc vàng
@@ -849,7 +835,7 @@ Explosive: Dễ bị bùng nổ, dễ bị kích động
 Extroverted: Hướng ngoại
 Exuberant: Cởi mở, hồ hởi, đầy sức sống, đầy năng lượng
 Fabulous: Tuyệt vời
-Fair: Công bằng, ngay thẳng, không gian lận, hợp {, đúng, phải
+Fair: Công bằng, ngay thẳng, không gian lận, hợp, đúng, phải
 Faithful: Trung thành, chung thủy, có lương tâm, trung thực
 Fantastic: Tuyệt vời
 Fawning: Xu nịnh, bợ đỡ, nịnh hót
@@ -891,21 +877,21 @@ Grandparents (noun): Ông bà
 Half-brother: anh em cùng cha khác mẹ/cùng mẹ khác cha
 Half-sister: chị em cùng cha khác mẹ/cùng mẹ khác cha
 Husband (noun): Người chồng
-Kid/Child (noun): Con cái///
-Marry (verb): Cưới///
-Mother (noun): Mẹ///
-Mother-in-law (noun): Mẹ chồng///
-Mother-in-law: mẹ chồng/mẹ vợ///
-Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)///
-Parents (noun): Cha mẹ, phụ huynh///
-Pregnant (adjective): Mang thai///
-Relative (noun): Họ hàng///
-Sibling (noun): Anh chị em///
-Sister (noun): Chị em gái///
-Sister-in-law: chị/em dâu///
-Son (noun): Con trai///
-Son-in-law: con rể///
-Stepbrother: con trai của bố dượng/mẹ kế///
+Kid/Child (noun): Con cái
+Marry (verb): Cưới
+Mother (noun): Mẹ
+Mother-in-law (noun): Mẹ chồng
+Mother-in-law: mẹ chồng/mẹ vợ
+Niece/Nephew (noun): Cháu trai/Cháu gái (con của anh/chị/em)
+Parents (noun): Cha mẹ, phụ huynh
+Pregnant (adjective): Mang thai
+Relative (noun): Họ hàng
+Sibling (noun): Anh chị em
+Sister (noun): Chị em gái
+Sister-in-law: chị/em dâu
+Son (noun): Con trai
+Son-in-law: con rể
+Stepbrother: con trai của bố dượng/mẹ kế
 Stepdaughter: con gái riêng của chồng/vợ
 Stepfather: bố dượng
 Step-mom (noun): Mẹ kế, dì ghẻ
@@ -1205,21 +1191,21 @@ Hardware shop /ˈhɑːrdwɛr ʃɑp/ (noun): Cửa hàng bán các vật dụng k
 Hardware store /ˈhɑrdwɛr stɔr/ (noun): Cửa hàng dụng cụ
 House /haʊs/ (noun): Ngôi nhà
 Hypermarket /ˈhaɪpərmɑːrkɪt/ (noun): Siêu thị lớn (megastore)
-Junk shop /dʒʌŋk ʃɑp/ (noun): Cửa hàng bán đồ cũ
-Kitchen /ˈkɪtʃən/ (noun): Phòng bếp
-Laundry /ˈlɔːndri/ (noun): Cửa hàng giặt ủi
-Liquor store /ˈlɪkər stɔr/ (noun): Quán bán rượu bia mang đi không phục vụ tại quán
-Living room /ˈlɪvɪŋ rum/ (noun): Phòng khách
-Market: Chợ
-Newsagents: Quầy bán quần áo
-Newsstand /ˈnjuːzstænd/ (noun): Sạp báo (paper shop)
-Optician: Hiệu kính mắt
-Outfitter /ˈaʊtfɪtər/ (noun): Quầy bán đồ dã ngoại (quần áo, trại...)
-Perfumery /ˈpɜːrfjʊməri/ (noun): Cửa hàng bán nước hoa
-Petrol station (UK) / Gas station (US): Trạm xăng
-Pet shop: Hiệu thú nuôi
-Pharmacy /ˈfɑːrməsi/ (noun): Hiệu thuốc
-Rapery /ˈdreɪpəri/ (noun): Cửa hàng đồ may mặc
+Junk shop /dʒʌŋk ʃɑp/ (noun): Cửa hàng bán đồ cũ///
+Kitchen /ˈkɪtʃən/ (noun): Phòng bếp///
+Laundry /ˈlɔːndri/ (noun): Cửa hàng giặt ủi///
+Liquor store /ˈlɪkər stɔr/ (noun): Quán bán rượu bia mang đi không phục vụ tại quán///
+Living room /ˈlɪvɪŋ rum/ (noun): Phòng khách///
+Market: Chợ///
+Newsagents: Quầy bán quần áo///
+Newsstand /ˈnjuːzstænd/ (noun): Sạp báo (paper shop)///
+Optician: Hiệu kính mắt///
+Outfitter /ˈaʊtfɪtər/ (noun): Quầy bán đồ dã ngoại (quần áo, trại...)///
+Perfumery /ˈpɜːrfjʊməri/ (noun): Cửa hàng bán nước hoa///
+Petrol station (UK) / Gas station (US): Trạm xăng///
+Pet shop: Hiệu thú nuôi///
+Pharmacy /ˈfɑːrməsi/ (noun): Hiệu thuốc///
+Rapery /ˈdreɪpəri/ (noun): Cửa hàng đồ may mặc///
 Real estate /riəl ɪˈsteɪt/ (noun): Bất động sản
 Roof /ruːf/ (noun): Mái nhà
 Service center /ˈsɜːrvɪs ˈsɛntər/ (noun): Cửa hàng bán đồ phụ tùng
@@ -1614,21 +1600,21 @@ Sing – /sɪŋ/: Hát
 Sleep – /slip/: Ngủ
 Surf net – /sɜːf nɛt/: Lướt net
 Take photographs – /teɪk ˈfəʊ: Chụp ảnh
-Travel – /ˈtræv: Du lịch///
-Watching + TV/movie/wɑʧɪŋ/ + ˈtiˈvi/ˈmuvi (verb): Xem TV/phim///
-Afford/əˈfɔrd/ (verb): Có khả năng chi trả///
-Affordable /əˈfɔrdəbəl/(adjective): Giá cả hợp lí, phải chăng///
-Aisle /aɪl/: lối đi giữa các dãy hàng///
-Bargain/ˈbɑrgən/ (verb): Trả giá, mặc cả///
-Basket /ˈbæskɪt/: cái rổ, cái giỏ, cái thúng///
-Basket/ˈbæskət/ (noun): Giỏ hàng///
-Bookstore /ˈbʊkˌstɔr/(noun): Hiệu sách///
-Cart/kɑrt/ (noun): Xe đẩy trong siêu thị///
-Cash /kæʃ/: tiền mặt///
-Cashier /kæˈʃɪr/: nhân viên thu ngân///
-Cashier/kæˈʃɪr/ (noun): Nhân viên thu ngân///
-Cheap/ʧip/ (adjective): Rẻ///
-Clerk/klɜrk/ (noun): Nhân viên bán hàng///
+Travel – /ˈtræv: Du lịch
+Watching + TV/movie/wɑʧɪŋ/ + ˈtiˈvi/ˈmuvi (verb): Xem TV/phim
+Afford/əˈfɔrd/ (verb): Có khả năng chi trả
+Affordable /əˈfɔrdəbəl/(adjective): Giá cả hợp lí, phải chăng
+Aisle /aɪl/: lối đi giữa các dãy hàng
+Bargain/ˈbɑrgən/ (verb): Trả giá, mặc cả
+Basket /ˈbæskɪt/: cái rổ, cái giỏ, cái thúng
+Basket/ˈbæskət/ (noun): Giỏ hàng
+Bookstore /ˈbʊkˌstɔr/(noun): Hiệu sách
+Cart/kɑrt/ (noun): Xe đẩy trong siêu thị
+Cash /kæʃ/: tiền mặt
+Cashier /kæˈʃɪr/: nhân viên thu ngân
+Cashier/kæˈʃɪr/ (noun): Nhân viên thu ngân
+Cheap/ʧip/ (adjective): Rẻ
+Clerk/klɜrk/ (noun): Nhân viên bán hàng
 Clothing shop/Boutique: Cửa hàng quần áo, thời trang
 Complain /kəmˈpleɪn/(verb): Phàn nàn
 Complaint /kəmˈpleɪnt/: lời phàn nàn
@@ -2096,21 +2082,21 @@ Install /ɪnˈstɔl/(verb): Cài đặt, lắp đặt
 Internet/ˈɪntərˌnɛt/ (noun): Mạng internet
 Keyboard /ˈkiˌbɔrd/(noun): Bàn phím máy tính
 keyboard: bàn phím
-Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay///
-laptop: máy tính xách tay///
-Link /lɪŋk/(noun): Đường dẫn///
-Log in /lɔg ɪn/(phrasal verb): Đăng nhập///
-monitor: phần màn hình///
-Mouse /maʊs/(noun): Chuột máy tính///
-mouse: chuột///
-Password/ˈpæˌswɜrd/ (noun): Mật khẩu///
-PC (viết tắt của personal computer): máy tính cá nhân///
-power cable: cáp nguồn///
-Printer /ˈprɪntər/(noun): Máy in///
-printer: máy in///
-Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)///
-screen: màn hình///
-Sign up/saɪn ʌp/ (phrasal verb): Đăng kí///
+Laptop /ˈlæpˌtɑp/(noun): Máy tính xách tay
+laptop: máy tính xách tay
+Link /lɪŋk/(noun): Đường dẫn
+Log in /lɔg ɪn/(phrasal verb): Đăng nhập
+monitor: phần màn hình
+Mouse /maʊs/(noun): Chuột máy tính
+mouse: chuột
+Password/ˈpæˌswɜrd/ (noun): Mật khẩu
+PC (viết tắt của personal computer): máy tính cá nhân
+power cable: cáp nguồn
+Printer /ˈprɪntər/(noun): Máy in
+printer: máy in
+Program/ˈproʊˌgræm/ (noun): Chương trình (máy tính)
+screen: màn hình
+Sign up/saɪn ʌp/ (phrasal verb): Đăng kí
 Smartphone /smärtˌfōn/(noun): Điện thoại thông minh
 Social network /ˈsoʊʃəl ˈnɛˌtwɜrk/(noun): Mạng xã hội
 Software/ˈsɔfˌtwɛr/ (noun): Phần mềm
@@ -2256,7 +2242,7 @@ Enough /ɪˈnʌf/(adverb): Đủ
 Entirely /ɪnˈtaɪərli/(adverb): Hoàn toàn, trọn vẹn
 Highly/ˈhaɪli/ (adverb): Rất, hết sức, ở mức độ cao
 Just/ʤʌst/ (adverb): Chỉ
-Nearly/ˈnɪrli/ (adverb): Gần như, su{t
+Nearly/ˈnɪrli/ (adverb): Gần như, sut
 Only /ˈoʊnli/ (adjective): Duy nhất, chỉ một
 Perfectly /ˈpɜrfəktli/(adverb): Một cách hoàn hảo
 Pretty/ˈprɪti/ (adverb): Khá là
@@ -2325,21 +2311,21 @@ Charm /tʃɑːrm/: những vật trang trí nhỏ
 Charm bracelet: vòng đeo tay (gắn nhiều đồ trang trí nhỏ xung quanh
 Clasp: cái móc, cái gài
 Cufflink: khuy cài cổ tay áo (măng sét)
-Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)///
-Engagement ring: nhẫn đính hôn///
-Hoop earrings: vòng đeo Tai///
-Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)///
-Pearl necklace: dây chuyền ngọc trai///
-Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu{)///
-Pin /pɪn/: cái ghim cài áo///
-Signet ring: nhẫn có khắc hình phía trên///
-Wedding ring: nhẫn cưới///
-Air (noun): không khí///
-Area (noun): khu vực///
-Art (noun): nghệ thuật///
-Back (noun): phía sau///
-Body (noun): cơ thể///
-Book (noun): cuốn sách///
+Earrings /ˈɪrɪŋ/ : bông tai (hoa tai)
+Engagement ring: nhẫn đính hôn
+Hoop earrings: vòng đeo Tai
+Medallion /mi'dæljən/: mặt dây chuyền (tròn, bằng kim loại)
+Pearl necklace: dây chuyền ngọc trai
+Pendant: /'pendənt/: mặt dây chuyền (bằng đá qu)
+Pin /pɪn/: cái ghim cài áo
+Signet ring: nhẫn có khắc hình phía trên
+Wedding ring: nhẫn cưới
+Air (noun): không khí
+Area (noun): khu vực
+Art (noun): nghệ thuật
+Back (noun): phía sau
+Body (noun): cơ thể
+Book (noun): cuốn sách
 Business (noun): kinh doanh
 Car (noun): xe hơi
 Case (noun): trường hợp
