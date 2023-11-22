@@ -1,9 +1,13 @@
 # Application to support learning English using Java
 ## Author
 Group HHH
+
 **1.** Nguyen Quang Huy - 22021110
+
 **2.** Vu Van Huy - 22021202
+
 **3.** Me Quang Huy - 22021142
+
 ## Description
 The application is designed to support learning English. The application is written in Java and uses the JavaFX library. The application is based on the MVC model. The application has two types of dictionaries: English-Vietnamese and Vietnamese-English. The application use dictionaries.txt files to store data.
 
@@ -32,11 +36,12 @@ The application is designed to support learning English. The application is writ
 **2.** The display screen after logging in will show daily vocabulary for you to learn.
 
 **3.** To search for a word, tap the search button (Search icon).
+
    In addition, you can also edit words, delete words and update the dictionaries.txt file
 
-**5.** To add a new word, click the Add button (Plus icon).
+**4.** To add a new word, click the Add button (Plus icon).
 
-**6.** To translate, tap the translation button (Traslation icon).
+**5.** To translate, tap the translation button (Traslation icon).
 
 - Select mode: English-Vietnamese or Vietnamese-English to choose the dictionary.
 
